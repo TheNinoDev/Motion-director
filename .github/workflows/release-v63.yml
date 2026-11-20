@@ -1,0 +1,45 @@
+name: Publish Motion Director v63
+
+on:
+  push:
+    paths:
+      - ".github/workflows/release-v63.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout v63 skill source
+        uses: actions/checkout@v4
+      - name: Verify and package complete skill
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/md-release/motion-director"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          actual="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$actual" = "495"
+          test -f "$target/references/133-clarity-over-complexity-v63.md"
+          grep -q "Motion Director 63" "$target/SKILL.md"
+          (cd "$RUNNER_TEMP/md-release" && zip -qr "$GITHUB_WORKSPACE/motion-director-v63.zip" motion-director)
+          unzip -tq "$GITHUB_WORKSPACE/motion-director-v63.zip"
+      - name: Create or update v63 GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v63 >/dev/null 2>&1; then
+            gh release upload v63 motion-director-v63.zip --clobber
+          else
+            gh release create v63 motion-director-v63.zip \
+              --target "$GITHUB_SHA" \
+              --title "Motion Director v63 — Clarity over Complexity" \
+              --notes "Full skill with Claude-informed visual hierarchy, subtractive art direction and restrained motion. Original user audio/source firewall preserved. All 297 non-Markdown skill files unchanged."
+          fi
