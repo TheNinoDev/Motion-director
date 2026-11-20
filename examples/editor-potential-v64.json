@@ -3,7 +3,7 @@
   "width": 720,
   "height": 1280,
   "fps": 30,
-  "duration": 3,
+  "duration": 3.0,
   "background": "#090D14",
   "layers": [
     {
@@ -241,7 +241,7 @@
         ],
         [
           1.4,
-          0
+          0.0
         ],
         [
           2.35,
