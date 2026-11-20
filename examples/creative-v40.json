@@ -1,0 +1,74 @@
+{
+  "mode": "fictional_study",
+  "product": "Fictional continuous motion study",
+  "audience": "Motion designers",
+  "central_idea": "A guided continuous movement resolves into a sculptural form.",
+  "cta": "IN MOTION.",
+  "platform": "9:16 vertical",
+  "duration": 6,
+  "proofs": [],
+  "concepts": [
+    {
+      "id": "fan",
+      "family": "object metaphor",
+      "visible_event": "A rounded shape follows a curved route with a delayed marker.",
+      "reason": "Continuous velocity through waypoints makes movement readable.",
+      "risk": "May resemble generic card animation without distinct motion."
+    },
+    {
+      "id": "type",
+      "family": "typographic contrast",
+      "visible_event": "Three different letter scales resolve into a single baseline.",
+      "reason": "Makes synchronization visible.",
+      "risk": "Does not demonstrate material interactions."
+    },
+    {
+      "id": "interface",
+      "family": "interaction",
+      "visible_event": "An illustrative cursor selects and aligns surfaces.",
+      "reason": "Shows a cause for the alignment.",
+      "risk": "No real product evidence; must stay fictional."
+    }
+  ],
+  "selected_concept": "fan",
+  "selection_reason": "One track and a delayed follower make the changing path readable.",
+  "beats": [
+    {
+      "start": 0,
+      "end": 3.65,
+      "purpose": "transformation",
+      "visible_event": "Capsule follows curved route while marker trails behind",
+      "dominant_subject": "capsule",
+      "support_motion": "path draws and capsule turns",
+      "outgoing_anchor": "capsule",
+      "incoming_anchor": "route",
+      "layout": "asymmetric flow",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "hero",
+        "marker",
+        "path"
+      ]
+    },
+    {
+      "start": 3.65,
+      "end": 6,
+      "purpose": "resolution",
+      "visible_event": "Capsule resolves into centered chrome ring study",
+      "dominant_subject": "ring",
+      "support_motion": "rotation and gentle scale motion",
+      "outgoing_anchor": "ring",
+      "incoming_anchor": "capsule",
+      "layout": "centered sculptural close",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "hero",
+        "solid",
+        "end",
+        "sub"
+      ]
+    }
+  ]
+}

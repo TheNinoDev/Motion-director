@@ -1,0 +1,8 @@
+{
+  "version": 1, "width": 360, "height": 640, "fps": 30,
+  "shots": [
+    {"id":"character","engine":"expressive","frames":18,"content":{"kind":"character","poses":[[0,"curious"],[8,"smirk"],[17,"neutral"]],"zoom":[[0,0.9],[17,1.1]]}},
+    {"id":"simple-3d","engine":"scene3d","frames":16,"transition_in":{"kind":"cut","frames":0},"content":{"layout":"custom","points":[[0,0,0]],"count":1,"glyphs":"A","size":3.0,"eye_from":[2,0.8,10],"eye_to":[-1,0,10],"spin":0.35,"roughness":0.2}},
+    {"id":"final-phrase","engine":"type","frames":20,"content":{"kind":"hero","text":"DONE","subtitle":"DEMO SCENE"}}
+  ]
+}

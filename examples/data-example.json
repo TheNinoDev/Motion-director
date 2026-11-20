@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "width": 360,
+  "height": 640,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "data-01",
+      "engine": "data",
+      "frames": 36,
+      "content": {
+        "kind": "line",
+        "label": "Example growth",
+        "unit": "events",
+        "values": [
+          2,
+          3,
+          5,
+          8,
+          13,
+          21
+        ],
+        "provenance": "illustrative"
+      }
+    },
+    {
+      "id": "data-02",
+      "engine": "data",
+      "frames": 30,
+      "content": {
+        "kind": "bars",
+        "label": "Same series",
+        "unit": "events",
+        "values": [
+          2,
+          3,
+          5,
+          8,
+          13,
+          21
+        ],
+        "provenance": "illustrative"
+      },
+      "transition_in": {
+        "kind": "wipeleft",
+        "frames": 4
+      }
+    }
+  ]
+}

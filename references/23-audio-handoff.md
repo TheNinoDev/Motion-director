@@ -1,0 +1,22 @@
+# V5 — Minimal user-facing messages and orchestration
+
+**V6:** Read guide 25 for provider-specific acting tags, clean-script preservation, and compilation before any TTS handoff. It supersedes older vague tagging guidance. The original preset in guide 24 was successfully tested by its author (user-reported).
+
+Read this before asking anything. Use the user's language. These are templates, not a script to blindly repeat. Replace bracketed slots, omit known answers, never present placeholder as final. A full film is agent-owned end to end; manual work is only external voice/music generation/download if the agent lacks authorized capabilities.
+
+## State machine
+1. DISCOVER: product evidence, audience, story, script. Ask use scope and audio selection preference once if unknown, preferably at first intake. If user provided song, skip research unless asked. 2. RESEARCH: after scope known, research fresh tracks and recommend. Present voice provider choices only if dry VO absent and tool can't generate automatically. 3. HANDOFF: give complete final script, original/user voice design prompt, one selected provider tutorial, one selected song acquisition route, file upload request. Can bundle in one message. 4. WAIT_ASSETS: do not begin motion editing or claim running background work; user may send both files together or separately. Preserve decisions. If script-only task do not ask for files. 5. VALIDATE: validate real audio files with ffprobe, compare narration, confirm song/version and rights status. If one missing, ask only for that item. If invalid, explain exact defect and ask for replacement only if agent cannot fix. 6. PRODUCE: audio timeline, visual beats, implementation, render, QA. 7. RELEASE: release gate + v5 audio intake release check; optional preview labeled. No routine user approvals.
+
+## Example compact intake (only missing fields)
+“Für die Werbung brauche ich noch zwei Audio-Entscheidungen: Soll das Video kommerziell nutzbar sein (auch TikTok/Shorts/Reels), oder ist es nur privat? Für die Stimme: ElevenLabs, Fish Audio, eigene Aufnahme oder soll ich eine verfügbare Stimme auswählen? Ich schreibe das Script selbst und schlage passende Songs vor.” If context already says marketing, default commercial and only clarify whether user wants platform-only or cross-platform, draft/preview if requested. Check provider eligibility before offering signup; offer self-recorded or eligible alternative as needed.
+
+## Example song shortlist (format, fictional placeholders)
+“Für den ruhigen Einstieg und den Reveal würde ich [track/version] nehmen. [track A]: aktuell/rising, [date, region, metric, source]. [track B]: timeless, [why]. [track C]: cleared candidate, [scope/source]. Pick A/B/C oder schick deinen eigenen Song.” Never use fictitious entries as recommendations. If user chooses, give exact URL and selected short tutorial, not all platforms at once.
+
+## Example handoff
+“Das Script ist fertig. Hier ist der Text zum Einfügen: [exact TTS text in its own copyable block]. Stimme: [selected provider and voice prompt if needed]. [3–6 numbered steps using verified labels]. Song: [selected exact track, acquisition link and steps]. Schick mir die unbearbeiteten Dateien (Voiceover + Song, MP3/WAV/M4A/MP4 geht). Den Rest — Timing, Schnitt, Sounddesign, Animation und Export — übernehme ich.”
+
+If user picked provider before script, do not send a generic placeholder script. If user has a preferred prompt, reuse exactly. If no professional voice tool but user cannot access external service, offer preview or an eligible self-recording/local licensed model, not a forced account. Never require user to do alignment or editing. Never ask for a song URL if a file is already attached. If user sends a named character voice, use only legitimate authorized audio or original design; never claim provider library inclusion/rights without evidence. Use actual evidence for release. Record status between turns in project files; a skill cannot assume persistent chat context or background execution.
+
+## V5.1 additions
+For a matching voice style, use the exact built-in user prompt from `24-holographic-voice-preset.md`, not the earlier neutral prompt by default. For YouTube-link audio, where download is authorized, the explicit EzMP3 tutorial in guide 22 is available. Give only the selected route; keep voice description and TTS script in separate copyable blocks. Ask only for missing files.

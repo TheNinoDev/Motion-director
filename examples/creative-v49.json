@@ -1,0 +1,89 @@
+{
+  "mode": "fictional_study",
+  "product": "Fictional FORM workspace",
+  "audience": "Motion designers",
+  "central_idea": "The title hands off while the persistent workspace expands to show its detail.",
+  "cta": "A closer look.",
+  "platform": "9:16 vertical",
+  "duration": 6,
+  "proofs": [],
+  "concepts": [
+    {
+      "id": "gesture",
+      "family": "product interaction",
+      "visible_event": "Workspace expands into focus and a precise line introduces the annotation.",
+      "reason": "Persistent real fictional demo asset.",
+      "risk": "Illustrative, not a real product claim."
+    },
+    {
+      "id": "metaphor",
+      "family": "visual metaphor",
+      "visible_event": "Fragments combine into a single plane.",
+      "reason": "Clarity metaphor.",
+      "risk": "Less direct."
+    },
+    {
+      "id": "type",
+      "family": "editorial",
+      "visible_event": "Letter spacing contracts into a single readable line.",
+      "reason": "Typographic clarity.",
+      "risk": "No product proof."
+    }
+  ],
+  "selected_concept": "gesture",
+  "selection_reason": "The persistent interface remains the visual anchor and demonstrates reframing.",
+  "beats": [
+    {
+      "start": 0,
+      "end": 1.1,
+      "purpose": "hook",
+      "visible_event": "Show fictional workspace in a smaller frame.",
+      "dominant_subject": "Title",
+      "support_motion": "Coordinated title and interface",
+      "outgoing_anchor": "workspace",
+      "incoming_anchor": "workspace",
+      "layout": "wide",
+      "audio_cue": "Synthetic press click only.",
+      "proof_id": null,
+      "layer_ids": [
+        "title",
+        "product"
+      ]
+    },
+    {
+      "start": 1.1,
+      "end": 3.3,
+      "purpose": "transformation",
+      "visible_event": "Title exchanges and the workspace expands with underline.",
+      "dominant_subject": "Workspace",
+      "support_motion": "Coordinated title and interface",
+      "outgoing_anchor": "workspace",
+      "incoming_anchor": "workspace",
+      "layout": "close",
+      "audio_cue": "Synthetic press click only.",
+      "proof_id": null,
+      "layer_ids": [
+        "title2",
+        "product",
+        "annotation"
+      ]
+    },
+    {
+      "start": 3.3,
+      "end": 6,
+      "purpose": "resolution",
+      "visible_event": "Detail label appears and the workspace responds to a press.",
+      "dominant_subject": "Workspace detail",
+      "support_motion": "Coordinated title and interface",
+      "outgoing_anchor": "workspace",
+      "incoming_anchor": "workspace",
+      "layout": "annotation",
+      "audio_cue": "Synthetic press click only.",
+      "proof_id": null,
+      "layer_ids": [
+        "product",
+        "label"
+      ]
+    }
+  ]
+}

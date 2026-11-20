@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "duration": 6,
+  "width": 720,
+  "fps": 30,
+  "background": "#151921",
+  "layers": [
+    {
+      "id": "bg",
+      "kind": "gradient",
+      "w": 720,
+      "h": 1280,
+      "stops": [
+        [
+          0,
+          "#151921"
+        ],
+        [
+          1,
+          "#273e42"
+        ]
+      ],
+      "angle": 130
+    },
+    {
+      "id": "header",
+      "kind": "text",
+      "text": "MOTION / STUDY 042",
+      "size": 24,
+      "x": 360,
+      "y": 155,
+      "color": "#c0d7cd",
+      "font": "mono"
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Find your rhythm.",
+      "size": 76,
+      "maxw": 550,
+      "x": 360,
+      "y": [
+        [
+          0,
+          305
+        ],
+        [
+          3.05,
+          305
+        ],
+        [
+          3.36,
+          270,
+          "in"
+        ]
+      ],
+      "color": "#eef2e7",
+      "font": "heavy",
+      "active": [
+        0,
+        3.65
+      ],
+      "opacity": [
+        [
+          0,
+          1
+        ],
+        [
+          3.05,
+          1
+        ],
+        [
+          3.36,
+          0,
+          "sine"
+        ]
+      ]
+    },
+    {
+      "id": "end",
+      "kind": "text",
+      "text": "In concert.",
+      "size": 92,
+      "maxw": 650,
+      "x": 360,
+      "y": [
+        [
+          3.37,
+          340
+        ],
+        [
+          3.85,
+          305,
+          "out"
+        ]
+      ],
+      "color": "#eef2e7",
+      "font": "heavy",
+      "active": [
+        3.37,
+        6
+      ],
+      "opacity": [
+        [
+          3.37,
+          0
+        ],
+        [
+          3.85,
+          1,
+          "sine"
+        ]
+      ]
+    },
+    {
+      "id": "stage",
+      "kind": "group",
+      "x": 360,
+      "y": 730,
+      "scale": 1,
+      "active": [
+        0,
+        6
+      ],
+      "rotate": [
+        [
+          0,
+          0
+        ],
+        [
+          3.1,
+          0
+        ],
+        [
+          3.9,
+          -5,
+          "sine"
+        ],
+        [
+          4.7,
+          0,
+          "sine"
+        ]
+      ]
+    },
+    {
+      "id": "module0",
+      "kind": "group",
+      "parent": "stage",
+      "x": -150,
+      "y": 0,
+      "active": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "module0_card",
+      "kind": "rect",
+      "parent": "module0",
+      "x": 0,
+      "y": 0,
+      "w": 132,
+      "h": 240,
+      "radius": 30,
+      "color": "#c6e5b1",
+      "shadow": true,
+      "shadow_blur": 20,
+      "shadow_opacity": 0.26
+    },
+    {
+      "id": "module0_slot",
+      "kind": "rect",
+      "parent": "module0",
+      "x": 0,
+      "y": -65,
+      "w": 74,
+      "h": 5,
+      "radius": 2,
+      "color": "#23323a"
+    },
+    {
+      "id": "module0_num",
+      "kind": "text",
+      "parent": "module0",
+      "x": 0,
+      "y": 20,
+      "text": "01",
+      "font": "heavy",
+      "size": 76,
+      "color": "#23323a"
+    },
+    {
+      "id": "module0_dot",
+      "kind": "ellipse",
+      "parent": "module0",
+      "x": 0,
+      "y": 87,
+      "w": 14,
+      "h": 14,
+      "color": "#23323a"
+    },
+    {
+      "id": "module1",
+      "kind": "group",
+      "parent": "stage",
+      "x": 0,
+      "y": 0,
+      "active": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "module1_card",
+      "kind": "rect",
+      "parent": "module1",
+      "x": 0,
+      "y": 0,
+      "w": 132,
+      "h": 240,
+      "radius": 30,
+      "color": "#87b7dc",
+      "shadow": true,
+      "shadow_blur": 20,
+      "shadow_opacity": 0.26
+    },
+    {
+      "id": "module1_slot",
+      "kind": "rect",
+      "parent": "module1",
+      "x": 0,
+      "y": -65,
+      "w": 74,
+      "h": 5,
+      "radius": 2,
+      "color": "#23323a"
+    },
+    {
+      "id": "module1_num",
+      "kind": "text",
+      "parent": "module1",
+      "x": 0,
+      "y": 20,
+      "text": "02",
+      "font": "heavy",
+      "size": 76,
+      "color": "#23323a"
+    },
+    {
+      "id": "module1_dot",
+      "kind": "ellipse",
+      "parent": "module1",
+      "x": 0,
+      "y": 87,
+      "w": 14,
+      "h": 14,
+      "color": "#23323a"
+    },
+    {
+      "id": "module2",
+      "kind": "group",
+      "parent": "stage",
+      "x": 150,
+      "y": 0,
+      "active": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "module2_card",
+      "kind": "rect",
+      "parent": "module2",
+      "x": 0,
+      "y": 0,
+      "w": 132,
+      "h": 240,
+      "radius": 30,
+      "color": "#e8bd91",
+      "shadow": true,
+      "shadow_blur": 20,
+      "shadow_opacity": 0.26
+    },
+    {
+      "id": "module2_slot",
+      "kind": "rect",
+      "parent": "module2",
+      "x": 0,
+      "y": -65,
+      "w": 74,
+      "h": 5,
+      "radius": 2,
+      "color": "#23323a"
+    },
+    {
+      "id": "module2_num",
+      "kind": "text",
+      "parent": "module2",
+      "x": 0,
+      "y": 20,
+      "text": "03",
+      "font": "heavy",
+      "size": 76,
+      "color": "#23323a"
+    },
+    {
+      "id": "module2_dot",
+      "kind": "ellipse",
+      "parent": "module2",
+      "x": 0,
+      "y": 87,
+      "w": 14,
+      "h": 14,
+      "color": "#23323a"
+    },
+    {
+      "id": "footer",
+      "kind": "text",
+      "text": "ONE MOVEMENT. THREE VOICES.",
+      "size": 21,
+      "maxw": 610,
+      "x": 360,
+      "y": 1050,
+      "color": "#c0d7cd",
+      "font": "mono"
+    },
+    {
+      "id": "mark0",
+      "kind": "ellipse",
+      "x": 312,
+      "y": 970,
+      "w": 10,
+      "h": 10,
+      "color": "#b4d3cc",
+      "active": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "mark1",
+      "kind": "ellipse",
+      "x": 360,
+      "y": 970,
+      "w": 10,
+      "h": 10,
+      "color": "#b4d3cc",
+      "active": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "mark2",
+      "kind": "ellipse",
+      "x": 408,
+      "y": 970,
+      "w": 10,
+      "h": 10,
+      "color": "#b4d3cc",
+      "active": [
+        0,
+        6
+      ]
+    }
+  ],
+  "components": {},
+  "instances": [],
+  "choreography": [
+    {
+      "recipe": "fan_out",
+      "layers": [
+        "module0",
+        "module1",
+        "module2"
+      ],
+      "start": 0.3,
+      "end": 2.3,
+      "center": [
+        0,
+        -30
+      ],
+      "spacing": 172,
+      "rise": 75,
+      "angle": 14,
+      "stagger": 0.14
+    },
+    {
+      "recipe": "wave",
+      "layers": [
+        "mark0",
+        "mark1",
+        "mark2"
+      ],
+      "start": 2.1,
+      "end": 4.3,
+      "amplitude": 20,
+      "cycles": 1,
+      "stagger": 0.18
+    }
+  ],
+  "continuous_motion": [
+    {
+      "recipe": "continuous_path",
+      "layer": "stage",
+      "knots": [
+        [
+          0,
+          360,
+          730
+        ],
+        [
+          2.9,
+          360,
+          730
+        ],
+        [
+          4.3,
+          360,
+          645
+        ],
+        [
+          5.9,
+          360,
+          645
+        ]
+      ],
+      "tension": 0.85,
+      "endpoint": "rest"
+    },
+    {
+      "recipe": "breathing_scale",
+      "layer": "stage",
+      "start": 3.5,
+      "end": 5.9,
+      "amount": 0.08,
+      "cycles": 1
+    }
+  ]
+}

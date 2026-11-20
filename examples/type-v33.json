@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "width": 720,
+  "height": 1280,
+  "fps": 24,
+  "duration": 1.6,
+  "background": "#12151b",
+  "grain": 0,
+  "review_times": [
+    0,
+    0.4,
+    0.8,
+    1.2,
+    1.56
+  ],
+  "layers": [
+    {
+      "id": "bg",
+      "kind": "gradient",
+      "active": [
+        0.0,
+        1.6
+      ],
+      "x": 360,
+      "y": 640,
+      "w": 720,
+      "h": 1280,
+      "stops": [
+        [
+          0,
+          "#111419"
+        ],
+        [
+          0.5,
+          "#343b49"
+        ],
+        [
+          1,
+          "#15171d"
+        ]
+      ],
+      "angle": 90
+    },
+    {
+      "id": "label",
+      "kind": "text",
+      "active": [
+        0.0,
+        1.6
+      ],
+      "text": "SCULPTED TYPE  /  033",
+      "x": 360,
+      "y": 190,
+      "size": 25,
+      "color": "#c5cbd6"
+    },
+    {
+      "id": "type",
+      "kind": "text3d",
+      "active": [
+        0.0,
+        1.6
+      ],
+      "text": "08",
+      "font": "heavy",
+      "x": 360,
+      "y": 610,
+      "size": 550,
+      "maxw": 610,
+      "depth": 86,
+      "bevel3d": 9,
+      "quality": 1,
+      "antialias": 1.5,
+      "atlas_resolution": 960,
+      "material": "chrome",
+      "roughness": 0.13,
+      "yaw": [
+        [
+          0.0,
+          -42
+        ],
+        [
+          0.8,
+          4,
+          "sine"
+        ],
+        [
+          1.6,
+          38,
+          "sine"
+        ]
+      ],
+      "pitch": [
+        [
+          0.0,
+          9
+        ],
+        [
+          1.6,
+          -8,
+          "sine"
+        ]
+      ],
+      "light": [
+        [
+          0.0,
+          -0.8
+        ],
+        [
+          1.6,
+          0.6,
+          "linear"
+        ]
+      ]
+    },
+    {
+      "id": "info",
+      "kind": "text",
+      "active": [
+        0.0,
+        1.6
+      ],
+      "text": "EXTRUSION  /  SOFT BEVEL",
+      "x": 360,
+      "y": 1050,
+      "size": 25,
+      "color": "#c5cbd6"
+    }
+  ]
+}

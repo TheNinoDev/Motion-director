@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "duration": 6,
+  "width": 720,
+  "fps": 30,
+  "background": "#101318",
+  "cues": {
+    "start": 0,
+    "impact": 1.05,
+    "reveal": 2.5,
+    "proof": 3.4,
+    "end": 6
+  },
+  "assets": {
+    "workspace": "assets/v15-workspace.png"
+  },
+  "layers": [
+    {
+      "id": "bg",
+      "kind": "gradient",
+      "w": 720,
+      "h": 1280,
+      "stops": [
+        [
+          0,
+          "#ebece5"
+        ],
+        [
+          1,
+          "#c9d3ba"
+        ]
+      ],
+      "angle": 65
+    },
+    {
+      "id": "big",
+      "kind": "text",
+      "text": "LESS.",
+      "size": 174,
+      "maxw": 660,
+      "x": 360,
+      "y": 360,
+      "color": "#17231e",
+      "active": [
+        0,
+        2.5
+      ]
+    },
+    {
+      "id": "orbit",
+      "kind": "ellipse",
+      "w": 470,
+      "h": 470,
+      "stroke": 0.8,
+      "color": "#73846a",
+      "x": 360,
+      "y": 696,
+      "active": [
+        0,
+        2.5
+      ]
+    },
+    {
+      "id": "marker",
+      "kind": "ellipse",
+      "w": 17,
+      "h": 17,
+      "color": "#253a2b",
+      "active": [
+        0,
+        2.5
+      ]
+    },
+    {
+      "id": "hero",
+      "kind": "object3d",
+      "geometry": "torus",
+      "material": "chrome",
+      "w": 350,
+      "h": 350,
+      "depth": 250,
+      "x": 360,
+      "y": 696,
+      "quality": 0.85,
+      "antialias": 1.5,
+      "active": [
+        0,
+        3.4
+      ],
+      "roughness": 0.12,
+      "bevel3d": 0.2
+    },
+    {
+      "id": "dark",
+      "kind": "rect",
+      "w": 720,
+      "h": 1280,
+      "color": "#101c19",
+      "active": [
+        2.5,
+        6
+      ]
+    },
+    {
+      "id": "more",
+      "kind": "text",
+      "text": "MORE ROOM.",
+      "maxw": 640,
+      "size": 102,
+      "color": "#d6efad",
+      "x": 360,
+      "y": 252,
+      "active": [
+        2.5,
+        6
+      ]
+    },
+    {
+      "id": "proof",
+      "kind": "image",
+      "src": "@workspace",
+      "w": 605,
+      "x": 360,
+      "y": 696,
+      "shadow": true,
+      "shadow_opacity": 0.32,
+      "shadow_blur": 24,
+      "active": [
+        2.5,
+        6
+      ]
+    },
+    {
+      "id": "accent",
+      "kind": "path",
+      "w": 620,
+      "h": 100,
+      "x": 360,
+      "y": 1025,
+      "points": [
+        [
+          20,
+          50
+        ],
+        [
+          580,
+          50
+        ]
+      ],
+      "stroke": 3,
+      "color": "#d6efad",
+      "active": [
+        3.4,
+        6
+      ]
+    },
+    {
+      "id": "label",
+      "kind": "text",
+      "text": "ONE WORKSPACE.",
+      "size": 39,
+      "maxw": 600,
+      "x": 360,
+      "y": 1090,
+      "color": "#e6ecdc",
+      "active": [
+        3.4,
+        6
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "op": "reveal",
+      "layer": "big",
+      "start": 0,
+      "end": 0.55,
+      "from": 0,
+      "to": 1,
+      "ease": "quint"
+    },
+    {
+      "op": "zoom",
+      "layer": "hero",
+      "start": 0,
+      "end": 0.65,
+      "from": 0.65,
+      "to": 1,
+      "ease": "out"
+    },
+    {
+      "op": "tilt",
+      "layer": "hero",
+      "start": 0,
+      "end": 2.5,
+      "from": [
+        -32,
+        13
+      ],
+      "to": [
+        38,
+        -9
+      ],
+      "ease": "sine"
+    },
+    {
+      "op": "elastic",
+      "layer": "hero",
+      "start": "impact",
+      "preset": "jelly_soft",
+      "strength": 0.72,
+      "mode": "squash"
+    },
+    {
+      "op": "elastic",
+      "layer": "hero",
+      "start": 1.1,
+      "preset": "jelly_soft",
+      "strength": 0.38,
+      "mode": "bend"
+    },
+    {
+      "op": "wipe",
+      "layer": "dark",
+      "start": "reveal",
+      "end": 3.15,
+      "from": 0,
+      "to": 1,
+      "mask": "diagonal",
+      "ease": "quint"
+    },
+    {
+      "op": "reveal",
+      "layer": "more",
+      "start": 2.65,
+      "end": 3.25,
+      "from": 0,
+      "to": 1,
+      "ease": "quint"
+    },
+    {
+      "op": "wipe",
+      "layer": "proof",
+      "start": 2.7,
+      "end": "proof",
+      "from": 0,
+      "to": 1,
+      "mask": "iris",
+      "ease": "quint"
+    },
+    {
+      "op": "tilt",
+      "layer": "proof",
+      "start": 2.7,
+      "end": 4.5,
+      "from": [
+        -18,
+        8
+      ],
+      "to": [
+        0,
+        0
+      ],
+      "ease": "out"
+    },
+    {
+      "op": "trace",
+      "layer": "accent",
+      "start": "proof",
+      "end": 4.05,
+      "from": 0,
+      "to": 1,
+      "ease": "out"
+    },
+    {
+      "op": "fade",
+      "layer": "label",
+      "start": "proof",
+      "end": 4.1,
+      "from": 0,
+      "to": 1,
+      "ease": "out"
+    },
+    {
+      "op": "orbit",
+      "layer": "marker",
+      "start": 0,
+      "end": 2.5,
+      "center": [
+        360,
+        696
+      ],
+      "radius": [
+        235,
+        235
+      ],
+      "degrees": [
+        -140,
+        95
+      ],
+      "samples": 48
+    },
+    {
+      "op": "light_sweep",
+      "layer": "hero",
+      "start": 0,
+      "end": 2.5,
+      "from": 0.05,
+      "to": 0.65,
+      "ease": "sine"
+    },
+    {
+      "op": "curve",
+      "layer": "proof",
+      "start": 3.4,
+      "end": 5.6,
+      "points": [
+        [
+          360,
+          696
+        ],
+        [
+          366,
+          675
+        ],
+        [
+          354,
+          666
+        ],
+        [
+          360,
+          660
+        ]
+      ],
+      "samples": 32,
+      "ease": "sine"
+    }
+  ]
+}

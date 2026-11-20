@@ -1,0 +1,16 @@
+> **V59 SOURCE FIREWALL — CURRENT RULE:** Product websites, local projects, original HTML/CSS and reference clips are **INFORMATION ONLY**. Any screenshot, real UI capture, existing site image, logo, font, webpage-derived frame, layout or reference footage mentioned below is **NOT permitted in the output video** by default, even after cropping, recoloring or redrawing. Build ALL visible scenes from new original tool-generated art instead; factual source inspection remains allowed. A separately provided asset needs explicit inclusion authorization. This V59 rule overrides all conflicting examples below. See `references/117-source-firewall-v59.md` and root `SKILL.md`.
+
+# V17: stop producing animated slides
+
+The prior visual failure was not lack of ornament: its shots shared identical central anchors, oversized background accents and little meaningful scale change. The new cinematic engine offers high-contrast typography, moving studio reflection fields, UI macro/context cuts and a controlled brand lockup. Its eight shot kinds are composable in the unified timeline. Read starter/cinematic/README.md for precise options and CLI.
+
+## Design decisions a weak agent should not need to invent
+1. Start on a sharp recognisable conflict or action, not decoration or a title slide. On a 9:16 artboard use a short two-line phrase at large display size. Leave a clear reading zone, keep typography consistent and avoid long blocks of text.
+2. For a metaphor, pick one meaningful material object; use a slow light sweep plus a fast change of scale, then cut to the same circular/detail anchor in UI. Do not add an abstract ring to every project. If there is no metaphor, use real product action instead.
+3. Contrast compositions: large text / full-bleed macro / clear UI proof / sparse reset. Micro-labels are secondary, never primary content. Use a max of two accent colors derived from brand assets. A cut can be the right transition, but it must be motivated by meaning or shared visual geometry.
+4. Show something happening every 0.5–1.5 seconds when narration is active. Change hierarchy, angle, crop, or selected UI element rather than adding particle clutter. Allow purposeful pauses. Don't impose this interval on emotional holds.
+5. At a product payoff use a legible real UI detail then wider context. Do not use placeholder screenshots if marketing a live product. If an existing visual is too low-res, capture again rather than upscale. A repeated screenshot is not a new feature.
+6. Keep voice and music primary; use existing sound-design and audio timing tools. The demo has no audio; it is not a production example of timing. The full workflow still requires the prior release checks.
+
+## Review and repair loop
+Render a preview, inspect contact sheet plus continuous playback (listen to mix), rate each shot 0–2 for hierarchy, readability, narrative relevance, continuity, material/asset craft, temporal movement, composition variation, and audio sync. A 0 in any dimension is a blocker; change the actual timeline and re-render, not just the report. Do not fake aesthetic scores or claim parity with historical references. Inspect actual full-resolution export separately. Re-run edit checks and release gate. If inputs or capabilities are missing, disclose exactly which ones.

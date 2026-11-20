@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "fragment",
+      "engine": "kinetic",
+      "frames": 63,
+      "content": {
+        "kind": "field",
+        "field": "vortex",
+        "glyph": "F",
+        "count": 4200,
+        "samples": 2,
+        "grain": 0.8,
+        "accent": "#bdb0ff",
+        "text": "Too much?",
+        "sub": "Find the signal.",
+        "eyebrow": "F / FORM   \u2014   CONCEPT STUDY",
+        "spread": [
+          [
+            0,
+            0
+          ],
+          [
+            0.16,
+            0
+          ],
+          [
+            0.8,
+            1,
+            "smooth"
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "zoom": [
+          [
+            0,
+            1.6
+          ],
+          [
+            0.65,
+            1
+          ],
+          [
+            1,
+            1.15
+          ]
+        ],
+        "yaw": [
+          [
+            0,
+            0.9
+          ],
+          [
+            0.55,
+            -0.25
+          ],
+          [
+            0.8,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "pany": 0.1,
+        "sprite": "mixed",
+        "size": 0.9,
+        "pitch": [
+          [
+            0,
+            -0.3
+          ],
+          [
+            0.8,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reset",
+      "engine": "kinetic",
+      "frames": 35,
+      "content": {
+        "kind": "type",
+        "words": [
+          "LESS.",
+          "BUT BETTER."
+        ],
+        "layout": "split",
+        "bg": "#dcd5fd",
+        "fg": "#14131b",
+        "accent": "#504078",
+        "eyebrow": "01   \u2014   CLARITY",
+        "sub": "A place for your projects."
+      }
+    },
+    {
+      "id": "proof",
+      "engine": "kinetic",
+      "frames": 79,
+      "content": {
+        "kind": "proof",
+        "src": "assets/v15-workspace.png",
+        "crop": [
+          0.05,
+          0.18,
+          0.56,
+          0.68
+        ],
+        "mask": "diagonal",
+        "text": "See the work.",
+        "sub": "Selected projects, in view.",
+        "eyebrow": "02   \u2014   PRODUCT CONCEPT",
+        "focus": [
+          [
+            0,
+            0
+          ],
+          [
+            0.25,
+            0
+          ],
+          [
+            0.85,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "zoom": [
+          [
+            0,
+            1.23
+          ],
+          [
+            0.85,
+            1
+          ]
+        ],
+        "yaw": [
+          [
+            0,
+            0.38
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "reveal": [
+          [
+            0,
+            0.18
+          ],
+          [
+            0.28,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "engine": "kinetic",
+      "frames": 60,
+      "content": {
+        "kind": "lockup",
+        "brand": "F / FORM",
+        "sub": "Make room for your work.",
+        "eyebrow": "FICTIONAL CONCEPT   /   03"
+      }
+    }
+  ],
+  "audio": {
+    "sfx": "assets/v21-sfx.wav",
+    "sfx_volume": 0.8
+  }
+}

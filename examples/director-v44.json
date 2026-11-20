@@ -1,0 +1,947 @@
+{
+  "version": 1,
+  "duration": 7.2,
+  "width": 720,
+  "fps": 30,
+  "background": "#131b2b",
+  "layers": [
+    {
+      "id": "bg",
+      "kind": "gradient",
+      "w": 720,
+      "h": 1280,
+      "stops": [
+        [
+          0,
+          "#171c29"
+        ],
+        [
+          1,
+          "#344c4c"
+        ]
+      ],
+      "angle": 115
+    },
+    {
+      "id": "eyebrow",
+      "kind": "text",
+      "text": "MOTION STUDY   /   044",
+      "font": "mono",
+      "size": 20,
+      "x": 360,
+      "y": 128,
+      "color": "#a6bec5"
+    },
+    {
+      "id": "intro",
+      "kind": "text",
+      "text": "Find the\nsignal.",
+      "font": "heavy",
+      "size": 96,
+      "maxw": 580,
+      "x": 360,
+      "y": 276,
+      "color": "#f7f1dd",
+      "active": [
+        0,
+        3.15
+      ]
+    },
+    {
+      "id": "stage",
+      "kind": "group",
+      "x": 360,
+      "y": 720,
+      "scale": 1
+    },
+    {
+      "id": "ring0",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": 0,
+      "y": 0,
+      "w": 448,
+      "h": 448,
+      "color": "#405a64",
+      "stroke": 2,
+      "scale": 1,
+      "opacity": 0.7
+    },
+    {
+      "id": "ring1",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": 0,
+      "y": 0,
+      "w": 346,
+      "h": 346,
+      "color": "#65858a",
+      "stroke": 2,
+      "scale": 1,
+      "opacity": 0.7
+    },
+    {
+      "id": "ring2",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": 0,
+      "y": 0,
+      "w": 244,
+      "h": 244,
+      "color": "#91b0af",
+      "stroke": 2,
+      "scale": 1,
+      "opacity": 0.7
+    },
+    {
+      "id": "point0",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": 165,
+      "y": 42,
+      "w": 18,
+      "h": 18,
+      "color": "#b6dbce",
+      "scale": 1,
+      "opacity": 0.85
+    },
+    {
+      "id": "point1",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": 110,
+      "y": 185,
+      "w": 23,
+      "h": 23,
+      "color": "#ffcf82",
+      "scale": 1,
+      "opacity": 0.85
+    },
+    {
+      "id": "point2",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": -64,
+      "y": 252,
+      "w": 28,
+      "h": 28,
+      "color": "#8cbaca",
+      "scale": 1,
+      "opacity": 0.85
+    },
+    {
+      "id": "point3",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": -146,
+      "y": 87,
+      "w": 18,
+      "h": 18,
+      "color": "#b6dbce",
+      "scale": 1,
+      "opacity": 0.85
+    },
+    {
+      "id": "point4",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": -208,
+      "y": -53,
+      "w": 23,
+      "h": 23,
+      "color": "#ffcf82",
+      "scale": 1,
+      "opacity": 0.85
+    },
+    {
+      "id": "point5",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": -133,
+      "y": -224,
+      "w": 28,
+      "h": 28,
+      "color": "#8cbaca",
+      "scale": 1,
+      "opacity": 0.85
+    },
+    {
+      "id": "point6",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": 42,
+      "y": -165,
+      "w": 18,
+      "h": 18,
+      "color": "#b6dbce",
+      "scale": 1,
+      "opacity": 0.85
+    },
+    {
+      "id": "point7",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": 185,
+      "y": -110,
+      "w": 23,
+      "h": 23,
+      "color": "#ffcf82",
+      "scale": 1,
+      "opacity": 0.85
+    },
+    {
+      "id": "core",
+      "kind": "ellipse",
+      "parent": "stage",
+      "x": 0,
+      "y": 0,
+      "w": 112,
+      "h": 112,
+      "color": "#f7d493",
+      "scale": 0.12,
+      "opacity": 0.0,
+      "shadow": true,
+      "shadow_blur": 22,
+      "shadow_y": 12,
+      "shadow_opacity": 0.27
+    },
+    {
+      "id": "corelabel",
+      "kind": "text",
+      "parent": "stage",
+      "text": "01",
+      "font": "heavy",
+      "size": 39,
+      "color": "#253844",
+      "x": 0,
+      "y": 0,
+      "opacity": 0
+    },
+    {
+      "id": "mid",
+      "kind": "text",
+      "text": "IN PHASE.",
+      "font": "heavy",
+      "size": 75,
+      "maxw": 590,
+      "x": 360,
+      "y": 910,
+      "color": "#f7f1dd",
+      "opacity": 0,
+      "active": [
+        2.5,
+        5.4
+      ]
+    },
+    {
+      "id": "final",
+      "kind": "text",
+      "text": "Clarity in\nmotion.",
+      "font": "heavy",
+      "size": 91,
+      "maxw": 560,
+      "x": 360,
+      "y": 865,
+      "color": "#f7f1dd",
+      "opacity": 0,
+      "active": [
+        5.15,
+        7.2
+      ]
+    },
+    {
+      "id": "foot",
+      "kind": "text",
+      "text": "ANTICIPATION / IMPACT / RECOVERY",
+      "font": "mono",
+      "size": 19,
+      "maxw": 550,
+      "x": 360,
+      "y": 1058,
+      "color": "#b7c8c6"
+    }
+  ],
+  "motion_programs": [
+    {
+      "layer": "intro",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 2.15
+        },
+        {
+          "op": "animate",
+          "end": 2.9,
+          "to": {
+            "y": 220,
+            "opacity": 0
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "stage",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 1.65
+        },
+        {
+          "op": "animate",
+          "end": 2.7,
+          "to": {
+            "y": 640
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.45,
+          "offset": {
+            "scale": 0.08
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.8
+        },
+        {
+          "op": "animate",
+          "end": 5.75,
+          "to": {
+            "y": 560,
+            "scale": 0.66
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "ring0",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.1
+        },
+        {
+          "op": "pulse",
+          "end": 1.6,
+          "offset": {
+            "scale": 0.12,
+            "opacity": 0.25
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "animate",
+          "end": 2.7,
+          "to": {
+            "scale": 0.72,
+            "opacity": 0.35
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "hold",
+          "end": 4.4
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "opacity": 0,
+            "scale": 1.25
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "ring1",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.28
+        },
+        {
+          "op": "pulse",
+          "end": 1.7200000000000002,
+          "offset": {
+            "scale": 0.12,
+            "opacity": 0.25
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "animate",
+          "end": 2.7,
+          "to": {
+            "scale": 0.7999999999999999,
+            "opacity": 0.35
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "hold",
+          "end": 4.4
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "opacity": 0,
+            "scale": 1.25
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "ring2",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.45999999999999996
+        },
+        {
+          "op": "pulse",
+          "end": 1.84,
+          "offset": {
+            "scale": 0.12,
+            "opacity": 0.25
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "animate",
+          "end": 2.7,
+          "to": {
+            "scale": 0.88,
+            "opacity": 0.35
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "hold",
+          "end": 4.4
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "opacity": 0,
+            "scale": 1.25
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "point0",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.12
+        },
+        {
+          "op": "animate",
+          "end": 2.55,
+          "to": {
+            "x": 80,
+            "y": 21,
+            "scale": 0.7
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.3
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.0
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "x": 228,
+            "y": 58,
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "point1",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.24
+        },
+        {
+          "op": "animate",
+          "end": 2.55,
+          "to": {
+            "x": 42,
+            "y": 71,
+            "scale": 0.7
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.3
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.0
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "x": 120,
+            "y": 202,
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "point2",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.36
+        },
+        {
+          "op": "animate",
+          "end": 2.55,
+          "to": {
+            "x": -21,
+            "y": 80,
+            "scale": 0.7
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.3
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.0
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "x": -58,
+            "y": 228,
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "point3",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.48
+        },
+        {
+          "op": "animate",
+          "end": 2.55,
+          "to": {
+            "x": -71,
+            "y": 42,
+            "scale": 0.7
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.3
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.0
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "x": -202,
+            "y": 120,
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "point4",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.6
+        },
+        {
+          "op": "animate",
+          "end": 2.55,
+          "to": {
+            "x": -80,
+            "y": -21,
+            "scale": 0.7
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.3
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.0
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "x": -228,
+            "y": -58,
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "point5",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.72
+        },
+        {
+          "op": "animate",
+          "end": 2.55,
+          "to": {
+            "x": -42,
+            "y": -71,
+            "scale": 0.7
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.3
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.0
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "x": -120,
+            "y": -202,
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "point6",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.84
+        },
+        {
+          "op": "animate",
+          "end": 2.55,
+          "to": {
+            "x": 21,
+            "y": -80,
+            "scale": 0.7
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.3
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.0
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "x": 58,
+            "y": -228,
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "point7",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 0.96
+        },
+        {
+          "op": "animate",
+          "end": 2.55,
+          "to": {
+            "x": 71,
+            "y": -42,
+            "scale": 0.7
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.3
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.0
+        },
+        {
+          "op": "animate",
+          "end": 5.7,
+          "to": {
+            "x": 202,
+            "y": -120,
+            "opacity": 0,
+            "scale": 0.4
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "core",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 1.85
+        },
+        {
+          "op": "animate",
+          "end": 2.6,
+          "to": {
+            "opacity": 1,
+            "scale": 1
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "pulse",
+          "end": 3.35,
+          "offset": {
+            "scale": 0.16
+          },
+          "ease": "sine"
+        },
+        {
+          "op": "hold",
+          "end": 4.1
+        },
+        {
+          "op": "animate",
+          "end": 5.65,
+          "to": {
+            "scale": 1.6
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "corelabel",
+      "start": 0,
+      "steps": [
+        {
+          "op": "hold",
+          "end": 2.45
+        },
+        {
+          "op": "animate",
+          "end": 2.83,
+          "to": {
+            "opacity": 1
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "hold",
+          "end": 4.2
+        },
+        {
+          "op": "animate",
+          "end": 4.7,
+          "to": {
+            "opacity": 0
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "mid",
+      "start": 2.5,
+      "steps": [
+        {
+          "op": "animate",
+          "end": 3.1,
+          "to": {
+            "opacity": 1,
+            "y": 895
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "hold",
+          "end": 4.6
+        },
+        {
+          "op": "animate",
+          "end": 5.25,
+          "to": {
+            "opacity": 0,
+            "y": 865
+          },
+          "ease": "quint"
+        }
+      ]
+    },
+    {
+      "layer": "final",
+      "start": 5.15,
+      "steps": [
+        {
+          "op": "animate",
+          "end": 5.95,
+          "to": {
+            "opacity": 1,
+            "y": 835
+          },
+          "ease": "quint"
+        },
+        {
+          "op": "hold",
+          "end": 7.2
+        }
+      ]
+    }
+  ],
+  "motion_accents": [
+    {
+      "profile": "anticipate",
+      "layer": "stage",
+      "start": 0.25,
+      "end": 2.7,
+      "delta": {
+        "rotate": 22
+      }
+    },
+    {
+      "profile": "recoil",
+      "layer": "core",
+      "start": 2.55,
+      "end": 3.65,
+      "delta": {
+        "scale_x": 0.24,
+        "scale_y": -0.16
+      }
+    },
+    {
+      "profile": "overshoot",
+      "layer": "final",
+      "start": 5.15,
+      "end": 6.1,
+      "delta": {
+        "scale": 0.08
+      }
+    },
+    {
+      "profile": "double_accent",
+      "layer": "ring2",
+      "start": 1.3,
+      "end": 2.55,
+      "delta": {
+        "scale_x": 0.12,
+        "scale_y": -0.08
+      }
+    }
+  ]
+}

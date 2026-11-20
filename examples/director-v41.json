@@ -1,0 +1,537 @@
+{
+  "version": 1,
+  "duration": 6,
+  "width": 720,
+  "fps": 30,
+  "background": "#102421",
+  "layers": [
+    {
+      "id": "bg",
+      "kind": "gradient",
+      "w": 720,
+      "h": 1280,
+      "stops": [
+        [
+          0,
+          "#102421"
+        ],
+        [
+          1,
+          "#304943"
+        ]
+      ],
+      "angle": 120
+    },
+    {
+      "id": "eyebrow",
+      "kind": "text",
+      "text": "SYSTEM / 01",
+      "size": 25,
+      "x": 360,
+      "y": 137,
+      "color": "#c9e9a5",
+      "font": "heavy",
+      "active": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "text": "Make it click.",
+      "size": 83,
+      "x": 360,
+      "y": 231,
+      "color": "#eff2e9",
+      "font": "heavy",
+      "maxw": 665,
+      "active": [
+        0,
+        4.15
+      ],
+      "opacity": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          3.45,
+          1,
+          "hold"
+        ],
+        [
+          4.14,
+          0,
+          "sine"
+        ]
+      ]
+    },
+    {
+      "id": "end",
+      "kind": "text",
+      "text": "Together.",
+      "size": 100,
+      "x": 360,
+      "y": 420,
+      "color": "#eff2e9",
+      "font": "heavy",
+      "maxw": 650,
+      "active": [
+        3.75,
+        6
+      ],
+      "opacity": [
+        [
+          3.75,
+          0,
+          "linear"
+        ],
+        [
+          4.38,
+          1,
+          "sine"
+        ]
+      ]
+    },
+    {
+      "id": "sub",
+      "kind": "text",
+      "text": "ONE SYSTEM. MANY POSSIBILITIES.",
+      "size": 22,
+      "x": 360,
+      "y": 1090,
+      "color": "#bbd1bc",
+      "font": "heavy",
+      "maxw": 640,
+      "active": [
+        0,
+        6
+      ]
+    }
+  ],
+  "components": {
+    "card": {
+      "duration": 3.8,
+      "layers": [
+        {
+          "id": "base",
+          "kind": "rect",
+          "w": 430,
+          "h": 200,
+          "color": "#e8eadf",
+          "x": 0,
+          "y": 0,
+          "radius": 28,
+          "opacity": [
+            [
+              0,
+              0,
+              "linear"
+            ],
+            [
+              0.35,
+              1,
+              "quint"
+            ]
+          ],
+          "scale": [
+            [
+              0,
+              0.86,
+              "linear"
+            ],
+            [
+              0.6,
+              1,
+              "quint"
+            ]
+          ]
+        },
+        {
+          "id": "stripe",
+          "kind": "rect",
+          "w": 10,
+          "h": 134,
+          "color": "#94b5a5",
+          "x": -187,
+          "y": 0,
+          "radius": 5,
+          "opacity": [
+            [
+              0.18,
+              0,
+              "linear"
+            ],
+            [
+              0.5800000000000001,
+              1,
+              "quint"
+            ]
+          ]
+        },
+        {
+          "id": "label",
+          "kind": "text",
+          "text": "A / MODULE",
+          "size": 24,
+          "x": -35,
+          "y": -53,
+          "color": "#263b35",
+          "font": "heavy",
+          "opacity": [
+            [
+              0.25,
+              0,
+              "linear"
+            ],
+            [
+              0.6,
+              1,
+              "quint"
+            ]
+          ]
+        },
+        {
+          "id": "value",
+          "kind": "text",
+          "text": "Focus",
+          "size": 66,
+          "x": -27,
+          "y": [
+            [
+              0,
+              41,
+              "linear"
+            ],
+            [
+              0.3,
+              41,
+              "hold"
+            ],
+            [
+              0.86,
+              22,
+              "quint"
+            ]
+          ],
+          "color": "#142923",
+          "font": "heavy",
+          "maxw": 345,
+          "opacity": [
+            [
+              0.3,
+              0,
+              "linear"
+            ],
+            [
+              0.75,
+              1,
+              "quint"
+            ]
+          ]
+        },
+        {
+          "id": "line",
+          "kind": "rect",
+          "w": 320,
+          "h": 5,
+          "color": "#a1b8a8",
+          "x": -15,
+          "y": 72,
+          "radius": 3,
+          "scale_x": [
+            [
+              0.4,
+              0.02,
+              "linear"
+            ],
+            [
+              1.15,
+              1,
+              "quint"
+            ]
+          ]
+        }
+      ]
+    },
+    "status": {
+      "duration": 2.4,
+      "layers": [
+        {
+          "id": "base",
+          "kind": "rect",
+          "w": 260,
+          "h": 85,
+          "color": "#c8ed9a",
+          "x": 0,
+          "y": 0,
+          "radius": 42,
+          "scale": [
+            [
+              0,
+              0.55,
+              "linear"
+            ],
+            [
+              0.4,
+              1,
+              "back"
+            ]
+          ]
+        },
+        {
+          "id": "label",
+          "kind": "text",
+          "text": "READY",
+          "size": 33,
+          "x": 0,
+          "y": 0,
+          "color": "#1d3024",
+          "font": "heavy",
+          "opacity": [
+            [
+              0.15,
+              0,
+              "linear"
+            ],
+            [
+              0.44999999999999996,
+              1,
+              "quint"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "instances": [
+    {
+      "id": "ready",
+      "component": "status",
+      "start": 3.6,
+      "x": 360,
+      "y": 690,
+      "scale": 1,
+      "overrides": {
+        "label": {
+          "text": "IN SYNC"
+        }
+      }
+    }
+  ],
+  "actions": [
+    {
+      "op": "fade",
+      "layer": "first",
+      "start": 2.68,
+      "end": 3.42,
+      "from": 1,
+      "to": 0,
+      "ease": "sine"
+    },
+    {
+      "op": "fade",
+      "layer": "second",
+      "start": 2.7800000000000002,
+      "end": 3.52,
+      "from": 1,
+      "to": 0,
+      "ease": "sine"
+    },
+    {
+      "op": "fade",
+      "layer": "third",
+      "start": 2.8800000000000003,
+      "end": 3.62,
+      "from": 1,
+      "to": 0,
+      "ease": "sine"
+    },
+    {
+      "op": "zoom",
+      "layer": "first",
+      "start": 2.55,
+      "end": 3.35,
+      "from": 0.93,
+      "to": 0.38,
+      "ease": "quint"
+    },
+    {
+      "op": "zoom",
+      "layer": "second",
+      "start": 2.55,
+      "end": 3.45,
+      "from": 0.93,
+      "to": 0.38,
+      "ease": "quint"
+    },
+    {
+      "op": "zoom",
+      "layer": "third",
+      "start": 2.55,
+      "end": 3.5500000000000003,
+      "from": 0.93,
+      "to": 0.38,
+      "ease": "quint"
+    }
+  ],
+  "continuous_motion": [
+    {
+      "recipe": "continuous_path",
+      "layer": "first",
+      "knots": [
+        [
+          0.12,
+          360,
+          490
+        ],
+        [
+          0.72,
+          360,
+          490
+        ],
+        [
+          2.65,
+          360,
+          490
+        ],
+        [
+          3.75,
+          360,
+          690
+        ]
+      ],
+      "tension": 1,
+      "endpoint": "rest"
+    },
+    {
+      "recipe": "continuous_path",
+      "layer": "second",
+      "knots": [
+        [
+          0.25,
+          360,
+          706
+        ],
+        [
+          0.85,
+          360,
+          706
+        ],
+        [
+          2.65,
+          360,
+          706
+        ],
+        [
+          3.75,
+          360,
+          690
+        ]
+      ],
+      "tension": 1,
+      "endpoint": "rest"
+    },
+    {
+      "recipe": "continuous_path",
+      "layer": "third",
+      "knots": [
+        [
+          0.38,
+          360,
+          922
+        ],
+        [
+          0.98,
+          360,
+          922
+        ],
+        [
+          2.65,
+          360,
+          922
+        ],
+        [
+          3.75,
+          360,
+          690
+        ]
+      ],
+      "tension": 1,
+      "endpoint": "rest"
+    }
+  ],
+  "instance_layouts": [
+    {
+      "layout": "grid",
+      "component": "card",
+      "center": [
+        360,
+        706
+      ],
+      "columns": 1,
+      "spacing": [
+        0,
+        216
+      ],
+      "start": 0.12,
+      "stagger": 0.13,
+      "scale": 0.93,
+      "items": [
+        {
+          "id": "first",
+          "overrides": {
+            "label": {
+              "text": "01 / IDEAS"
+            },
+            "value": {
+              "text": "Focus"
+            },
+            "stripe": {
+              "color": "#c1dcaa"
+            },
+            "line": {
+              "color": "#c1dcaa"
+            }
+          }
+        },
+        {
+          "id": "second",
+          "overrides": {
+            "label": {
+              "text": "02 / WORK"
+            },
+            "value": {
+              "text": "Build"
+            },
+            "stripe": {
+              "color": "#a7c6c0"
+            },
+            "line": {
+              "color": "#a7c6c0"
+            }
+          }
+        },
+        {
+          "id": "third",
+          "overrides": {
+            "label": {
+              "text": "03 / FLOW"
+            },
+            "value": {
+              "text": "Connect"
+            },
+            "stripe": {
+              "color": "#e6cc97"
+            },
+            "line": {
+              "color": "#e6cc97"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

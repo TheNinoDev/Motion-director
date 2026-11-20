@@ -1,0 +1,44 @@
+{
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "duration": 5,
+  "time_scale": 0.46,
+  "bodies": [
+    {
+      "id": "jelly",
+      "radius": 0.67,
+      "position": [
+        4.4,
+        1.22,
+        -1.65
+      ],
+      "velocity": [
+        -3.8,
+        0,
+        0
+      ],
+      "color": "#ac89ff",
+      "preset": "jelly"
+    },
+    {
+      "id": "rubber",
+      "radius": 0.67,
+      "position": [
+        4.4,
+        1.45,
+        1.5
+      ],
+      "velocity": [
+        -3.8,
+        0,
+        0
+      ],
+      "color": "#72d9ba",
+      "preset": "rubber"
+    }
+  ],
+  "antialias": 1.0,
+  "title": "Jelly vs rubber",
+  "label": "MATERIAL LAB  /  034"
+}

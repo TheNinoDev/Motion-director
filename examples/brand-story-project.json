@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "title": "DEMO ONLY — fictional product, replace with verified claims",
+  "width": 360,
+  "height": 640,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "01-question",
+      "engine": "type",
+      "frames": 30,
+      "content": {"kind":"hero","text":"SAME?","subtitle":"EVERY SITE LOOKS ALIKE","chrome":false}
+    },
+    {
+      "id": "02-show-interface",
+      "engine": "ui",
+      "frames": 48,
+      "transition_in": {"kind":"dissolve","frames":6},
+      "content": {"background":"#090a0c","layers":[
+        {"type":"image","src":"assets/demo-profile.png","x":180,"y":336,"w":320,"h":320,"radius":12,"animate":{"scale":[[0,1.6],[30,1.0,"inout"]],"opacity":[[0,0],[6,1,"out"]]}},
+        {"type":"text","text":"A DIFFERENT POINT OF VIEW","x":180,"y":540,"size":21,"color":"#f8f6f5","animate":{"opacity":[[0,0],[14,0],[23,1,"out"]]}}
+      ]}
+    },
+    {
+      "id": "03-hero",
+      "engine": "material",
+      "frames": 30,
+      "transition_in":{"kind":"cut","frames":0},
+      "content": {"kind":"metal","text":"O","caption":"ONE DISTINCT DETAIL.","reflection":0.4,"roughness":0.16,"bloom":0.06}
+    },
+    {
+      "id":"04-ending",
+      "engine":"type",
+      "frames":36,
+      "transition_in":{"kind":"dissolve","frames":6},
+      "content":{"kind":"hero","text":"YOUR BRAND","subtitle":"MAKE THE STORY YOURS","chrome":false}
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "fps": 30,
+  "frames": 249,
+  "seed": 22,
+  "events": [
+    {
+      "frame": 3,
+      "duration_frames": 16,
+      "kind": "riser",
+      "gain_db": -24,
+      "pan": 0
+    },
+    {
+      "frame": 19,
+      "duration_frames": 10,
+      "kind": "impact",
+      "gain_db": -20,
+      "pan": 0
+    },
+    {
+      "frame": 38,
+      "duration_frames": 16,
+      "kind": "whoosh",
+      "gain_db": -17,
+      "pan": -0.3
+    },
+    {
+      "frame": 52,
+      "duration_frames": 8,
+      "kind": "click",
+      "gain_db": -23,
+      "pan": 0.3
+    },
+    {
+      "frame": 83,
+      "duration_frames": 12,
+      "kind": "impact",
+      "gain_db": -18,
+      "pan": 0
+    },
+    {
+      "frame": 130,
+      "duration_frames": 15,
+      "kind": "whoosh",
+      "gain_db": -22,
+      "pan": 0.2
+    },
+    {
+      "frame": 147,
+      "duration_frames": 8,
+      "kind": "chime",
+      "gain_db": -22,
+      "pan": 0
+    },
+    {
+      "frame": 208,
+      "duration_frames": 20,
+      "kind": "chime",
+      "gain_db": -19,
+      "pan": 0
+    }
+  ]
+}

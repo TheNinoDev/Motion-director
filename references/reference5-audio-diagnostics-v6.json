@@ -1,0 +1,244 @@
+{
+  "file": "1000043460.mp4",
+  "duration_seconds": 41.0064375,
+  "peak_sample_dbfs": 2.97,
+  "rms_dbfs": -13.72,
+  "quiet_window_fraction": 0.1195,
+  "transient_candidates": [
+    {
+      "seconds": 0.1,
+      "rise_db": 23.04
+    },
+    {
+      "seconds": 0.3,
+      "rise_db": 17.17
+    },
+    {
+      "seconds": 1.26,
+      "rise_db": 23.83
+    },
+    {
+      "seconds": 2.48,
+      "rise_db": 28.33
+    },
+    {
+      "seconds": 2.92,
+      "rise_db": 17.35
+    },
+    {
+      "seconds": 3.08,
+      "rise_db": 16.05
+    },
+    {
+      "seconds": 3.22,
+      "rise_db": 7.5
+    },
+    {
+      "seconds": 3.48,
+      "rise_db": 13.06
+    },
+    {
+      "seconds": 3.62,
+      "rise_db": 17.54
+    },
+    {
+      "seconds": 3.8,
+      "rise_db": 18.02
+    },
+    {
+      "seconds": 4.96,
+      "rise_db": 20.57
+    },
+    {
+      "seconds": 5.18,
+      "rise_db": 12.76
+    },
+    {
+      "seconds": 5.38,
+      "rise_db": 16.54
+    },
+    {
+      "seconds": 5.82,
+      "rise_db": 7.72
+    },
+    {
+      "seconds": 6.26,
+      "rise_db": 10.28
+    },
+    {
+      "seconds": 6.42,
+      "rise_db": 10.12
+    },
+    {
+      "seconds": 6.72,
+      "rise_db": 4.57
+    },
+    {
+      "seconds": 6.86,
+      "rise_db": 10.41
+    },
+    {
+      "seconds": 7.1,
+      "rise_db": 5.1
+    },
+    {
+      "seconds": 7.26,
+      "rise_db": 15.13
+    },
+    {
+      "seconds": 7.94,
+      "rise_db": 19.0
+    },
+    {
+      "seconds": 8.34,
+      "rise_db": 4.69
+    },
+    {
+      "seconds": 8.62,
+      "rise_db": 7.1
+    },
+    {
+      "seconds": 9.26,
+      "rise_db": 10.76
+    },
+    {
+      "seconds": 9.42,
+      "rise_db": 12.71
+    },
+    {
+      "seconds": 9.82,
+      "rise_db": 19.34
+    },
+    {
+      "seconds": 9.98,
+      "rise_db": 8.93
+    },
+    {
+      "seconds": 10.52,
+      "rise_db": 11.43
+    },
+    {
+      "seconds": 11.04,
+      "rise_db": 4.94
+    },
+    {
+      "seconds": 11.56,
+      "rise_db": 19.94
+    },
+    {
+      "seconds": 11.74,
+      "rise_db": 8.08
+    },
+    {
+      "seconds": 12.08,
+      "rise_db": 18.87
+    },
+    {
+      "seconds": 12.42,
+      "rise_db": 4.54
+    },
+    {
+      "seconds": 12.64,
+      "rise_db": 8.52
+    },
+    {
+      "seconds": 13.02,
+      "rise_db": 6.19
+    },
+    {
+      "seconds": 13.42,
+      "rise_db": 6.86
+    },
+    {
+      "seconds": 14.02,
+      "rise_db": 9.44
+    },
+    {
+      "seconds": 14.34,
+      "rise_db": 6.52
+    },
+    {
+      "seconds": 14.68,
+      "rise_db": 4.94
+    },
+    {
+      "seconds": 14.88,
+      "rise_db": 9.01
+    },
+    {
+      "seconds": 15.16,
+      "rise_db": 9.91
+    },
+    {
+      "seconds": 15.48,
+      "rise_db": 5.77
+    },
+    {
+      "seconds": 15.66,
+      "rise_db": 8.22
+    },
+    {
+      "seconds": 15.94,
+      "rise_db": 7.68
+    },
+    {
+      "seconds": 16.34,
+      "rise_db": 6.62
+    },
+    {
+      "seconds": 16.78,
+      "rise_db": 8.69
+    },
+    {
+      "seconds": 17.06,
+      "rise_db": 5.4
+    },
+    {
+      "seconds": 17.32,
+      "rise_db": 4.27
+    },
+    {
+      "seconds": 17.6,
+      "rise_db": 10.26
+    },
+    {
+      "seconds": 17.84,
+      "rise_db": 4.56
+    },
+    {
+      "seconds": 18.5,
+      "rise_db": 6.17
+    },
+    {
+      "seconds": 18.64,
+      "rise_db": 4.23
+    },
+    {
+      "seconds": 18.96,
+      "rise_db": 5.98
+    },
+    {
+      "seconds": 19.82,
+      "rise_db": 4.18
+    },
+    {
+      "seconds": 20.66,
+      "rise_db": 8.28
+    },
+    {
+      "seconds": 20.98,
+      "rise_db": 9.79
+    },
+    {
+      "seconds": 36.98,
+      "rise_db": 88.51
+    },
+    {
+      "seconds": 37.48,
+      "rise_db": 6.12
+    }
+  ],
+  "method": "20ms RMS rise, mono 16k decode; audition required; not musical beat or speech timing",
+  "verified_beats": [],
+  "scope": "Entire downloaded source including approximately 4 seconds of downloader outro. Mixed audio, not isolated speech. Peak from decoded float PCM; above-zero sample peak is not proof of original clipping."
+}

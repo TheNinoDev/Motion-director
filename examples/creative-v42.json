@@ -1,0 +1,72 @@
+{
+  "mode": "fictional_study",
+  "product": "Fictional rhythm study",
+  "audience": "Motion designers",
+  "central_idea": "Separate elements can move in concert.",
+  "cta": "In concert.",
+  "platform": "9:16 vertical",
+  "duration": 6,
+  "proofs": [],
+  "concepts": [
+    {
+      "id": "fan",
+      "family": "object metaphor",
+      "visible_event": "Three modular cards converge into one status.",
+      "reason": "Reused components with unique content give a coherent motif.",
+      "risk": "May resemble generic card animation without distinct motion."
+    },
+    {
+      "id": "type",
+      "family": "typographic contrast",
+      "visible_event": "Three different letter scales resolve into a single baseline.",
+      "reason": "Makes synchronization visible.",
+      "risk": "Does not demonstrate material interactions."
+    },
+    {
+      "id": "interface",
+      "family": "interaction",
+      "visible_event": "An illustrative cursor selects and aligns surfaces.",
+      "reason": "Shows a cause for the alignment.",
+      "risk": "No real product evidence; must stay fictional."
+    }
+  ],
+  "selected_concept": "fan",
+  "selection_reason": "One reusable object group changes its content and converges with its siblings.",
+  "beats": [
+    {
+      "start": 0,
+      "end": 3.4,
+      "purpose": "transformation",
+      "visible_event": "Three numbered modules fan out from a row into one coordinated arc.",
+      "dominant_subject": "numbered modules",
+      "support_motion": "small rhythmic marks",
+      "outgoing_anchor": "module arc",
+      "incoming_anchor": "module row",
+      "layout": "vertical modular arrangement",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "module1_card",
+        "title",
+        "module0_num"
+      ]
+    },
+    {
+      "start": 3.4,
+      "end": 6,
+      "purpose": "resolution",
+      "visible_event": "The module arc rises together as the closing phrase replaces the opening.",
+      "dominant_subject": "module arc",
+      "support_motion": "group rise",
+      "outgoing_anchor": "module arc",
+      "incoming_anchor": "module arc",
+      "layout": "centered closure",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "module1_card",
+        "end"
+      ]
+    }
+  ]
+}

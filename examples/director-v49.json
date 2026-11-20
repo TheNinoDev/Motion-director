@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "duration": 6,
+  "width": 720,
+  "fps": 30,
+  "background": "#0c1516",
+  "layers": [
+    {
+      "id": "bg",
+      "kind": "gradient",
+      "w": 720,
+      "h": 1280,
+      "angle": 45,
+      "stops": [
+        [
+          0,
+          "#122522"
+        ],
+        [
+          1,
+          "#0c1516"
+        ]
+      ]
+    },
+    {
+      "id": "kicker",
+      "kind": "text",
+      "text": "MOTION STUDY / 049",
+      "font": "mono",
+      "size": 17,
+      "x": 360,
+      "y": 108,
+      "color": "#abc7bd"
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Less noise.",
+      "font": "heavy",
+      "size": 82,
+      "maxw": 650,
+      "x": 360,
+      "y": 245,
+      "color": "#f2f5e9"
+    },
+    {
+      "id": "title2",
+      "kind": "text",
+      "text": "Find the detail.",
+      "font": "heavy",
+      "size": 68,
+      "maxw": 650,
+      "x": 360,
+      "y": 315,
+      "color": "#d2f4a0",
+      "opacity": 0,
+      "reveal": 0
+    },
+    {
+      "id": "panel",
+      "kind": "group",
+      "x": 360,
+      "y": 650,
+      "scale": 0.85
+    },
+    {
+      "id": "panelback",
+      "kind": "rect",
+      "parent": "panel",
+      "x": 0,
+      "y": 0,
+      "w": 620,
+      "h": 494,
+      "radius": 22,
+      "color": "#d2f4a0",
+      "shadow": true,
+      "shadow_blur": 20,
+      "shadow_opacity": 0.5,
+      "shadow_y": 12
+    },
+    {
+      "id": "product",
+      "kind": "image",
+      "parent": "panel",
+      "src": "assets/v15-workspace.png",
+      "x": 0,
+      "y": 0,
+      "w": 604,
+      "h": 478
+    },
+    {
+      "id": "annotation",
+      "kind": "rect",
+      "x": 360,
+      "y": 925,
+      "w": 360,
+      "h": 3,
+      "color": "#d2f4a0",
+      "opacity": 0,
+      "reveal": 0
+    },
+    {
+      "id": "detail_line",
+      "kind": "rect",
+      "x": 360,
+      "y": 1000,
+      "w": 280,
+      "h": 4,
+      "color": "#d2f4a0",
+      "opacity": 1,
+      "reveal": 0
+    },
+    {
+      "id": "label",
+      "kind": "text",
+      "text": "A closer look.",
+      "font": "bold",
+      "size": 35,
+      "x": 360,
+      "y": 1055,
+      "color": "#e8f4e4",
+      "opacity": 0,
+      "blur": 8
+    },
+    {
+      "id": "foot",
+      "kind": "text",
+      "text": "FORM  /  FICTIONAL INTERFACE",
+      "font": "mono",
+      "size": 17,
+      "x": 360,
+      "y": 1200,
+      "color": "#abc7bd"
+    }
+  ],
+  "markers": [
+    {
+      "id": "focus",
+      "time": 1.1
+    },
+    {
+      "id": "answer",
+      "after": "focus",
+      "offset": 1.0
+    },
+    {
+      "id": "settle",
+      "after": "answer",
+      "offset": 1.2
+    },
+    {
+      "id": "press",
+      "after": "settle",
+      "offset": 0.8
+    }
+  ],
+  "sequences": [
+    {
+      "id": "titlechange",
+      "recipe": "masked_handoff",
+      "marker": "focus",
+      "offset": 0,
+      "duration": 0.75,
+      "bind": {
+        "incoming": "title2",
+        "outgoing": "title"
+      },
+      "params": {
+        "exit_x": -100,
+        "entry_x": 360
+      }
+    },
+    {
+      "id": "detail",
+      "recipe": "proof_detail",
+      "marker": "focus",
+      "offset": 0,
+      "duration": 1.2,
+      "bind": {
+        "product": "panel",
+        "annotation": "annotation"
+      },
+      "params": {
+        "zoom": 1.1,
+        "target_x": 360,
+        "target_y": 630
+      }
+    },
+    {
+      "id": "semantic",
+      "recipe": "trace_then_label",
+      "marker": "settle",
+      "offset": 0,
+      "duration": 0.8,
+      "bind": {
+        "trace": "detail_line",
+        "label": "label"
+      },
+      "params": {}
+    },
+    {
+      "id": "press_feedback",
+      "recipe": "press_release",
+      "marker": "press",
+      "offset": 0,
+      "duration": 0.7,
+      "bind": {
+        "object": "panel"
+      },
+      "params": {}
+    }
+  ],
+  "cue_actions": [
+    {
+      "marker": "answer",
+      "layer": "title2",
+      "offset": 0,
+      "duration": 0.5,
+      "op": "animate",
+      "ease": "smooth",
+      "values": {
+        "y": 245
+      }
+    }
+  ]
+}

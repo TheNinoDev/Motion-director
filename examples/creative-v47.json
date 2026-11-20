@@ -1,0 +1,95 @@
+{
+  "mode": "fictional_study",
+  "product": "Fictional sorting board",
+  "audience": "Motion designers",
+  "central_idea": "Moving the cards fills persistent status indicators and one shared completion accent.",
+  "cta": "All sorted.",
+  "platform": "9:16 vertical",
+  "duration": 9,
+  "proofs": [],
+  "concepts": [
+    {
+      "id": "gesture",
+      "family": "product interaction",
+      "visible_event": "Cursor drags two cards to matching slots.",
+      "reason": "The visible change demonstrates a cause and result.",
+      "risk": "Clearly fictional, no real product claims."
+    },
+    {
+      "id": "metaphor",
+      "family": "visual metaphor",
+      "visible_event": "Loose blocks assemble into one shelf.",
+      "reason": "Physical analogy for sorting.",
+      "risk": "Less direct."
+    },
+    {
+      "id": "type",
+      "family": "editorial",
+      "visible_event": "Misaligned letters form a baseline.",
+      "reason": "Typographic visual contrast.",
+      "risk": "No UI action."
+    }
+  ],
+  "selected_concept": "gesture",
+  "selection_reason": "The cursor and cards persist throughout and produce a visible state change.",
+  "beats": [
+    {
+      "start": 0,
+      "end": 3.7,
+      "purpose": "transformation",
+      "visible_event": "Cursor presses PLAN then drags it to its slot. PLAN status turns on after arrival.",
+      "dominant_subject": "PLAN card",
+      "support_motion": "center-hotspot cursor",
+      "outgoing_anchor": "board",
+      "incoming_anchor": "board",
+      "layout": "asymmetric card stack",
+      "audio_cue": "Original event-locked synthetic accents; no narration or music.",
+      "proof_id": null,
+      "layer_ids": [
+        "card1bg",
+        "headline",
+        "cursor",
+        "status1"
+      ]
+    },
+    {
+      "start": 3.7,
+      "end": 6.55,
+      "purpose": "transformation",
+      "visible_event": "Cursor drags BUILD to its slot. BUILD status turns on.",
+      "dominant_subject": "BUILD card",
+      "support_motion": "center-hotspot cursor",
+      "outgoing_anchor": "board",
+      "incoming_anchor": "board",
+      "layout": "two aligned cards",
+      "audio_cue": "Original event-locked synthetic accents; no narration or music.",
+      "proof_id": null,
+      "layer_ids": [
+        "card2bg",
+        "headline2",
+        "cursor",
+        "status2"
+      ]
+    },
+    {
+      "start": 6.55,
+      "end": 9,
+      "purpose": "resolution",
+      "visible_event": "Cursor presses DONE and title resolves.",
+      "dominant_subject": "confirmation",
+      "support_motion": "center-hotspot cursor",
+      "outgoing_anchor": "board",
+      "incoming_anchor": "board",
+      "layout": "aligned board and statement",
+      "audio_cue": "Original event-locked synthetic accents; no narration or music.",
+      "proof_id": null,
+      "layer_ids": [
+        "confirm",
+        "headline3",
+        "cursor",
+        "status1",
+        "status2"
+      ]
+    }
+  ]
+}

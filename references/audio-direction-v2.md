@@ -1,0 +1,17 @@
+# Voice, music and sound direction — expanded
+
+The script should have been written from verified product context, then made final before TTS. Accept user-written script or approved/delegated agent script. Ask for the user's soundtrack attachment before animation, even if research and writing already done. If user explicitly wants no music, a cleared replacement, or no VO, record choice. Do not fake audio generation.
+
+## Performance
+Create separate performance notes per paragraph: emotion, conversational speed, emphasis word, pause before twist, energy shift and pronunciation. Avoid monotonous same emphasis on each sentence; avoid screaming or melodrama for no reason. Determine target audience and language. Use authorized voice; pick voice appropriate to context, not imitation of a real person. Keep narration exactly as final script, including unusual brand names, numbers and acronyms. Make a pronunciation dictionary if engine supports it; otherwise segment and verify. Direction markers are metadata and never spoken. Regenerate only defective phrases if possible, but preserve consistent voice/style. Save dry pieces and concatenation manifest with exact timings.
+
+## Editing to actual audio
+1. Decode original song; probe duration, codec and channels. Keep original untouched. Analyze waveform/transients and quiet/loud sections; if available use spectral flux and beat grid tools. Confirm by listening, don't assign BPM from noisy peaks as fact.
+2. Select a section with suitable emotional arc and space for speech. Map VO words/phrases with alignment; create timeline anchors for hook word, proof, transition, reversal and close.
+3. Align primary moments before selecting minor beats. A cut may anticipate a hit by a frame or land on attack; decide based on actual playback. Music can lead visual scene or trail after it. Use musical phrases rather than metronomic cuts. Avoid editing dense words to every beat; use speech semantics as clock.
+4. Choose sound palette: 3–6 complementary families (soft UI ticks, designed impact, airy transitions, metallic texture, ambience, silence). Derive SFX cue from a visible action. Reuse motifs only intentionally. Silence before payoff can be stronger than adding another whoosh. No unauthorized music or sound packs.
+5. Mix stems: start with voice intelligibility and reasonable loudness. Duck music during speech, recover in gaps; don't mash everything with hard limiting. Check mono as well as stereo when feasible. Suggested social starting master −14 to −16 LUFS integrated and true peak ≤ −1 dBTP, not universal standard. Measure and state actual result. Inspect clicks at edits, breaths, SFX masking, abrupt tail.
+6. Do actual listen test and final visual/audio sync if environment allows. If accessibility prevents playback, use decoded measurements and timing, report that aural checks are unverified; do not imply listening. On export verify dry VO, expected music, mix mapping and no truncated words.
+
+## Outputs
+`audio/voiceover.wav`, `audio/music-edit.wav`, `audio/sfx.wav`, `audio/final-mix.wav`, `audio/alignment.json`, `audio/cues.json` and `audio/performance.md` where source rights permit. Record TTS engine/version/voice parameters if known, actual timing method and confidence, music section choices and licensed asset references (never API keys). Use actual media paths. If TTS unavailable, finish script/plan and ask for recorded narration rather than promise an audio file. If user requested silent preview, label it clearly.

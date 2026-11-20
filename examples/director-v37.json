@@ -1,0 +1,26 @@
+{
+ "version":1,"duration":6,"width":720,"fps":30,"background":"#111719",
+ "layers":[
+ {"id":"base","kind":"gradient","w":720,"h":1280,"stops":[[0,"#e4eee9"],[1,"#a9bbb0"]],"angle":80,"active":[0,3.2]},
+ {"id":"line","kind":"path","w":720,"h":1280,"points":[[85,680],[155,584],[250,650],[360,490],[480,640],[635,570]],"stroke":3,"color":"#879c91","active":[0,3.2]},
+ {"id":"hook","kind":"text","text":"MAKE","font":"heavy","size":164,"maxw":640,"x":360,"y":266,"color":"#152b25","active":[0,3.2]},
+ {"id":"hook2","kind":"text","text":"IT FLOW.","font":"heavy","size":145,"maxw":640,"x":360,"y":414,"color":"#152b25","active":[0,3.2]},
+ {"id":"hero","kind":"glass_object","geometry":"torus","material":"prism","color":"#9db9b1","w":400,"h":400,"depth":160,"quality":0.75,"x":360,"y":815,"active":[0,3.2]},
+ {"id":"dark","kind":"rect","w":720,"h":1280,"color":"#101a19","active":[2.75,6]},
+ {"id":"ring","kind":"ellipse","w":530,"h":530,"stroke":2,"color":"#627f72","x":360,"y":650,"active":[3.2,6]},
+ {"id":"dot","kind":"ellipse","w":32,"h":32,"color":"#d8ff98","active":[3.2,6]},
+ {"id":"core","kind":"object3d","geometry":"rounded_box","material":"chrome","color":"#d6e1d4","w":340,"h":340,"quality":0.8,"active":[3.2,6]},
+ {"id":"title","kind":"text","text":"F L O W","font":"heavy","size":118,"maxw":620,"x":360,"y":275,"color":"#d8ff98","active":[3.2,6]},
+ {"id":"caption","kind":"text","text":"A study in motion.","font":"regular","size":35,"maxw":600,"x":360,"y":1030,"color":"#e1eae1","active":[3.2,6]}
+ ],
+ "macros":[
+ {"recipe":"path_draw","layer":"line","start":0,"end":1.1,"from":0,"to":1},
+ {"recipe":"stagger_reveal","layers":["hook","hook2"],"start":0.05,"end":0.85,"offset":[0,85]},
+ {"recipe":"glass_travel","layer":"hero","start":0,"end":2.4,"from":[180,920],"to":[380,755],"angles_from":[-35,25],"angles_to":[55,-20]},
+ {"recipe":"masked_arrival","layer":"dark","start":2.75,"end":3.2,"at":[360,640],"offset":[0,0],"mask":"diagonal"},
+ {"recipe":"orbit_reveal","layer":"dot","start":3.2,"end":6,"center":[360,650],"radius":[265,265],"degrees":[-90,220]},
+ {"recipe":"elastic_land","layer":"core","start":3.2,"end":4.9,"from":[360,910],"to":[360,650],"preset":"jelly_firm","strength":0.45},
+ {"recipe":"stagger_reveal","layers":["title","caption"],"start":3.2,"end":4.1,"offset":[0,60]}
+ ],
+ "actions":[{"op":"tilt","layer":"core","start":3.2,"end":5.8,"from":[-35,15],"to":[30,-15],"ease":"quint"}]
+}

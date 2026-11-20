@@ -1,0 +1,90 @@
+{
+  "mode": "fictional_study",
+  "product": "Fictional signal study",
+  "audience": "Motion designers",
+  "central_idea": "Scattered signals converge into a single readable pulse.",
+  "cta": "Clarity in motion.",
+  "platform": "9:16 vertical",
+  "duration": 7.2,
+  "proofs": [],
+  "concepts": [
+    {
+      "id": "fan",
+      "family": "object metaphor",
+      "visible_event": "Scattered dots converge on one central signal and release.",
+      "reason": "One persistent visual motif expresses focus.",
+      "risk": "Ensure the central pulse reads and does not merely decorate."
+    },
+    {
+      "id": "type",
+      "family": "typographic contrast",
+      "visible_event": "Three different letter scales resolve into a single baseline.",
+      "reason": "Makes synchronization visible.",
+      "risk": "Does not demonstrate material interactions."
+    },
+    {
+      "id": "interface",
+      "family": "interaction",
+      "visible_event": "An illustrative cursor selects and aligns surfaces.",
+      "reason": "Shows a cause for the alignment.",
+      "risk": "No real product evidence; must stay fictional."
+    }
+  ],
+  "selected_concept": "fan",
+  "selection_reason": "The same dots and rings retain their identity as they converge, then make room for type.",
+  "beats": [
+    {
+      "start": 0,
+      "end": 2.55,
+      "purpose": "transformation",
+      "visible_event": "Particles move from a dispersed orbit to a tight circle.",
+      "dominant_subject": "signal constellation",
+      "support_motion": "ring pulse",
+      "outgoing_anchor": "central orbit",
+      "incoming_anchor": "constellation",
+      "layout": "type over orbital diagram",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "point0",
+        "point1",
+        "intro"
+      ]
+    },
+    {
+      "start": 2.55,
+      "end": 5.15,
+      "purpose": "transformation",
+      "visible_event": "A central pulse swells and the orbit opens.",
+      "dominant_subject": "gold central pulse",
+      "support_motion": "rings recede",
+      "outgoing_anchor": "gold pulse",
+      "incoming_anchor": "central orbit",
+      "layout": "center symbol and lower type",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "core",
+        "mid",
+        "corelabel"
+      ]
+    },
+    {
+      "start": 5.15,
+      "end": 7.2,
+      "purpose": "resolution",
+      "visible_event": "The central pulse remains while the final phrase rises.",
+      "dominant_subject": "closing message",
+      "support_motion": "gold pulse moves upward",
+      "outgoing_anchor": "gold pulse",
+      "incoming_anchor": "gold pulse",
+      "layout": "large lower type",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "core",
+        "final"
+      ]
+    }
+  ]
+}

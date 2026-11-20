@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "hook",
+      "frames": 42,
+      "engine": "cinematic",
+      "content": {
+        "kind": "impact",
+        "label": "FORM / CREATIVE WORKSPACE",
+        "headline": "TOO MANY\nTABS?",
+        "sub": "One project. Everywhere.",
+        "accent": "#c6c9fa"
+      }
+    },
+    {
+      "id": "hero",
+      "frames": 32,
+      "engine": "cinematic",
+      "content": {
+        "kind": "artifact",
+        "label": "01 / THE IDEA",
+        "headline": "Bring it together.",
+        "shape": "ring",
+        "material": "chrome",
+        "bloom": 0.14,
+        "grain": 0.1
+      }
+    },
+    {
+      "id": "reset",
+      "frames": 21,
+      "engine": "cinematic",
+      "content": {
+        "kind": "typewall",
+        "label": "02 / LESS FRICTION",
+        "headline": "OPEN CLOSE",
+        "sub": "Stop searching."
+      }
+    },
+    {
+      "id": "proof",
+      "frames": 36,
+      "engine": "cinematic",
+      "content": {
+        "kind": "reframe",
+        "label": "03 / PRODUCT VIEW",
+        "headline": "Your work.",
+        "sub": "IN ONE PLACE",
+        "src": "assets/v15-workspace.png"
+      }
+    },
+    {
+      "id": "macro",
+      "frames": 31,
+      "engine": "cinematic",
+      "content": {
+        "kind": "detail",
+        "label": "04 / THE DETAILS",
+        "headline": "Make it yours.",
+        "sub": "FORM  /  WORKSPACE",
+        "src": "assets/v15-workspace.png",
+        "crop": [
+          0.04,
+          0.1,
+          0.96,
+          0.74
+        ],
+        "background": "#e9e9e7",
+        "foreground": "#141519",
+        "accent": "#41466f",
+        "vignette": 0
+      }
+    },
+    {
+      "id": "montage",
+      "frames": 32,
+      "engine": "cinematic",
+      "content": {
+        "kind": "filmstrip",
+        "label": "05 / THE WORK",
+        "headline": "Focus on\nwhat matters.",
+        "src": "assets/v15-workspace.png",
+        "sub": "A quieter workspace."
+      }
+    },
+    {
+      "id": "brand",
+      "frames": 38,
+      "engine": "cinematic",
+      "content": {
+        "kind": "lockup",
+        "brand": "FORM",
+        "sub": "Space to make.",
+        "cta": "CREATIVE WORKSPACE"
+      }
+    }
+  ]
+}

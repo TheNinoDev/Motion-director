@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "tension",
+      "engine": "studio",
+      "frames": 45,
+      "content": {
+        "kind": "hero",
+        "shape": "links",
+        "material": "chrome",
+        "roughness": 0.045,
+        "quality": 0.85,
+        "text": "Too many tabs?",
+        "zoom": [
+          [
+            0,
+            5.6
+          ],
+          [
+            0.35,
+            4.5
+          ],
+          [
+            1,
+            2.15
+          ]
+        ],
+        "pitch": [
+          [
+            0,
+            0.12
+          ],
+          [
+            1,
+            0.38
+          ]
+        ],
+        "yaw": [
+          [
+            0,
+            -0.43
+          ],
+          [
+            1,
+            0.24
+          ]
+        ],
+        "roll": [
+          [
+            0,
+            -0.3
+          ],
+          [
+            1,
+            0.18
+          ]
+        ],
+        "light": [
+          [
+            0,
+            -0.42
+          ],
+          [
+            1,
+            0.45
+          ]
+        ],
+        "panx": [
+          [
+            0,
+            -0.08
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "floor": false,
+        "bloom": 0.06,
+        "grain": 0.45,
+        "contrast_scrim": 0.92
+      }
+    },
+    {
+      "id": "fragments",
+      "engine": "studio",
+      "frames": 39,
+      "content": {
+        "kind": "kinetic",
+        "words": [
+          "NOTES.",
+          "LINKS.",
+          "WORK."
+        ],
+        "layout": "cascade",
+        "bg": "#e8e8df",
+        "fg": "#111315",
+        "accent": "#363b33",
+        "grain": 0.45
+      }
+    },
+    {
+      "id": "proof",
+      "engine": "studio",
+      "frames": 75,
+      "content": {
+        "kind": "proof",
+        "src": "assets/v15-workspace.png",
+        "crop": [
+          0.52,
+          0.28,
+          0.96,
+          0.55
+        ],
+        "text": "One workspace.",
+        "sub": "Your projects and links, together.",
+        "bg": "#08090b",
+        "accent": "#d6f477",
+        "brackets": true,
+        "grain": 0.4
+      }
+    },
+    {
+      "id": "form",
+      "engine": "studio",
+      "frames": 42,
+      "content": {
+        "kind": "hero",
+        "shape": "ring",
+        "material": "tinted",
+        "accent": "#c9f381",
+        "roughness": 0.08,
+        "quality": 0.85,
+        "zoom": [
+          [
+            0,
+            1.7
+          ],
+          [
+            1,
+            2.75
+          ]
+        ],
+        "pitch": [
+          [
+            0,
+            0.6
+          ],
+          [
+            1,
+            0.15
+          ]
+        ],
+        "yaw": [
+          [
+            0,
+            -0.5
+          ],
+          [
+            1,
+            0.1
+          ]
+        ],
+        "roll": [
+          [
+            0,
+            -0.6
+          ],
+          [
+            1,
+            -0.12
+          ]
+        ],
+        "light": [
+          [
+            0,
+            0.7
+          ],
+          [
+            1,
+            -0.2
+          ]
+        ],
+        "floor": false,
+        "bloom": 0.08,
+        "grain": 0.45
+      }
+    },
+    {
+      "id": "brand",
+      "engine": "studio",
+      "frames": 60,
+      "content": {
+        "kind": "lockup",
+        "brand": "FORM",
+        "sub": "Make room for your work.",
+        "grain": 0.4
+      }
+    }
+  ],
+  "audio": {
+    "sfx": "assets/v19-study.wav",
+    "sfx_volume": 0.8
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "width": 360,
+  "height": 640,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "collapse",
+      "engine": "brand",
+      "frames": 24,
+      "content": {
+        "kind": "collapse",
+        "src": "assets/demo-profile.png",
+        "boxes": [
+          [
+            0.07,
+            0.03,
+            0.94,
+            0.28
+          ],
+          [
+            0.09,
+            0.38,
+            0.92,
+            0.5
+          ],
+          [
+            0.09,
+            0.55,
+            0.92,
+            0.7
+          ]
+        ],
+        "caption": "LOOK CLOSER"
+      }
+    },
+    {
+      "id": "reset",
+      "engine": "brand",
+      "frames": 14,
+      "content": {
+        "kind": "reset",
+        "caption": "ONE CHANGE"
+      }
+    },
+    {
+      "id": "endcard",
+      "engine": "brand",
+      "frames": 48,
+      "content": {
+        "kind": "endcard",
+        "brand": "YOUR BRAND",
+        "tagline": "One honest story.",
+        "url": "your-domain.example"
+      }
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "scattered",
+      "engine": "fusion",
+      "frames": 48,
+      "content": {
+        "bg": "#090a0c",
+        "fg": "#f5f4f0",
+        "accent": "#d5f28b",
+        "grain": 0.45,
+        "kind": "morph",
+        "shape": "tiles",
+        "material": "chrome",
+        "quality": 0.64,
+        "samples": 2,
+        "shutter": 0.6,
+        "roughness": 0.065,
+        "phase": [
+          [
+            0,
+            0
+          ],
+          [
+            0.22,
+            0
+          ],
+          [
+            1,
+            1,
+            "smooth"
+          ]
+        ],
+        "zoom": [
+          [
+            0,
+            4.2
+          ],
+          [
+            0.28,
+            3.75
+          ],
+          [
+            1,
+            1.8
+          ]
+        ],
+        "pitch": [
+          [
+            0,
+            0.56
+          ],
+          [
+            1,
+            0.1
+          ]
+        ],
+        "yaw": [
+          [
+            0,
+            -0.67
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "roll": [
+          [
+            0,
+            -0.32
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "light": [
+          [
+            0,
+            -0.8
+          ],
+          [
+            1,
+            0.65
+          ]
+        ],
+        "text": "Still scattered?",
+        "guides": true,
+        "eyebrow": "F / FORM \u2014 VISUAL STUDY",
+        "pany": [
+          [
+            0,
+            0.16
+          ],
+          [
+            1,
+            0.05
+          ]
+        ],
+        "bloom": 0.1
+      }
+    },
+    {
+      "id": "reset",
+      "engine": "fusion",
+      "frames": 24,
+      "content": {
+        "kind": "type",
+        "words": [
+          "LESS.",
+          "NOISE."
+        ],
+        "layout": "stripe",
+        "bg": "#d5f28b",
+        "fg": "#10130e",
+        "accent": "#10130e",
+        "grain": 0.45
+      }
+    },
+    {
+      "id": "unfold",
+      "engine": "fusion",
+      "frames": 84,
+      "content": {
+        "bg": "#090a0c",
+        "fg": "#f5f4f0",
+        "accent": "#d5f28b",
+        "grain": 0.45,
+        "kind": "bridge",
+        "shape": "tiles",
+        "material": "chrome",
+        "quality": 0.6,
+        "samples": 2,
+        "shutter": 0.55,
+        "phase": 1,
+        "zoom": [
+          [
+            0,
+            1.8
+          ],
+          [
+            0.25,
+            2.7
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "pitch": 0.1,
+        "yaw": 0,
+        "roll": 0,
+        "light": [
+          [
+            0,
+            0.65
+          ],
+          [
+            1,
+            1.1
+          ]
+        ],
+        "pany": 0.05,
+        "roughness": 0.065,
+        "src": "assets/v15-workspace.png",
+        "crop": [
+          0.5,
+          0.25,
+          0.97,
+          0.58
+        ],
+        "mask": "rounded",
+        "reveal_at": 0.16,
+        "text": "Room to think.",
+        "sub": "A place for your projects.",
+        "guides": false
+      }
+    },
+    {
+      "id": "glass",
+      "engine": "fusion",
+      "frames": 32,
+      "content": {
+        "kind": "morph",
+        "shape": "tiles",
+        "material": "glass",
+        "quality": 0.65,
+        "samples": 1,
+        "roughness": 0.055,
+        "ior": 1.49,
+        "tint": "#b7c2ff",
+        "phase": 1,
+        "twist": 2.0,
+        "zoom": [
+          [
+            0,
+            2.1
+          ],
+          [
+            1,
+            2.6
+          ]
+        ],
+        "pitch": [
+          [
+            0,
+            -0.35
+          ],
+          [
+            1,
+            0.32
+          ]
+        ],
+        "yaw": [
+          [
+            0,
+            -0.55
+          ],
+          [
+            1,
+            0.38
+          ]
+        ],
+        "roll": [
+          [
+            0,
+            -0.38
+          ],
+          [
+            1,
+            0.25
+          ]
+        ],
+        "light": [
+          [
+            0,
+            0.4
+          ],
+          [
+            1,
+            -0.6
+          ]
+        ],
+        "bg": "#101018",
+        "accent": "#ccd1fa",
+        "fg": "#f5f4f0",
+        "bloom": 0.12,
+        "text": "Less clutter.",
+        "grain": 0.45,
+        "pany": 0.12
+      }
+    },
+    {
+      "id": "end",
+      "engine": "fusion",
+      "frames": 55,
+      "content": {
+        "kind": "lockup",
+        "brand": "F / FORM",
+        "sub": "Make room for your work.",
+        "eyebrow": "FICTIONAL CONCEPT / 01",
+        "bg": "#090a0c",
+        "fg": "#f5f4f0",
+        "accent": "#d5f28b",
+        "grain": 0.45
+      }
+    }
+  ],
+  "audio": {
+    "sfx": "assets/v20-study.wav",
+    "sfx_volume": 0.9
+  }
+}

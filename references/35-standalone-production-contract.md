@@ -1,0 +1,28 @@
+> **V59 SOURCE FIREWALL — CURRENT RULE:** Product websites, local projects, original HTML/CSS and reference clips are **INFORMATION ONLY**. Any screenshot, real UI capture, existing site image, logo, font, webpage-derived frame, layout or reference footage mentioned below is **NOT permitted in the output video** by default, even after cropping, recoloring or redrawing. Build ALL visible scenes from new original tool-generated art instead; factual source inspection remains allowed. A separately provided asset needs explicit inclusion authorization. This V59 rule overrides all conflicting examples below. See `references/117-source-firewall-v59.md` and root `SKILL.md`.
+
+# Standalone operating contract: no external reference clips needed
+This skill is the editing knowledge base. It is not an assignment to study any historical reference brand or to ask the user for reference videos. All normal tasks operate from the product, intended audience, actual audio, and the packaged recipes/tools. Optional archival observation notes exist only for provenance and are never runtime prerequisites. If the user separately supplies a reference for a specific commission, inspect that reference as a new input; otherwise do not request one.
+
+## One-pass workflow for a weak agent
+1. Read this file and SKILL.md. Use existing project files or one adequate product input. Ask only essential missing facts and usage scope in one compact turn. If URL fails, accept source copy, HTML or user description; do not demand every option.
+2. Record verified claim, problem, audience, payoff. Pick one story. Write 3 distinct hooks internally: concrete action, contradiction, curiosity. Reject self-praise, generic hype, invented statistics, and misleading bait. Choose a hook that can be shown in first 1–2 seconds. Finish with payoff, not a list of features.
+3. Use guides 21–25 for song discovery, user's tested exact Voice Design prompt, provider-specific TTS input, and necessary user handoff. If already supplied, do not ask again. Get real raw audio, inspect and align. Never include tags in captions. No editing with guessed final timing. User does not edit, code, or learn tools.
+4. Run doctor. Use the library below to choose a small number of proven primitives; do not begin with a custom engine or mandatory GUI. Test one tiny shot and re-use its working plan.
+5. Build exact frame timeline from actual speech. Each beat needs subject, position, scale, enter-development-exit, easing, audio anchor, asset and method. Render 3 style/technical stills internally; user approval optional only if requested. Render each shot with first/middle/last checks. Reuse anchors and type grid. Do not create a feature slide deck.
+6. Combine shots using the UI engine stitcher or tested equivalent; add real sound/music mix. Verify decoded length, frame count, audio and mobile safe areas. Review all cuts and motion, not just stills. Fix failures before release. Deliver real MP4 + project sources + script + QA/claims report. If a necessary capability is unavailable, explicitly deliver draft/partial, not upload-ready.
+
+## Technique routing (no external sources needed)
+| Creative need | Use these packaged guides / modules | Exact production approach |
+|---|---|---|
+| Human spoken hook and story | 02,03,04,19,25; compile_voice.py | Start with an action or concrete tension; actual payoff in final third; lock narration and compile correct expressive tags |
+| UI interaction and feature proof | 32; starter/ui_engine | Screen capture approved UI states; crop to relevant control; animate cursor to target; cut or mask to true result; then zoom out to context |
+| Repeated feedback / frustration | 07,09; starter/ui_engine | One clear result, repeat 2–4 related controlled elements, escalate scale/count and reset to one anchor; show real solution |
+| Graphs and technical proof | 27; starter/data_motion.py | Counter, line and bars derived from same actual dataset; change representation without fabricating numbers |
+| Luxury metaphors | 29–30; hero_token.py or scene3d | A detail -> context -> proof arc, restrained light sweep on polished material, verify the metaphor is relevant |
+| Large procedural structures | 34,35; scene3d/preset.py and render.py | Extrude one relevant glyph; grid/ring/helix/tunnel/morph; cap complex hero shots by default; add 2D editorial typography |
+| Brand and CTA | 08,09,16; ui_engine | Consistent type spacing/color, one focal point, simple brand lockup and hold; avoid copying others |
+| Comedic expression, UI outline collapse, dot typography, reset | 37; starter/expressive_motion | use ready preset; align pose keys with audio; short neutral hold then single contrast cut, real proof |
+| Complex character or organic CGI | 34,12,29 | Use authorized real asset with proven headless implementation, or label and replace with relevant geometric metaphor; missing complex rigs not a built-in feature |
+
+## Preset selection and limits
+Do not confuse a recipe name with an implemented feature. Run its actual demonstration on this environment before promising. Preserve generic layout/motion ideas, not former brand names, scripts, images, watermarks or exact copyrighted assets. The reusable demos are educational starting assets only. Prefer 0–2 polished CGI hero sequences in ordinary ads; a deliberately CGI-led brief can go beyond that if quality and resources genuinely support it. Existing archives, older notes and examples may refer to references; treat that wording as historical, not a runtime request. If an old rule asks for reference study, this document takes precedence unless the user explicitly supplied one for the current job.

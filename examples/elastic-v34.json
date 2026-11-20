@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "duration": 3,
+  "background": "#171a23",
+  "grain": 0,
+  "review_times": [
+    0,
+    1,
+    1.08,
+    1.25,
+    2.96
+  ],
+  "layers": [
+    {
+      "id": "hero",
+      "kind": "object3d",
+      "geometry": "rounded_box",
+      "material": "prism",
+      "color": "#ac89ff",
+      "w": 350,
+      "h": 350,
+      "depth": 350,
+      "x": 360,
+      "y": 640,
+      "active": [
+        0,
+        3
+      ],
+      "yaw": [
+        [
+          0,
+          -20
+        ],
+        [
+          3,
+          18,
+          "sine"
+        ]
+      ],
+      "pitch": 7,
+      "light": [
+        [
+          0,
+          0.2
+        ],
+        [
+          3,
+          0.75,
+          "sine"
+        ]
+      ],
+      "quality": 1,
+      "antialias": 1.5,
+      "softbody": {
+        "preset": "jelly_soft",
+        "events": [
+          {
+            "mode": "bend",
+            "time": 1,
+            "strength": 0.65
+          },
+          {
+            "mode": "twist",
+            "time": 1.05,
+            "strength": 0.45
+          },
+          {
+            "mode": "squash",
+            "time": 1.1,
+            "strength": 0.32
+          }
+        ]
+      }
+    }
+  ]
+}

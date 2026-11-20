@@ -1,0 +1,43 @@
+> **V59 SOURCE FIREWALL — CURRENT RULE:** Product websites, local projects, original HTML/CSS and reference clips are **INFORMATION ONLY**. Any screenshot, real UI capture, existing site image, logo, font, webpage-derived frame, layout or reference footage mentioned below is **NOT permitted in the output video** by default, even after cropping, recoloring or redrawing. Build ALL visible scenes from new original tool-generated art instead; factual source inspection remains allowed. A separately provided asset needs explicit inclusion authorization. This V59 rule overrides all conflicting examples below. See `references/117-source-firewall-v59.md` and root `SKILL.md`.
+
+# Case study 01 — the unavailable username (1000043463.mp4)
+
+## Method and confidence
+Selected as the most transferable case, not a claim that it is objectively the best or has highest engagement. All nine original files were reopened and sampled at one-second intervals; this one at 250 ms intervals across its entire duration. Previous v3 samples at 100 ms supplement this. Source timecodes below are visual observations approximate to 0.25 s; interpolation/easing and authoring tool choices are proposals, not recovered source keyframes. Actual branded content ends around 34.0 s; TikTok end slate begins around 34.25 s. Visible captions and UI labels are not a verified verbatim voice transcript. No downloader overlays, original copyrighted assets or reference fonts are redistributed.
+
+## Shot-by-shot decisions
+| Window (s) | Directly visible | Function | Rebuild in original brand |
+|---|---|---|---|
+| 0–0.50 | Oversized cropped @ and cursor pull back to smaller input; thin line and tiny label | Immediate visual question; establishes anchor | Begin already in motion; scale a single group from ~2.2 to 1 over 12–16 frames, anchored to same baseline, ease-out; preserve label alignment. |
+| 0.50–1.25 | Username builds to @ghost | Personalized action | Reveal characters on selected narration cue, 2–4 frames per character; cursor x = measured text width. |
+| 1.25–2.75 | Input stays centered; caret blinks | Let audience read; anticipation | Hold 1–1.5 s if narration needs it; subtle blink, no camera orbit; do not make all shots constantly move. |
+| 3.00–3.75 | Input and white Claim button appear; pointer moves and button darkens | Cause before consequence | Expand field bounds over 8–12 frames; cursor travels 10–15 frames; press 2–3 frames; no extra popup. |
+| 3.75–4.50 | Pressed button holds | Set up reversal | Use a short response delay grounded in story; agent must not imply real network performance. |
+| 4.75–5.50 | Small handle above large coral TAKEN | Outcome becomes headline | Keep handle position; replace button with semantic state in an 8-frame reveal; coral is failure accent. Hold for recognition. |
+| 5.75–7.75 | Previous failed handle becomes small row above new attempts; rows accumulate | Repeat action with compression | Reuse component; animate old row up 44–64px; insert new field. Compress subsequent cycles; preserve layout. |
+| 8.00–8.75 | Several rows stack; changing active entry and failures | Escalate | Each attempt has a new detail; accelerate with 8, 6, 5 frame intervals; avoid recreating UI each time. |
+| 9.00–10.25 | Coral/dark TAKEN tile field, crop changes to horizontal band | Frustration becomes a visual world | Duplicate one text symbol in grid, offset alternate rows, give cells stable seeded contrast. Expand from source failure label; move camera/mask, not random glyph effects. |
+| 10.50–11.25 | White panels with inverse text expand across repeated words | End of escalation | One directional matte or band; no strobe. Inverse text stays within white panels; clip at parent. |
+| 11.25–12.25 | Texture disappears, lone cursor on black | Visual silence, narrative pivot | Collapse rectangular band to caret at common center over 8–12 frames. Hold ~0.6–1 s unless VO requires different. |
+| 12.50–13.50 | Rounded reservation field, button revealed from right | Alternative enters | Grow capsule from caret anchor, then text and button; animate clipping rather than squeezing glyphs. |
+| 13.75–16.50 | Editorial headline about short names; rows and changing values; view reframes | Evidence, not feature dump | One specific claim and a real screenshot or supported values. Fixed headline, rows change separately; controlled crop. |
+| 16.75–18.75 | Small symbol then dark profile card; card approaches | Identity made tangible | Logo bridge optional; use a real captured product card. Ease scale .85→1, keep edges smooth and text readable. |
+| 19.00–20.25 | Typed brand handle; crop expands | Familiar motif returns | Use same typing component with changed text; same baseline and visual grammar. |
+| 20.50–21.25 | Chrome wordmark, then product summary card | Brand punctuation | One polished typography/3D shot or quality 2D substitute, not a new visual theme. |
+| 21.50–22.75 | Single and short metallic name examples, reservation control persists, then card | Proof by variations | Keep field anchored while central glyph changes; if 3D not available use vector glyphs and subtle moving gradient. |
+| 23.00–24.50 | Profile detail → audience list; active row bright, others dim; overlay examples | Extend proof | Keep only one row active. On a new campaign default to a single audience; this reference is denser than beginner-safe advice. |
+| 24.75–26.00 | Links dashboard, larger crop, then import headline | Show actual behavior | Match screen edge to headline baseline. Do not claim integrations without evidence. |
+| 26.25–27.50 | Stacked line reveal, then k/gg/7 | Visual shorthand | Reveal one phrase, then replace it with proof object. Use 8–12 frame masks, legible hold. |
+| 27.75–29.00 | Dense list of earlier username candidates, contrast moves through rows | Return to opening conflict | Reuse cached attempt list. Focus by dimming background rows instead of introducing unrelated graphics. |
+| 29.25–30.50 | @ghost returns then becomes large ghost above reservation field | Callback and visual payoff | Match baseline and text; remove @ only if story warrants it. Do not represent an unverified successful claim. |
+| 30.75–31.75 | Reservation control and cursor; outline pulse about button | Action | Show one next step, cursor plus 1 subtle ring. |
+| 32.00–34.00 | Wordmark, CTA 'YOUR NAME IS WAITING', fade | Closure | Original brand and truthful CTA; hold 1.5–2 s. End before platform outro. |
+
+## Concrete reusable motion system (30 fps recommendations, not measured parameters)
+Coordinate space 1080×1920. Establish scene root, camera group, UI field, status text, caret, cursor, rows, and matte as independent layers; no per-shot reimplementation. Keep major focal object in x=120..900, y=320..1450 except deliberate overscan. Set anchor to stable baseline; interpolate properties from local frame, clamp easing. Use cubic ease-out for arrival, ease-in-out for reframing, hard cut for outcome when it has narrative purpose. For type animation, premeasure glyph widths; never animate font size per letter to fake typing. For grids use deterministic row/column opacity and crop (not uncontrolled flashing). Keep original font licensed and measure each line. At frame boundaries calculate outgoing/incoming positions from same state. For 3D use at most two hero accents; if no good bevel/render pipeline, use original vector and restrained gradient. This case is mainly 2D; prove that the 2D choreography works before adding 3D.
+
+## Narrative map, not a transcript
+Action → attempted result → rejection → repeated rejection → overwhelming pattern → silence → alternative → evidence → callback → CTA. Screen text is a visible aid, not evidence of the actual spoken words. The source also contains late extra features; for a small multi-video campaign leave these for later. The lesson is the callback loop and semantic transformation, not the specific username/brand, claims, or phrasing. Never manufacture a competitor failure as alleged real footage. Use a labeled illustrative scenario or reproduce a verified problem.
+
+## Transfer: fictional bookmark app (not a real product claim)
+Opening: “I know I saved this. Somewhere.” Show a messy search in an illustrative view. Escalation: three near-identical results build into an abstract wall of titles. Reset to one empty search field. Demonstrate verified search behavior in actual app. Callback: return to the exact item from opening and open it. CTA: one actual next action. Rewrite from verified facts; do not use example if product has no search. Caption phrases can be shorter than VO; captions intended as accessibility transcript must remain exact.

@@ -1,0 +1,10 @@
+# Timing, pacing and duration from zero
+Choose length based on message and actual generated audio, not number of features. Rough planning at 135–170 English words/minute: 15 s roughly 25–35 words after pause/CTA allowance, 30 s about 55–70, 45 s about 85–105; these are draft budgets only. Read/synthesize and measure. Different languages/speakers vary. Do not artificially accelerate beyond intelligibility. If user sets a hard time, edit agent-authored text or request approval for changes to locked script. Avoid padding.
+
+Default story shape for a 25–35 s piece: 0–2 hook, 2–6 context/tension, 6–15 proof/reveal, 15–24 consequence, last 1.5–3 s brand/CTA. This is a starting proportion, not template. A 10-second piece may just be action → result → identity; a 45-second piece may afford an extra proof beat. No mandatory intro. Use actual phrase starts/ends and measured soundtrack accents; add visual lead-in or pause when needed. CTA text must remain legible long enough.
+
+At 30 fps: 3 frames=.1 s, 6=.2, 9=.3, 12=.4, 15=.5, 30=1 s, 60=2 s. Think in frames. Maintain contiguous half-open frame intervals [start,end); no duplicated end frame. Visual event = a movement or attention change, not necessarily new shot. Hero text typically 1–3 s, UI actions 1.5–4 s, rapid montage clips 0.35–0.8 s only if not required to read, CTA 1.5–3 s. These numbers are recommended starting values, not NOIZ-measured thresholds.
+
+Reading estimate: minimum hold = max(0.8 s, words/3 + 0.25 s) for short display text; longer proof needs more. Test at phone scale, prioritize important words. Speech and on-screen text can differ: display a concise visual cue rather than reproducing every word. Keep captions separate from kinetic title. If users need accessibility captions, provide SRT from actual alignment (phrase-level accepted, labeled).
+
+Make pacing curve: quiet → acceleration → peak → recovery. Use stable focal anchor for rapid montage, and one still or near-still moment before big reveal. Never cut to a beat just because it exists. Music analysis follows voice; choose accent only when it fits message. Hold last frame and audio tail rather than chopping both.

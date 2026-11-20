@@ -1,0 +1,46 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 5,
+  "time_scale": 0.37,
+  "bodies": [
+    {
+      "id": "A",
+      "radius": 0.67,
+      "position": [
+        4.4,
+        1.22,
+        -1.8
+      ],
+      "velocity": [
+        -3.4,
+        0,
+        0
+      ],
+      "mass": 1,
+      "stiffness": 145,
+      "damping": 4.8,
+      "color": "#84a9ff"
+    },
+    {
+      "id": "B",
+      "radius": 0.67,
+      "position": [
+        4.85,
+        1.45,
+        -0.1
+      ],
+      "velocity": [
+        -5.2,
+        0,
+        2.5
+      ],
+      "mass": 1,
+      "stiffness": 125,
+      "damping": 3.8,
+      "color": "#f3aa65"
+    }
+  ],
+  "antialias": 1.25
+}

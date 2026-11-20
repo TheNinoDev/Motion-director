@@ -1,0 +1,74 @@
+{
+  "mode": "fictional_study",
+  "product": "Fictional modular motion system study",
+  "audience": "Motion designers",
+  "central_idea": "Independent modules assemble into one system.",
+  "cta": "Together.",
+  "platform": "9:16 vertical",
+  "duration": 6,
+  "proofs": [],
+  "concepts": [
+    {
+      "id": "fan",
+      "family": "object metaphor",
+      "visible_event": "Three modular cards converge into one status.",
+      "reason": "Reused components with unique content give a coherent motif.",
+      "risk": "May resemble generic card animation without distinct motion."
+    },
+    {
+      "id": "type",
+      "family": "typographic contrast",
+      "visible_event": "Three different letter scales resolve into a single baseline.",
+      "reason": "Makes synchronization visible.",
+      "risk": "Does not demonstrate material interactions."
+    },
+    {
+      "id": "interface",
+      "family": "interaction",
+      "visible_event": "An illustrative cursor selects and aligns surfaces.",
+      "reason": "Shows a cause for the alignment.",
+      "risk": "No real product evidence; must stay fictional."
+    }
+  ],
+  "selected_concept": "fan",
+  "selection_reason": "One reusable object group changes its content and converges with its siblings.",
+  "beats": [
+    {
+      "start": 0,
+      "end": 4.1,
+      "purpose": "transformation",
+      "visible_event": "Three individually labelled reusable cards enter and converge",
+      "dominant_subject": "modular cards",
+      "support_motion": "Local label and line reveals",
+      "outgoing_anchor": "card cluster",
+      "incoming_anchor": "headline",
+      "layout": "vertical modular arrangement",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "first__base",
+        "second__base",
+        "third__base",
+        "headline"
+      ]
+    },
+    {
+      "start": 4.1,
+      "end": 6,
+      "purpose": "resolution",
+      "visible_event": "One shared status pill resolves under Together",
+      "dominant_subject": "status",
+      "support_motion": "Status scales into view",
+      "outgoing_anchor": "status pill",
+      "incoming_anchor": "card cluster",
+      "layout": "centered closure",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "ready__base",
+        "ready__label",
+        "end"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "mode": "fictional_study",
+  "product": "Fictional connected motion study",
+  "audience": "Motion designers",
+  "central_idea": "Independent elements move into a shared arrangement",
+  "cta": "CONNECTED.",
+  "platform": "9:16 vertical",
+  "duration": 6,
+  "proofs": [],
+  "concepts": [
+    {
+      "id": "fan",
+      "family": "object metaphor",
+      "visible_event": "Panels align and the marker follows their movement.",
+      "reason": "One coordinated gesture makes independent layers legible.",
+      "risk": "May resemble generic card animation without distinct motion."
+    },
+    {
+      "id": "type",
+      "family": "typographic contrast",
+      "visible_event": "Three different letter scales resolve into a single baseline.",
+      "reason": "Makes synchronization visible.",
+      "risk": "Does not demonstrate material interactions."
+    },
+    {
+      "id": "interface",
+      "family": "interaction",
+      "visible_event": "An illustrative cursor selects and aligns surfaces.",
+      "reason": "Shows a cause for the alignment.",
+      "risk": "No real product evidence; must stay fictional."
+    }
+  ],
+  "selected_concept": "fan",
+  "selection_reason": "Shows state-aware alignment and delayed following before a sculptural resolution.",
+  "beats": [
+    {
+      "start": 0,
+      "end": 1.45,
+      "purpose": "setup",
+      "visible_event": "Three panels align horizontally",
+      "dominant_subject": "panel row",
+      "support_motion": "staggered counter-rotation",
+      "outgoing_anchor": "middle panel",
+      "incoming_anchor": "middle panel",
+      "layout": "wide row",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "card1",
+        "card2",
+        "card3"
+      ]
+    },
+    {
+      "start": 1.45,
+      "end": 4.2,
+      "purpose": "transformation",
+      "visible_event": "Middle panel moves up and its delayed marker follows",
+      "dominant_subject": "middle panel",
+      "support_motion": "side cards dim and iris opens",
+      "outgoing_anchor": "iris",
+      "incoming_anchor": "middle panel",
+      "layout": "focused center",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "card2",
+        "marker",
+        "cover"
+      ]
+    },
+    {
+      "start": 4.2,
+      "end": 6,
+      "purpose": "resolution",
+      "visible_event": "Chrome torus rises and settles",
+      "dominant_subject": "torus",
+      "support_motion": "depth turn",
+      "outgoing_anchor": "torus",
+      "incoming_anchor": "iris",
+      "layout": "sculptural close",
+      "audio_cue": "silent study",
+      "proof_id": null,
+      "layer_ids": [
+        "hero",
+        "end"
+      ]
+    }
+  ]
+}

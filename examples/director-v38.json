@@ -1,0 +1,27 @@
+{
+ "version":1,"duration":6,"width":540,"fps":30,"background":"#171d20",
+ "layers":[
+  {"id":"paper","kind":"gradient","w":720,"h":1280,"stops":[[0,"#e8ede8"],[1,"#c3d0c9"]],"angle":110,"active":[0,3.75]},
+  {"id":"line","kind":"path","w":720,"h":1280,"points":[[68,558],[652,558]],"stroke":2,"color":"#a0ada3","active":[0,3.75]},
+  {"id":"heading","kind":"text","text":"Make it fit.","size":116,"font":"heavy","maxw":650,"color":"#21382f","x":360,"y":300,"active":[0,3.75]},
+  {"id":"sub","kind":"text","text":"ONE MOTION SYSTEM","size":24,"font":"mono","color":"#506b61","x":360,"y":455,"active":[0,3.75]},
+  {"id":"card1","kind":"rect","w":280,"h":340,"radius":32,"color":"#6b9181","shadow":true,"shadow_blur":20,"shadow_opacity":0.25,"active":[0.5,3.75]},
+  {"id":"card2","kind":"rect","w":280,"h":340,"radius":32,"color":"#b0c5b4","shadow":true,"shadow_blur":18,"shadow_opacity":0.25,"active":[0.5,3.75]},
+  {"id":"card3","kind":"rect","w":280,"h":340,"radius":32,"color":"#263e38","shadow":true,"shadow_blur":20,"shadow_opacity":0.25,"active":[0.5,3.75]},
+  {"id":"lens","kind":"lens","w":260,"h":260,"shape":"ellipse","color":"#e7fff7","shine":0.7,"active":[1.2,3.1]},
+  {"id":"dark","kind":"rect","w":720,"h":1280,"color":"#172720","active":[3.35,6]},
+  {"id":"footer","kind":"text","text":"MOTION / 038","size":25,"font":"mono","color":"#c6e5c9","x":360,"y":1090,"active":[3.75,6]},
+  {"id":"hero","kind":"object3d","geometry":"rounded_box","material":"chrome","color":"#a9d6bb","w":320,"h":320,"quality":0.75,"depth":90,"x":360,"y":690,"active":[3.65,6]},
+  {"id":"end","kind":"text","text":"IN SYNC.","size":118,"font":"heavy","maxw":600,"color":"#e3f5de","x":360,"y":345,"active":[3.7,6]}
+ ],
+ "macros":[{"recipe":"masked_arrival","layer":"dark","start":3.35,"end":3.75,"at":[360,640],"offset":[0,0],"mask":"diagonal"}],
+ "choreography":[
+  {"recipe":"arc_arrival","layer":"heading","start":0,"end":0.65,"points":[[440,320],[510,310],[340,290],[360,300]],"fade_fraction":0.6},
+  {"recipe":"card_fan","layers":["card1","card2","card3"],"start":0.5,"end":1.55,"center":[360,810],"spacing":[132,38],"angle":23,"scale_from":0.72,"scale_to":1},
+  {"recipe":"lens_pass","layer":"lens","start":1.2,"end":3.1,"points":[[-160,890],[150,680],[520,880],[900,775]],"strength":[0.04,0.24],"dispersion":[0.003,0.019]},
+  {"recipe":"cascade_exit","layers":["card1","card2","card3"],"start":2.89,"end":3.65,"offset":[0,-160],"stagger":0.45},
+  {"recipe":"compression_release","layer":"hero","start":3.65,"end":5.55,"at":[360,690],"offset":[0,230],"preset":"jelly_soft","strength":0.48,"angles":[-20,14]},
+  {"recipe":"arc_arrival","layer":"end","start":3.7,"end":4.5,"points":[[360,410],[330,375],[360,335],[360,345]],"fade_fraction":0.5}
+ ],
+ "actions":[{"op":"tilt","layer":"hero","start":3.65,"end":5.9,"from":[-35,22],"to":[28,-15],"ease":"quint"}]
+}

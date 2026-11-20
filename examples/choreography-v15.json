@@ -1,0 +1,760 @@
+{
+  "version": 1,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "hook-motif",
+      "engine": "layers",
+      "frames": 62,
+      "content": {
+        "background": "#090a0c",
+        "samples": 2,
+        "shutter": 0.58,
+        "layers": [
+          {
+            "id": "index",
+            "kind": "text",
+            "size": [
+              860,
+              42
+            ],
+            "x": 540,
+            "y": 260,
+            "text": "01  /  FORM",
+            "font_size": 29,
+            "color": "#9da4af",
+            "decorative": true,
+            "depth": 0
+          },
+          {
+            "id": "hairline",
+            "kind": "line",
+            "size": [
+              850,
+              3
+            ],
+            "x": 540,
+            "y": 310,
+            "color": "#39414c",
+            "reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                17,
+                1,
+                "out"
+              ]
+            ],
+            "depth": 0
+          },
+          {
+            "id": "hook",
+            "kind": "text",
+            "size": [
+              910,
+              370
+            ],
+            "x": 540,
+            "y": [
+              [
+                0,
+                730
+              ],
+              [
+                13,
+                710,
+                "out"
+              ],
+              [
+                35,
+                710
+              ],
+              [
+                51,
+                480,
+                "inout"
+              ]
+            ],
+            "text": "Too many\ntabs.",
+            "font_size": 180,
+            "align": "left",
+            "color": "#f6f6f5",
+            "scale": [
+              [
+                0,
+                1.0
+              ],
+              [
+                15,
+                1,
+                "out"
+              ],
+              [
+                38,
+                1
+              ],
+              [
+                56,
+                0.65,
+                "inout"
+              ]
+            ],
+            "opacity": [
+              [
+                0,
+                1
+              ],
+              [
+                41,
+                1
+              ],
+              [
+                57,
+                0,
+                "inout"
+              ]
+            ],
+            "reveal": 1,
+            "depth": 0
+          },
+          {
+            "id": "swarm",
+            "kind": "swarm",
+            "size": [
+              875,
+              875
+            ],
+            "x": 540,
+            "y": [
+              [
+                0,
+                1360
+              ],
+              [
+                24,
+                1240,
+                "out"
+              ],
+              [
+                46,
+                960,
+                "inout"
+              ]
+            ],
+            "color": "#c5ef78",
+            "to": "ring",
+            "count": 400,
+            "dot": 5.0,
+            "arc": 0.31,
+            "scatter": 0.1,
+            "drag": 0.4,
+            "seed": 124,
+            "progress": [
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0
+              ],
+              [
+                48,
+                1,
+                "inout"
+              ]
+            ],
+            "scale": [
+              [
+                0,
+                1.2
+              ],
+              [
+                35,
+                1,
+                "inout"
+              ],
+              [
+                54,
+                0.66,
+                "inout"
+              ],
+              [
+                61,
+                0.66
+              ]
+            ],
+            "opacity": [
+              [
+                0,
+                0.6
+              ],
+              [
+                11,
+                1
+              ],
+              [
+                44,
+                1
+              ],
+              [
+                60,
+                0,
+                "out"
+              ]
+            ],
+            "glow": 0.22,
+            "from": "grid"
+          },
+          {
+            "id": "anchor",
+            "kind": "morph",
+            "size": [
+              820,
+              820
+            ],
+            "x": 540,
+            "y": 960,
+            "color": "#c5ef78",
+            "to": "circle",
+            "progress": 0,
+            "outline": 6,
+            "scale": 0.66,
+            "opacity": [
+              [
+                38,
+                0
+              ],
+              [
+                52,
+                1,
+                "out"
+              ]
+            ],
+            "start": 38,
+            "glow": 0.18,
+            "from": "ring"
+          }
+        ],
+        "ambient": {
+          "color": "#263348",
+          "strength": 0.2,
+          "x": 0.5,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "id": "proof-reframe",
+      "engine": "layers",
+      "frames": 76,
+      "content": {
+        "background": "#eeeeea",
+        "samples": 2,
+        "shutter": 0.58,
+        "layers": [
+          {
+            "id": "anchor",
+            "kind": "morph",
+            "size": [
+              820,
+              820
+            ],
+            "x": 540,
+            "y": 960,
+            "color": "#15171b",
+            "to": "square",
+            "outline": 10,
+            "progress": [
+              [
+                0,
+                0
+              ],
+              [
+                26,
+                1,
+                "inout"
+              ]
+            ],
+            "scale": [
+              [
+                0,
+                0.66
+              ],
+              [
+                23,
+                1.24,
+                "inout"
+              ],
+              [
+                42,
+                1.55,
+                "out"
+              ]
+            ],
+            "opacity": [
+              [
+                0,
+                1
+              ],
+              [
+                26,
+                0.85
+              ],
+              [
+                40,
+                0,
+                "out"
+              ]
+            ],
+            "rotation": [
+              [
+                0,
+                0
+              ],
+              [
+                24,
+                -11,
+                "inout"
+              ]
+            ],
+            "from": "ring"
+          },
+          {
+            "id": "number",
+            "kind": "text",
+            "size": [
+              260,
+              130
+            ],
+            "x": 220,
+            "y": 415,
+            "text": "02",
+            "font_size": 106,
+            "color": "#25292d",
+            "reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                15,
+                1,
+                "out"
+              ]
+            ],
+            "depth": 0,
+            "decorative": true
+          },
+          {
+            "id": "division",
+            "kind": "line",
+            "size": [
+              840,
+              3
+            ],
+            "x": 540,
+            "y": 505,
+            "color": "#939697",
+            "reveal": [
+              [
+                8,
+                0
+              ],
+              [
+                28,
+                1,
+                "out"
+              ]
+            ],
+            "depth": 0
+          },
+          {
+            "id": "benefit",
+            "kind": "text",
+            "size": [
+              900,
+              255
+            ],
+            "x": 540,
+            "y": 650,
+            "text": "One place for\nyour work.",
+            "font_size": 106,
+            "color": "#121416",
+            "align": "left",
+            "reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                14,
+                0
+              ],
+              [
+                28,
+                1,
+                "out"
+              ]
+            ],
+            "depth": 0
+          },
+          {
+            "id": "panel",
+            "kind": "image",
+            "size": [
+              950,
+              850
+            ],
+            "x": [
+              [
+                9,
+                720
+              ],
+              [
+                29,
+                540,
+                "out"
+              ],
+              [
+                45,
+                520,
+                "inout"
+              ],
+              [
+                63,
+                540,
+                "inout"
+              ]
+            ],
+            "y": [
+              [
+                9,
+                1450
+              ],
+              [
+                29,
+                1205,
+                "out"
+              ],
+              [
+                45,
+                1205,
+                "inout"
+              ],
+              [
+                63,
+                1205,
+                "inout"
+              ]
+            ],
+            "src": "assets/v15-workspace.png",
+            "radius": 28,
+            "scale": [
+              [
+                9,
+                0.24
+              ],
+              [
+                28,
+                0.94,
+                "out"
+              ],
+              [
+                46,
+                0.98,
+                "inout"
+              ],
+              [
+                64,
+                0.93,
+                "inout"
+              ]
+            ],
+            "rotation": [
+              [
+                9,
+                -14
+              ],
+              [
+                29,
+                0,
+                "out"
+              ]
+            ],
+            "tilt": [
+              [
+                9,
+                -43
+              ],
+              [
+                29,
+                0,
+                "out"
+              ]
+            ],
+            "opacity": [
+              [
+                9,
+                0
+              ],
+              [
+                20,
+                1,
+                "out"
+              ]
+            ],
+            "shadow": 0.56,
+            "start": 9,
+            "depth": 1
+          },
+          {
+            "id": "foot",
+            "kind": "text",
+            "size": [
+              820,
+              54
+            ],
+            "x": 540,
+            "y": 1640,
+            "text": "FORM  /  PRODUCT VIEW",
+            "font_size": 26,
+            "color": "#676b70",
+            "align": "left",
+            "reveal": [
+              [
+                30,
+                0
+              ],
+              [
+                44,
+                1,
+                "out"
+              ]
+            ],
+            "decorative": true,
+            "depth": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "resolution",
+      "engine": "layers",
+      "frames": 78,
+      "content": {
+        "background": "#0a0b0d",
+        "samples": 2,
+        "shutter": 0.58,
+        "layers": [
+          {
+            "id": "path",
+            "kind": "swarm",
+            "size": [
+              980,
+              980
+            ],
+            "x": 540,
+            "y": 875,
+            "color": "#c5ef78",
+            "to": "text",
+            "text": "FORM",
+            "count": 650,
+            "dot": 4,
+            "arc": 0.35,
+            "scatter": 0.1,
+            "drag": 0.5,
+            "seed": 124,
+            "progress": [
+              [
+                0,
+                0
+              ],
+              [
+                9,
+                0
+              ],
+              [
+                38,
+                1,
+                "inout"
+              ]
+            ],
+            "opacity": [
+              [
+                0,
+                1
+              ],
+              [
+                37,
+                1
+              ],
+              [
+                50,
+                0,
+                "out"
+              ]
+            ],
+            "scale": [
+              [
+                0,
+                1.15
+              ],
+              [
+                35,
+                1,
+                "inout"
+              ]
+            ],
+            "glow": 0.15,
+            "from": "ring"
+          },
+          {
+            "id": "logo",
+            "kind": "morph",
+            "size": [
+              980,
+              980
+            ],
+            "x": 540,
+            "y": 875,
+            "color": "#f7f8fb",
+            "to": "text",
+            "text": "FORM",
+            "progress": [
+              [
+                0,
+                0
+              ],
+              [
+                32,
+                1,
+                "inout"
+              ]
+            ],
+            "scale": [
+              [
+                0,
+                1.15
+              ],
+              [
+                32,
+                1,
+                "inout"
+              ]
+            ],
+            "opacity": [
+              [
+                0,
+                0.18
+              ],
+              [
+                28,
+                0.35
+              ],
+              [
+                41,
+                1,
+                "out"
+              ]
+            ],
+            "metal": [
+              [
+                0,
+                0.25
+              ],
+              [
+                35,
+                0.65
+              ],
+              [
+                52,
+                0,
+                "out"
+              ]
+            ],
+            "glow": 0.05,
+            "from": "ring"
+          },
+          {
+            "id": "cta",
+            "kind": "text",
+            "size": [
+              870,
+              135
+            ],
+            "x": 540,
+            "y": 1150,
+            "text": "Make it yours.",
+            "font_size": 65,
+            "color": "#e8e9eb",
+            "align": "center",
+            "reveal": [
+              [
+                23,
+                0
+              ],
+              [
+                35,
+                1,
+                "out"
+              ]
+            ],
+            "opacity": [
+              [
+                23,
+                0
+              ],
+              [
+                35,
+                1
+              ]
+            ],
+            "depth": 0
+          },
+          {
+            "id": "last-line",
+            "kind": "line",
+            "size": [
+              480,
+              3
+            ],
+            "x": 540,
+            "y": 1270,
+            "color": "#c5ef78",
+            "reveal": [
+              [
+                32,
+                0
+              ],
+              [
+                40,
+                1,
+                "out"
+              ]
+            ],
+            "depth": 0
+          }
+        ],
+        "ambient": {
+          "color": "#243344",
+          "strength": 0.24,
+          "x": 0.5,
+          "y": 0.46
+        }
+      },
+      "transition_in": {
+        "kind": "circleclose",
+        "frames": 6
+      }
+    }
+  ],
+  "audio": {
+    "sfx": "assets/v15-sfx.wav",
+    "sfx_volume": 0.8
+  }
+}

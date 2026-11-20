@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "duration": 9,
+  "width": 720,
+  "fps": 30,
+  "background": "#171d25",
+  "layers": [
+    {
+      "id": "bg",
+      "kind": "gradient",
+      "w": 720,
+      "h": 1280,
+      "angle": 136,
+      "stops": [
+        [
+          0,
+          "#171d25"
+        ],
+        [
+          1,
+          "#212a34"
+        ]
+      ]
+    },
+    {
+      "id": "kicker",
+      "kind": "text",
+      "text": "INTERACTION STUDY   /   045",
+      "font": "mono",
+      "size": 18,
+      "x": 360,
+      "y": 112,
+      "color": "#a9bac9"
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "text": "Make room.",
+      "font": "heavy",
+      "size": 78,
+      "maxw": 640,
+      "x": 360,
+      "y": 220,
+      "color": "#f4eee3",
+      "active": [
+        0,
+        4.3
+      ]
+    },
+    {
+      "id": "headline2",
+      "kind": "text",
+      "text": "Put it in place.",
+      "font": "heavy",
+      "size": 60,
+      "maxw": 640,
+      "x": 360,
+      "y": 220,
+      "color": "#f4eee3",
+      "active": [
+        4.3,
+        7.5
+      ],
+      "opacity": 0
+    },
+    {
+      "id": "headline3",
+      "kind": "text",
+      "text": "All sorted.",
+      "font": "heavy",
+      "size": 78,
+      "maxw": 650,
+      "x": 360,
+      "y": 220,
+      "color": "#f4eee3",
+      "active": [
+        7.5,
+        9
+      ],
+      "opacity": 0
+    },
+    {
+      "id": "board",
+      "kind": "group",
+      "x": 360,
+      "y": 672
+    },
+    {
+      "id": "slot1",
+      "kind": "rect",
+      "parent": "board",
+      "x": -156,
+      "y": 125,
+      "w": 252,
+      "h": 244,
+      "radius": 24,
+      "color": "#536873",
+      "stroke": 2
+    },
+    {
+      "id": "slot2",
+      "kind": "rect",
+      "parent": "board",
+      "x": 156,
+      "y": 125,
+      "w": 252,
+      "h": 244,
+      "radius": 24,
+      "color": "#536873",
+      "stroke": 2
+    },
+    {
+      "id": "slotlabel1",
+      "kind": "text",
+      "parent": "board",
+      "x": -156,
+      "y": 230,
+      "text": "01 / PLAN",
+      "font": "mono",
+      "size": 15,
+      "color": "#a2b6c4"
+    },
+    {
+      "id": "slotlabel2",
+      "kind": "text",
+      "parent": "board",
+      "x": 156,
+      "y": 230,
+      "text": "02 / BUILD",
+      "font": "mono",
+      "size": 15,
+      "color": "#a2b6c4"
+    },
+    {
+      "id": "card1",
+      "kind": "group",
+      "parent": "board",
+      "x": -109,
+      "y": -168,
+      "scale": 1
+    },
+    {
+      "id": "card1bg",
+      "kind": "rect",
+      "parent": "card1",
+      "x": 0,
+      "y": 0,
+      "w": 230,
+      "h": 214,
+      "radius": 20,
+      "color": "#d7e9b3",
+      "shadow": true,
+      "shadow_opacity": 0.3,
+      "shadow_y": 8,
+      "shadow_blur": 12
+    },
+    {
+      "id": "card1code",
+      "kind": "text",
+      "parent": "card1",
+      "x": -65,
+      "y": -65,
+      "text": "01",
+      "font": "mono",
+      "size": 22,
+      "color": "#24352b"
+    },
+    {
+      "id": "card1title",
+      "kind": "text",
+      "parent": "card1",
+      "x": 0,
+      "y": 19,
+      "text": "PLAN",
+      "font": "heavy",
+      "size": 38,
+      "color": "#24352b"
+    },
+    {
+      "id": "card1line",
+      "kind": "rect",
+      "parent": "card1",
+      "x": 0,
+      "y": 63,
+      "w": 126,
+      "h": 5,
+      "radius": 2,
+      "color": "#24352b",
+      "opacity": 0.28
+    },
+    {
+      "id": "card2",
+      "kind": "group",
+      "parent": "board",
+      "x": 110,
+      "y": -119,
+      "scale": 1
+    },
+    {
+      "id": "card2bg",
+      "kind": "rect",
+      "parent": "card2",
+      "x": 0,
+      "y": 0,
+      "w": 230,
+      "h": 214,
+      "radius": 20,
+      "color": "#b5cbe7",
+      "shadow": true,
+      "shadow_opacity": 0.3,
+      "shadow_y": 8,
+      "shadow_blur": 12
+    },
+    {
+      "id": "card2code",
+      "kind": "text",
+      "parent": "card2",
+      "x": -65,
+      "y": -65,
+      "text": "02",
+      "font": "mono",
+      "size": 22,
+      "color": "#28364a"
+    },
+    {
+      "id": "card2title",
+      "kind": "text",
+      "parent": "card2",
+      "x": 0,
+      "y": 19,
+      "text": "BUILD",
+      "font": "heavy",
+      "size": 38,
+      "color": "#28364a"
+    },
+    {
+      "id": "card2line",
+      "kind": "rect",
+      "parent": "card2",
+      "x": 0,
+      "y": 63,
+      "w": 126,
+      "h": 5,
+      "radius": 2,
+      "color": "#28364a",
+      "opacity": 0.28
+    },
+    {
+      "id": "confirmgroup",
+      "kind": "group",
+      "parent": "board",
+      "x": 0,
+      "y": 378,
+      "scale": 1,
+      "active": [
+        6.5,
+        9
+      ]
+    },
+    {
+      "id": "confirm",
+      "kind": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 292,
+      "h": 78,
+      "radius": 39,
+      "color": "#e9ce90",
+      "scale": 1,
+      "active": [
+        6.5,
+        9
+      ],
+      "parent": "confirmgroup"
+    },
+    {
+      "id": "confirmtext",
+      "kind": "text",
+      "x": 0,
+      "y": 0,
+      "text": "DONE",
+      "font": "heavy",
+      "size": 24,
+      "color": "#28251b",
+      "active": [
+        6.5,
+        9
+      ],
+      "parent": "confirmgroup"
+    },
+    {
+      "id": "cursor",
+      "kind": "ellipse",
+      "parent": "board",
+      "x": 285,
+      "y": -295,
+      "w": 34,
+      "h": 34,
+      "color": "#fff8e7",
+      "stroke": 3,
+      "scale": 1,
+      "shadow": true,
+      "shadow_opacity": 0.45,
+      "shadow_blur": 9,
+      "shadow_y": 4,
+      "active": [
+        0,
+        8.8
+      ]
+    },
+    {
+      "id": "foot",
+      "kind": "text",
+      "text": "POINT  /  GRAB  /  RELEASE",
+      "font": "mono",
+      "size": 18,
+      "x": 360,
+      "y": 1180,
+      "color": "#acbdc9"
+    }
+  ],
+  "gestures": [
+    {
+      "pointer": "cursor",
+      "steps": [
+        {
+          "op": "point",
+          "target": "card1",
+          "start": 0.1,
+          "end": 0.8
+        },
+        {
+          "op": "tap",
+          "target": "card1",
+          "start": 0.85,
+          "end": 1.6,
+          "press": 0.89
+        },
+        {
+          "op": "drag",
+          "target": "card1",
+          "start": 1.7,
+          "end": 3.6,
+          "to": [
+            -156,
+            125
+          ]
+        },
+        {
+          "op": "drag",
+          "target": "card2",
+          "start": 3.9,
+          "end": 6.5,
+          "to": [
+            156,
+            125
+          ]
+        },
+        {
+          "op": "tap",
+          "target": "confirmgroup",
+          "start": 6.6,
+          "end": 7.9,
+          "press": 0.87
+        }
+      ]
+    }
+  ],
+  "motion_programs": [
+    {
+      "layer": "headline",
+      "start": 3.95,
+      "steps": [
+        {
+          "op": "animate",
+          "end": 4.3,
+          "to": {
+            "opacity": 0,
+            "y": 195
+          },
+          "ease": "smooth"
+        }
+      ]
+    },
+    {
+      "layer": "headline2",
+      "start": 4.3,
+      "steps": [
+        {
+          "op": "animate",
+          "end": 4.65,
+          "to": {
+            "opacity": 1
+          },
+          "ease": "smooth"
+        },
+        {
+          "op": "hold",
+          "end": 7.15
+        },
+        {
+          "op": "animate",
+          "end": 7.5,
+          "to": {
+            "opacity": 0
+          },
+          "ease": "smooth"
+        }
+      ]
+    },
+    {
+      "layer": "headline3",
+      "start": 7.5,
+      "steps": [
+        {
+          "op": "animate",
+          "end": 7.9,
+          "to": {
+            "opacity": 1
+          },
+          "ease": "smooth"
+        }
+      ]
+    }
+  ]
+}

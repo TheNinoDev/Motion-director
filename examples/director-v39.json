@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "duration": 6,
+  "width": 540,
+  "fps": 30,
+  "background": "#151e2c",
+  "layers": [
+    {
+      "id": "bg",
+      "kind": "gradient",
+      "w": 720,
+      "h": 1280,
+      "stops": [
+        [
+          0,
+          "#101925"
+        ],
+        [
+          1,
+          "#233449"
+        ]
+      ],
+      "angle": 110
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Move as one.",
+      "size": 92,
+      "font": "heavy",
+      "maxw": 640,
+      "color": "#eff4fc",
+      "x": 360,
+      "y": 250,
+      "active": [
+        0,
+        4.2
+      ]
+    },
+    {
+      "id": "guide",
+      "kind": "path",
+      "w": 720,
+      "h": 1280,
+      "points": [
+        [
+          72,
+          825
+        ],
+        [
+          648,
+          825
+        ]
+      ],
+      "stroke": 2,
+      "color": "#546d85",
+      "active": [
+        0,
+        4.2
+      ]
+    },
+    {
+      "id": "card1",
+      "kind": "rect",
+      "w": 180,
+      "h": 220,
+      "radius": 25,
+      "color": "#accaf1",
+      "x": 130,
+      "y": 700,
+      "rotate": -20,
+      "active": [
+        0,
+        4.2
+      ]
+    },
+    {
+      "id": "card2",
+      "kind": "rect",
+      "w": 180,
+      "h": 220,
+      "radius": 25,
+      "color": "#d0e1fa",
+      "x": 360,
+      "y": 700,
+      "rotate": 12,
+      "active": [
+        0,
+        4.2
+      ]
+    },
+    {
+      "id": "card3",
+      "kind": "rect",
+      "w": 180,
+      "h": 220,
+      "radius": 25,
+      "color": "#729cd0",
+      "x": 590,
+      "y": 700,
+      "rotate": 20,
+      "active": [
+        0,
+        4.2
+      ]
+    },
+    {
+      "id": "marker",
+      "kind": "ellipse",
+      "w": 26,
+      "h": 26,
+      "color": "#f5d789",
+      "x": 360,
+      "y": 505,
+      "active": [
+        0,
+        4.2
+      ]
+    },
+    {
+      "id": "cover",
+      "kind": "rect",
+      "w": 720,
+      "h": 1280,
+      "color": "#e8edf5",
+      "mask": "iris",
+      "mask_progress": 0,
+      "active": [
+        3.75,
+        6
+      ]
+    },
+    {
+      "id": "hero",
+      "kind": "object3d",
+      "geometry": "torus",
+      "material": "chrome",
+      "w": 345,
+      "h": 345,
+      "x": 360,
+      "y": 920,
+      "depth": 75,
+      "quality": 0.45,
+      "color": "#a8c9ee",
+      "active": [
+        4.2,
+        6
+      ]
+    },
+    {
+      "id": "end",
+      "kind": "text",
+      "text": "CONNECTED.",
+      "font": "heavy",
+      "size": 98,
+      "maxw": 650,
+      "color": "#193047",
+      "x": 360,
+      "y": 355,
+      "active": [
+        4.2,
+        6
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "op": "slide",
+      "layer": "card2",
+      "start": 1.35,
+      "end": 2.8,
+      "from": [
+        360,
+        695
+      ],
+      "to": [
+        360,
+        565
+      ],
+      "ease": "smooth"
+    }
+  ],
+  "state_motion": [
+    {
+      "recipe": "arrange_row",
+      "layers": [
+        "card1",
+        "card2",
+        "card3"
+      ],
+      "start": 0.15,
+      "end": 1.35,
+      "center": [
+        360,
+        695
+      ],
+      "spacing": [
+        188,
+        0
+      ],
+      "stagger": 0.2,
+      "angle": 0,
+      "scale": 1
+    },
+    {
+      "recipe": "follow_offset",
+      "layer": "marker",
+      "source": "card2",
+      "start": 1.45,
+      "end": 2.95,
+      "offset": [
+        0,
+        -170
+      ],
+      "delay": 0.1,
+      "blend_in": 0.2,
+      "samples": 24
+    },
+    {
+      "recipe": "spotlight",
+      "layer": "card2",
+      "others": [
+        "card1",
+        "card3"
+      ],
+      "start": 1.5,
+      "end": 2.8,
+      "scale": 1.25,
+      "dim": 0.28,
+      "blur": 4
+    },
+    {
+      "recipe": "quiet_exit",
+      "layer": "card2",
+      "start": 3.05,
+      "end": 4.1,
+      "offset": [
+        0,
+        -150
+      ],
+      "scale": 0.8
+    },
+    {
+      "recipe": "mask_continue",
+      "layer": "cover",
+      "start": 3.75,
+      "end": 4.2,
+      "mask": "iris",
+      "to": 1
+    },
+    {
+      "recipe": "elastic_settle",
+      "layer": "hero",
+      "start": 4.2,
+      "end": 5.8,
+      "to": [
+        360,
+        700
+      ],
+      "preset": "jelly_firm",
+      "strength": 0.3,
+      "impact_fraction": 0.5
+    },
+    {
+      "recipe": "depth_turn",
+      "layer": "hero",
+      "start": 4.2,
+      "end": 5.9,
+      "angles": [
+        28,
+        -14
+      ],
+      "light": 0.85,
+      "scale": 1.1
+    }
+  ]
+}

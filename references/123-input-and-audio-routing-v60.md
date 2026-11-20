@@ -1,0 +1,27 @@
+# 123 — Ask only for missing inputs; never invent an audio problem
+
+The two supplied agent runs had DIFFERENT input states. In the discovery run Claude initially had no voice/music and reasonably asked for them. In the protection run GPT's task explicitly said the original script, voiceover and song were ALREADY inside the local project. It would have been a bad idea to ask for those files again. This guide controls that distinction. Root V60 and truth/rights constraints take precedence over the legacy V58 blanket “ask and stop” language wherever it ignores supplied assets.
+
+## Fast asset inventory before any question
+1. Read the user's current message AND available prior task state. Determine whether the deliverable is full film, script only, audio only, picture study or a narrow revision.
+2. Check project root or explicitly identified files for original narration, transcript/script, music, production source and instructions. Do not fetch or visually import website/local project imagery; reading product text/feature claims is allowed. A local project may contain media that the user has supplied as a separate audio asset; using that user-authorized voice/music is not the same as copying site visuals.
+3. For each audio component record: **present as file? user specifically supplied/authorized? content/codec/duration inspected? words verified? audible/listened? distribution rights confirmed?** These are distinct. A detected MP3 is not a rights grant, a waveform is not an audition, a transcript is not verified timing.
+4. If narration/music already exist, do NOT ask how the user will create them; inspect now and proceed with the available evidence. If speech can't be recognized, ask for the exact existing text (or run an available authorized ASR) only if this blocks alignment. If rights are uncertain, ask a specific clearance question; continue independent visual work while unresolved but do not call a final release cleared.
+5. If a narrated ad is requested but no raw voice/music exists, recommend a fitting route and ask just the unresolved language/provider/music/release choices. If the user delegated and provider access exists, produce audio if authorized. Otherwise deliver actual complete tagged script (when native syntax verified), separate exact voice design only when appropriate and needed, usable provider steps, legal music options or candid blocker, request only missing raw stems, then stop at real user dependency. Respect explicit no voice/no music/silent requests.
+
+## Case-specific next responses
+
+| Situation | Correct behavior | Bad behavior |
+|---|---|---|
+| Website with no audio specified | Grounded recommended focus + ask for spoken language / voice and music source / destination if unanswered | Silent finished export or huge preferences questionnaire |
+| User: “English, voice and song provided” with two project MP3s | Open each once, inspect media and locked script, ask only necessary transcript/rights uncertainties, align and proceed | Re-ask voice/model/music, generate second take, claim nothing provided |
+| User supplies script file with expressive tags + actual recorded VO | Keep tags as historical direction, captions use cleaned exact words; verify actual speech if possible; do NOT paste tags as visual text | Auto-generate a different take or put `[sighs]` in on-screen captions |
+| Song retrieved from a downloader, user says “my music” | Record that the user claims permission; do not independently certify license from name. If actual commercial scope matters, clarify rights or offer platform-native insertion/cleared alternative | Claim downloader file automatically licensed or refuse all work with no alternative |
+| Narration mix contains singing under speech | Check actual stems/mix; plan dynamic ducking and arrangement, not automatic downmix or unverified listening claims | Say vocals are clear based solely on LUFS; put loud sung music over dialogue |
+| Script promotes unshipped protection features | Use future/planned wording; show illustration clearly as conceptual | Depict it as proven secure/live or guarantee theft prevention |
+| User wants to test skill and gave all assets | Produce a real edit and evaluate visually; don't stall at an unrelated prior handoff | Add unnecessary setup questions or make a proofless title slideshow |
+
+## Current skill version and manual routing
+Before working, read the installed root header/version. If testing V60, confirm it says `Motion Director 60`. Its current guides are 121, 122, 123 and 124. A log showing only `116-action-not-slides-v58.md` does not establish the agent applied V59/V60 rules. Old references can be consulted for TECHNIQUE but have screenshot-centric legacy text; V60 source firewall always wins. The task's own explicit instructions about source information vs output images are controlling, not a suggestion to extract photos. A validated frame from a website can support fact research but never enter final scene assets by default.
+
+If the user asks for voice text but not an MP4, deliver usable text and don't require the entire V50 project manifest. If a supported V50 production gate rejects a legitimate very short/locked/silent/platform-only case, explain the limitation and preserve scope; do not pad copy, invent stems, silently downgrade ad to study or bypass release checks. When an unresolved external user action is essential, deliver the useful unblocked content and end; do not promise to finish asynchronously.

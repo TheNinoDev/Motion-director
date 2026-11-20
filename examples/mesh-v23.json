@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "hook",
+      "engine": "editorial",
+      "frames": 30,
+      "content": {
+        "bg": "#151613",
+        "fg": "#f2f0eb",
+        "accent": "#e6e2d8",
+        "grain": 0.25,
+        "kind": "poster",
+        "lines": [
+          "GOOD WORK.",
+          "BAD FRAME?"
+        ],
+        "layout": "left",
+        "reveal": "glyph",
+        "label": "",
+        "sub": ""
+      }
+    },
+    {
+      "id": "ribbon",
+      "engine": "mesh",
+      "frames": 42,
+      "content": {
+        "bg": "#101112",
+        "fg": "#f2f0eb",
+        "accent": "#d8eb92",
+        "grain": 0.25,
+        "kind": "ribbon",
+        "material": "chrome",
+        "tint": "#d5d8e0",
+        "quality": 0.72,
+        "resolution": 100,
+        "phase": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0.9
+          ]
+        ],
+        "twist": [
+          [
+            0,
+            2.3
+          ],
+          [
+            1,
+            0.2
+          ]
+        ],
+        "yaw": [
+          [
+            0,
+            0.9
+          ],
+          [
+            1,
+            -0.15
+          ]
+        ],
+        "pitch": [
+          [
+            0,
+            0.35
+          ],
+          [
+            1,
+            -0.16
+          ]
+        ],
+        "roll": [
+          [
+            0,
+            -0.6
+          ],
+          [
+            1,
+            0.15
+          ]
+        ],
+        "zoom": [
+          [
+            0,
+            1.62
+          ],
+          [
+            1,
+            1.09,
+            "out"
+          ]
+        ],
+        "pany": -0.01,
+        "light": [
+          [
+            0,
+            -0.7
+          ],
+          [
+            1,
+            1.9
+          ]
+        ],
+        "label": "",
+        "title": "",
+        "caption": "",
+        "samples": 2,
+        "bloom": 0.045
+      }
+    },
+    {
+      "id": "unfold",
+      "engine": "mesh",
+      "frames": 54,
+      "content": {
+        "bg": "#101112",
+        "fg": "#f2f0eb",
+        "accent": "#d8eb92",
+        "grain": 0.25,
+        "kind": "sheet",
+        "material": "texture",
+        "src": "assets/v15-workspace.png",
+        "crop": [
+          0.035,
+          0.15,
+          0.52,
+          0.7
+        ],
+        "quality": 0.9,
+        "resolution": 88,
+        "phase": [
+          [
+            0,
+            0
+          ],
+          [
+            0.8,
+            1,
+            "out"
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "bend": [
+          [
+            0,
+            1.8
+          ],
+          [
+            0.8,
+            0,
+            "out"
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "twist": [
+          [
+            0,
+            1.8
+          ],
+          [
+            0.8,
+            0,
+            "out"
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "yaw": [
+          [
+            0,
+            -0.95
+          ],
+          [
+            0.8,
+            0,
+            "out"
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "pitch": [
+          [
+            0,
+            0.35
+          ],
+          [
+            0.8,
+            0,
+            "out"
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "roll": [
+          [
+            0,
+            -0.22
+          ],
+          [
+            0.8,
+            0,
+            "out"
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "zoom": [
+          [
+            0,
+            1.45
+          ],
+          [
+            0.8,
+            1.04,
+            "out"
+          ],
+          [
+            1,
+            1.04
+          ]
+        ],
+        "pany": -0.075,
+        "label": "",
+        "title": "Bring it forward.",
+        "caption": "",
+        "samples": 1
+      }
+    },
+    {
+      "id": "detail",
+      "engine": "editorial",
+      "frames": 36,
+      "content": {
+        "bg": "#101112",
+        "fg": "#f2f0eb",
+        "accent": "#d8eb92",
+        "grain": 0.25,
+        "kind": "macro",
+        "src": "assets/v15-workspace.png",
+        "crop": [
+          0.045,
+          0.287,
+          0.507,
+          0.55
+        ],
+        "crop2": [
+          0.035,
+          0.15,
+          0.97,
+          0.7
+        ],
+        "text": "In focus.",
+        "label": "",
+        "sub": "",
+        "zoom": [
+          [
+            0,
+            1.38
+          ],
+          [
+            1,
+            1,
+            "out"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "end",
+      "engine": "editorial",
+      "frames": 36,
+      "content": {
+        "bg": "#101112",
+        "fg": "#f2f0eb",
+        "accent": "#d8eb92",
+        "grain": 0.25,
+        "kind": "signature",
+        "brand": "F / FORM",
+        "label": "CONCEPT STUDY",
+        "sub": "Make space for good work."
+      }
+    }
+  ],
+  "audio": {
+    "sfx": "assets/v23-sfx.wav",
+    "sfx_volume": 0.72
+  }
+}

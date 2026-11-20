@@ -1,0 +1,272 @@
+[
+  {
+    "file": "1000043456.mp4",
+    "duration": 34.87,
+    "audio_duration": 34.85,
+    "peak_dbfs": -3.8,
+    "rms_dbfs": -20.0,
+    "rms_percentiles_dbfs": [
+      -34.6,
+      -24.8,
+      -15.1
+    ],
+    "quiet_100ms_fraction": 0.069,
+    "mixed_audio_transient_candidates_seconds": [
+      0.64,
+      1.47,
+      4.19,
+      4.74,
+      5.26,
+      6.35,
+      8.16,
+      8.74,
+      9.56,
+      14.21,
+      14.35,
+      14.92,
+      15.28,
+      17.27,
+      17.45
+    ]
+  },
+  {
+    "file": "1000043457.mp4",
+    "duration": 50.23,
+    "audio_duration": 50.22,
+    "peak_dbfs": 3.1,
+    "rms_dbfs": -15.2,
+    "rms_percentiles_dbfs": [
+      -47.9,
+      -19.1,
+      -11.8
+    ],
+    "quiet_100ms_fraction": 0.125,
+    "mixed_audio_transient_candidates_seconds": [
+      3.29,
+      20.24,
+      22.37,
+      26.2,
+      27.05,
+      28.54,
+      29.18,
+      29.6,
+      33.86,
+      35.35,
+      35.99,
+      36.41,
+      38.11,
+      43.22,
+      46.22
+    ]
+  },
+  {
+    "file": "1000043458.mp4",
+    "duration": 38.6,
+    "audio_duration": 38.61,
+    "peak_dbfs": 3.0,
+    "rms_dbfs": -13.3,
+    "rms_percentiles_dbfs": [
+      -44.7,
+      -15.7,
+      -9.9
+    ],
+    "quiet_100ms_fraction": 0.114,
+    "mixed_audio_transient_candidates_seconds": [
+      1.03,
+      6.87,
+      7.49,
+      13.77,
+      17.03,
+      18.33,
+      18.66,
+      19.64,
+      20.94,
+      21.92,
+      26.16,
+      28.77,
+      30.07,
+      32.68,
+      34.59
+    ]
+  },
+  {
+    "file": "1000043459.mp4",
+    "duration": 40.6,
+    "audio_duration": 40.57,
+    "peak_dbfs": 3.0,
+    "rms_dbfs": -13.5,
+    "rms_percentiles_dbfs": [
+      -47.6,
+      -14.5,
+      -10.7
+    ],
+    "quiet_100ms_fraction": 0.138,
+    "mixed_audio_transient_candidates_seconds": [
+      0.63,
+      4.17,
+      6.47,
+      13.22,
+      20.54,
+      22.39,
+      23.31,
+      23.77,
+      25.62,
+      26.08,
+      27.12,
+      28.85,
+      29.31,
+      29.77,
+      31.16
+    ]
+  },
+  {
+    "file": "1000043460.mp4",
+    "duration": 41.0,
+    "audio_duration": 41.01,
+    "peak_dbfs": 3.0,
+    "rms_dbfs": -13.7,
+    "rms_percentiles_dbfs": [
+      -42.3,
+      -14.0,
+      -11.6
+    ],
+    "quiet_100ms_fraction": 0.112,
+    "mixed_audio_transient_candidates_seconds": [
+      0.3,
+      1.4,
+      5.39,
+      5.81,
+      6.55,
+      20.98,
+      21.56,
+      25.61,
+      27.93,
+      30.25,
+      31.99,
+      32.57,
+      34.31,
+      34.89,
+      36.98
+    ]
+  },
+  {
+    "file": "1000043461.mp4",
+    "duration": 24.03,
+    "audio_duration": 24.03,
+    "peak_dbfs": 3.0,
+    "rms_dbfs": -15.4,
+    "rms_percentiles_dbfs": [
+      -180.0,
+      -17.9,
+      -13.5
+    ],
+    "quiet_100ms_fraction": 0.179,
+    "mixed_audio_transient_candidates_seconds": [
+      0.64,
+      2.56,
+      3.67,
+      3.92,
+      4.19,
+      5.02,
+      5.79,
+      9.61,
+      10.66,
+      11.5,
+      14.42,
+      17.75,
+      18.17,
+      20.02,
+      20.52
+    ]
+  },
+  {
+    "file": "1000043462.mp4",
+    "duration": 39.03,
+    "audio_duration": 39.03,
+    "peak_dbfs": 3.0,
+    "rms_dbfs": -13.4,
+    "rms_percentiles_dbfs": [
+      -44.9,
+      -16.2,
+      -9.5
+    ],
+    "quiet_100ms_fraction": 0.123,
+    "mixed_audio_transient_candidates_seconds": [
+      0.59,
+      1.58,
+      1.92,
+      4.72,
+      8.14,
+      11.82,
+      20.37,
+      23.57,
+      26.17,
+      26.57,
+      28.37,
+      29.77,
+      31.57,
+      32.57,
+      35.02
+    ]
+  },
+  {
+    "file": "1000043463.mp4",
+    "duration": 38.03,
+    "audio_duration": 38.03,
+    "peak_dbfs": 3.0,
+    "rms_dbfs": -13.1,
+    "rms_percentiles_dbfs": [
+      -51.9,
+      -14.8,
+      -9.9
+    ],
+    "quiet_100ms_fraction": 0.197,
+    "mixed_audio_transient_candidates_seconds": [
+      6.92,
+      17.4,
+      20.31,
+      21.4,
+      23.22,
+      25.76,
+      26.13,
+      26.67,
+      27.22,
+      27.95,
+      29.04,
+      29.58,
+      30.13,
+      31.95,
+      34.01
+    ]
+  },
+  {
+    "file": "1000043464.mp4",
+    "duration": 39.03,
+    "audio_duration": 39.03,
+    "peak_dbfs": 3.1,
+    "rms_dbfs": -13.0,
+    "rms_percentiles_dbfs": [
+      -47.8,
+      -16.1,
+      -9.8
+    ],
+    "quiet_100ms_fraction": 0.146,
+    "mixed_audio_transient_candidates_seconds": [
+      0.11,
+      12.17,
+      17.31,
+      18.34,
+      19.88,
+      21.43,
+      22.46,
+      23.49,
+      26.06,
+      27.09,
+      29.66,
+      30.69,
+      31.72,
+      33.26,
+      35.03
+    ]
+  }
+]
