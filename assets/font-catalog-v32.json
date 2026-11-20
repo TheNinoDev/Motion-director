@@ -1,0 +1,647 @@
+{
+  "version": 1,
+  "sources": {
+    "Google Fonts": "https://github.com/google/fonts",
+    "Fontshare": "https://www.fontshare.com/about",
+    "Adobe Fonts": "https://helpx.adobe.com/fonts/web/font-licensing/font-licensing.html"
+  },
+  "families": [
+    {
+      "family": "Inter",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Inter",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Manrope",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Manrope",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "DM Sans",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/DM+Sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Plus+Jakarta+Sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Geist",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Geist",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Public Sans",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Public+Sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Albert Sans",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Albert+Sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Figtree",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Figtree",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Instrument Sans",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Instrument+Sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Outfit",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Outfit",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Onest",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Onest",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Sora",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Sora",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Urbanist",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Urbanist",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Hanken Grotesk",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Hanken+Grotesk",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Noto Sans",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Noto+Sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "IBM Plex Sans",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/IBM+Plex+Sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Roboto",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Roboto",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Work Sans",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Work+Sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Source Sans 3",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Source+Sans+3",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Lato",
+      "role": "clean_ui",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Lato",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Space Grotesk",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Space+Grotesk",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Bricolage Grotesque",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Bricolage+Grotesque",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Archivo",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Archivo",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Archivo Black",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Archivo+Black",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Syne",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Syne",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Unbounded",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Unbounded",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Clash Display",
+      "role": "hero_grotesk",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/clash-display",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Satoshi",
+      "role": "hero_grotesk",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/satoshi",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "General Sans",
+      "role": "hero_grotesk",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/general-sans",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Cabinet Grotesk",
+      "role": "hero_grotesk",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/cabinet-grotesk",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Switzer",
+      "role": "hero_grotesk",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/switzer",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Gambetta",
+      "role": "editorial_serif",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/gambetta",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Chillax",
+      "role": "hero_grotesk",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/chillax",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Gabarito",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Gabarito",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Lexend",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Lexend",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Epilogue",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Epilogue",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Be Vietnam Pro",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Be+Vietnam+Pro",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Montserrat",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Montserrat",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Poppins",
+      "role": "hero_grotesk",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Poppins",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Barlow Condensed",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Barlow+Condensed",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Roboto Condensed",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Roboto+Condensed",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Oswald",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Oswald",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Bebas Neue",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Bebas+Neue",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Anton",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Anton",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Teko",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Teko",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Saira Condensed",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Saira+Condensed",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Big Shoulders Display",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Big+Shoulders+Display",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "League Gothic",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/League+Gothic",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Archivo Narrow",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Archivo+Narrow",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Rajdhani",
+      "role": "condensed_impact",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Rajdhani",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Instrument Serif",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Instrument+Serif",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Bodoni Moda",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Bodoni+Moda",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Playfair Display",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Playfair+Display",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Cormorant Garamond",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Cormorant+Garamond",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Newsreader",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Newsreader",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Fraunces",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Fraunces",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "DM Serif Display",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/DM+Serif+Display",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Libre Baskerville",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Libre+Baskerville",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Lora",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Lora",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Spectral",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Spectral",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Gelasio",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Gelasio",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Prata",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Prata",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Gilda Display",
+      "role": "editorial_serif",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Gilda+Display",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Bespoke Serif",
+      "role": "editorial_serif",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/bespoke-serif",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Supreme",
+      "role": "hero_grotesk",
+      "provider": "Fontshare",
+      "url": "https://www.fontshare.com/fonts/supreme",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "JetBrains Mono",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/JetBrains+Mono",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "IBM Plex Mono",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/IBM+Plex+Mono",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Space Mono",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Space+Mono",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "DM Mono",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/DM+Mono",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Geist Mono",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Geist+Mono",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Roboto Mono",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Roboto+Mono",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Inconsolata",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Inconsolata",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Fira Code",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Fira+Code",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Source Code Pro",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Source+Code+Pro",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Azeret Mono",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Azeret+Mono",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Martian Mono",
+      "role": "mono_data",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Martian+Mono",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Dela Gothic One",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Dela+Gothic+One",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Rubik Mono One",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Rubik+Mono+One",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Righteous",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Righteous",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Kanit",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Kanit",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Anybody",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Anybody",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Climate Crisis",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Climate+Crisis",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Black Ops One",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Black+Ops+One",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Bungee",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Bungee",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Audiowide",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Audiowide",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Chakra Petch",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Chakra+Petch",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Michroma",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Michroma",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Oxanium",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Oxanium",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Orbitron",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Orbitron",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Exo 2",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Exo+2",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    },
+    {
+      "family": "Krona One",
+      "role": "expressive",
+      "provider": "Google Fonts",
+      "url": "https://fonts.google.com/specimen/Krona+One",
+      "license_check": "Verify family-specific license and local installation before final production. No font software included."
+    }
+  ]
+}

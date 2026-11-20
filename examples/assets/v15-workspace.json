@@ -1,0 +1,13 @@
+{
+  "url": "local:examples/assets/v15-workspace.html",
+  "status": null,
+  "viewport": [
+    1200,
+    950
+  ],
+  "selector": "main",
+  "console_errors": [],
+  "page_errors": [],
+  "failed_requests": [],
+  "note": "Inspect image and errors; successful capture does not prove correct UI."
+}
