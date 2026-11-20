@@ -1,3 +1,7 @@
+# Motion Director v64 — director-led optional subagents
+
+When real subagent support is available, the parent director delegates narrow, independent fact/audio/story/editor-proof/QA tasks with explicit inputs, separate workspaces, evidence and acceptance criteria. Only one agent owns the master film and release. The director verifies native editor output and rejects clutter. When no subagent tool exists, the same workflow runs sequentially without pretending. Read `references/135-subagent-orchestration-v64.md`.
+
 # Motion Director v64 — capability-first editing, not primitive renderer rewrites
 
 **New guide:** `references/134-editor-capability-routing-v64.md`. Inspect and use the real packaged compositor/unified editors before writing a new frame renderer. Prototype an actual editor shot and preserve the editable plan; do not select effects just to show off the toolkit. Source sites/projects are facts-only, voice/music input handling and v63 clarity direction remain intact. See `examples/editor-potential-v64.json` for a deliberately simple, validated native-compositor technique study (NOT a ready-made commercial).
