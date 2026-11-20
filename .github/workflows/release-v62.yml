@@ -1,0 +1,44 @@
+name: Publish Motion Director v62
+
+on:
+  push:
+    paths:
+      - ".github/workflows/release-v62.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current skill
+        uses: actions/checkout@v4
+      - name: Verify and package Motion Director v62
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/md-release/motion-director"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          actual="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$actual" = "494"
+          test -f "$target/references/132-film-acceptance-repair-v62.md"
+          (cd "$RUNNER_TEMP/md-release" && zip -qr "$GITHUB_WORKSPACE/motion-director-v62.zip" motion-director)
+          unzip -tq "$GITHUB_WORKSPACE/motion-director-v62.zip"
+      - name: Publish v62 GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v62 >/dev/null 2>&1; then
+            gh release upload v62 motion-director-v62.zip --clobber
+          else
+            gh release create v62 motion-director-v62.zip \
+              --target "$GITHUB_SHA" \
+              --title "Motion Director v62" \
+              --notes "Complete v62 skill; Claude workflow reconstruction, deterministic render debugging, weak-agent direction, and actual film acceptance/repair. All prior tools preserved."
+          fi
