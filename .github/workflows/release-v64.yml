@@ -1,0 +1,47 @@
+name: Publish Motion Director v64
+
+on:
+  push:
+    paths:
+      - ".github/workflows/release-v64.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current Motion Director skill
+        uses: actions/checkout@v4
+      - name: Verify source and package original skill
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/md-release/motion-director"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          actual="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$actual" = "498"
+          test -f "$target/references/134-editor-capability-routing-v64.md"
+          test -f "$target/references/135-subagent-orchestration-v64.md"
+          test -f "$target/examples/editor-potential-v64.json"
+          python -m json.tool "$target/examples/editor-potential-v64.json" >/dev/null
+          (cd "$RUNNER_TEMP/md-release" && zip -qr "$GITHUB_WORKSPACE/motion-director-v64.zip" motion-director)
+          unzip -tq "$GITHUB_WORKSPACE/motion-director-v64.zip"
+      - name: Publish v64 release with the complete ZIP
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v64 >/dev/null 2>&1; then
+            gh release upload v64 motion-director-v64.zip --clobber
+          else
+            gh release create v64 motion-director-v64.zip \
+              --target "$GITHUB_SHA" \
+              --title "Motion Director v64 — Native editor and optional subagents" \
+              --notes "Uses actual packaged Motion Director compositor capabilities, adds a tested native-layer technique study, and delegates bounded tasks to subagents only where supported. One director owns narrative, timeline, QA and final release. Existing tools preserved."
+          fi
