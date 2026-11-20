@@ -1,3 +1,5 @@
+> **V61 PRIORITY OVERRIDE:** For the new user-supplied 24 s v60 output, see `128-protection-film-alternative-v61.md`. This older outline addresses the preceding 25.4 s film and is NOT an adequately reviewed solution to the new low-motion/flat-composition problem. Preserve the locked audio and information-only visual source rule.
+
 # 124 — Build a protection story as transformation, not feature slides
 
 **Illustrative and conditional case study**, grounded only in the supplied GPT prompt and sampled frames of its 25.4-second output. This is NOT an actual new video, actual product security verification, voice transcription or production source. The user's project description explicitly calls RobloxLARP's protection **in development**. Do not imply any real security claim is established by this sketch. The user's actual locked voice/song/script must determine final copy and pacing. The point is how to direct a weak agent to *animate meaning*, not to copy Claude's exact button grid or borrow the site's logo/assets.
