@@ -1,3 +1,9 @@
+# Motion Director v63 — clarity over complexity
+
+Current active guide: `references/133-clarity-over-complexity-v63.md`. The closer Claude/GPT script-protection comparison shows stronger **visual hierarchy, restraint and legible action**, not a requirement for more detail or constant movement. Updated the root and active direction/review guides accordingly. Existing video/audio/rendering tools remain unchanged. The new Claude film and prior GPT/Claude videos were inspected as evidence, not copied as styles. No independent v63 agent result is claimed.
+
+---
+
 # Motion Director V62 — grounded Claude process transfer, not a Claude style clone
 
 Begin with `SKILL.md`. Guides 129–132 capture the actual user-provided Claude execution sequence, define a weak-agent stage-by-stage creative workflow, show deterministic scene rendering/debugging, and require whole-film review and targeted correction. V61 and older references remain available as supporting knowledge. All executable and binary assets are unchanged. No independent agent test is claimed for V62.
