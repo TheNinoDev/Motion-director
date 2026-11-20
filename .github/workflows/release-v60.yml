@@ -1,0 +1,43 @@
+name: Publish Motion Director v60
+
+on:
+  push:
+    paths:
+      - ".github/workflows/release-v60.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Package and verify original skill files
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/md-release/motion-director"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          actual="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$actual" = "486"
+          (cd "$RUNNER_TEMP/md-release" && zip -qr "$GITHUB_WORKSPACE/motion-director-v60.zip" motion-director)
+          unzip -tq "$GITHUB_WORKSPACE/motion-director-v60.zip"
+      - name: Publish v60 GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v60 >/dev/null 2>&1; then
+            gh release upload v60 motion-director-v60.zip --clobber
+          else
+            gh release create v60 motion-director-v60.zip \
+              --target "9dda800af45ca1167382d57482278a3a09a91c38" \
+              --title "Motion Director v60" \
+              --notes "Complete Motion Director v60 skill, including original-scene direction, source information-only rules, and the existing production tools."
+          fi
