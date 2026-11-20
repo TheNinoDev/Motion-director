@@ -1,3 +1,7 @@
+# Motion Director v64 — capability-first editing, not primitive renderer rewrites
+
+**New guide:** `references/134-editor-capability-routing-v64.md`. Inspect and use the real packaged compositor/unified editors before writing a new frame renderer. Prototype an actual editor shot and preserve the editable plan; do not select effects just to show off the toolkit. Source sites/projects are facts-only, voice/music input handling and v63 clarity direction remain intact. See `examples/editor-potential-v64.json` for a deliberately simple, validated native-compositor technique study (NOT a ready-made commercial).
+
 # Motion Director v63 — clarity over complexity
 
 Current active guide: `references/133-clarity-over-complexity-v63.md`. The closer Claude/GPT script-protection comparison shows stronger **visual hierarchy, restraint and legible action**, not a requirement for more detail or constant movement. Updated the root and active direction/review guides accordingly. Existing video/audio/rendering tools remain unchanged. The new Claude film and prior GPT/Claude videos were inspected as evidence, not copied as styles. No independent v63 agent result is claimed.
