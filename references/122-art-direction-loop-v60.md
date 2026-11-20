@@ -1,3 +1,5 @@
+> **V61 PRIORITY OVERRIDE:** This historical guide describes the original art-direction loop. The actual second v60 film failed partly because its single detailed code-morph microtest did not expose long inert spans elsewhere. For any full narrated edit, V61 `127-whole-film-review-loop-v61.md` requires a complete rough cut and a deliberate look at the weakest slow section. Use `126-kinetic-motion-grammar-v61.md` to fix stiff paths and `125` for grounded observations. Do not approve a complete film on the strength of one proof sequence.
+
 # 122 — A do-able film direction loop for weak coding agents
 
 This is the **current film-production playbook** for new ads. Read after 121, not every legacy script. It is guidance, not a tool, validator or exact shot template. The brief controls story, scope, audio and rights. A website or local repo supplies factual semantics ONLY, never final visual pixels. When a user has already supplied voice/music/script, use them, not a new interview.
