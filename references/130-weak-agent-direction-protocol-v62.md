@@ -16,11 +16,11 @@ Produce three **different** internal visual mechanisms with distinct spatial sub
 
 This list is not a set of mandatory shots. Pick a mechanism because it leads to meaningful on-screen action. Don't copy Claude's script-inspection film verbatim into an unrelated security advert.
 
-## 2. Map the WHOLE picture before coding
+## 2. Map the whole picture **without filling it with detail**
 
-Construct a compact 5–8-row beat-to-state board for a ~20–30 s short (adapt proportionally; not a quota). Each row must have: actual voice phrase/event, on-screen narrative question, dominant object **at phone scale**, concrete start state, *visible cause and movement*, visually different outcome, retained visual anchor, music/SFX cue if applicable, and a source/claim note. The board should exhibit **contrasts among rows** in focal scale, composition, density, shape silhouette and purpose.
+Make a terse private progression of dominant subject and visible consequence. Three meaningful compositions are a better starting point than a long table of tiny assets: *opening question / pivotal change / earned result*. Draft actual phone-sized thumbnails. Identify **one hero subject**, one meaningful action or intentional hold and one contrast for each. If a tiny diagram must be explained by the caption, redesign at larger scale. Do not assume an engineering product needs a grid, code snippets, terminal chrome and complex diagrams in every scene.
 
-Draw fast **three actual representative styleframes** from the chosen treatment—an opening, the pivotal transformation, and a payoff/ending—before investing in a full bespoke renderer. They must not all be a giant uppercase heading above a tiny centered code rectangle. Test at ~360×640 display size. Typography may dominate only when the letters themselves are the meaningful graphic event, or at a deliberate payoff, not as automatic background decoration. If no source/story/visual mechanism is legible with subtitles hidden, **redesign now** instead of justifying the first idea.
+The same palette may carry distinct scenes. Meaningful visual variety is in framing, spatial relations and outcomes—not necessarily in more colors, assets, velocity, or constant cuts. **Claude's stronger work is often simpler than the elaborate GPT film.** Prefer a clean, visually decisive image over a crowded 'premium-tech' collage. Use `references/133-clarity-over-complexity-v63.md` for the observed comparison and subtractive method.
 
 ## 3. Program motion as an event, not a collection of easings
 
@@ -30,7 +30,7 @@ At least one main event should demonstrably change the viewer's understanding **
 
 ## 4. Start with cheap evidence, repair early
 
-Implement a simple, deterministic scene clock; select the most meaningful high-risk transition. Render a moving **1–3 s slice**, inspect start/peak/end and actual playback, then make a cheap **complete rough cut**. The rough cut should use the *actual stems* and approximate real duration so it exposes boring and overly long sections. Do not spend the full task budget refining only the clever VM morph. Also review a low-motion section and the ending. If they repeat the same title/icon/card relationship without narrative purpose, change the **mechanism**.
+Implement a simple, deterministic scene clock; select the most meaningful high-risk transition. Render a moving **1–3 s slice**, inspect start/peak/end and actual playback, then make a cheap **complete rough cut**. The rough cut should use the *actual stems* and approximate real duration so it exposes boring and overly long sections. Do not spend the full task budget refining only the clever VM morph. Also review a low-motion section and the ending. A deliberate hold can be strong. If they repeat the same title/icon/card relationship without narrative purpose, change the **mechanism**. First try removing unnecessary detail; only add motion if it serves a visible change.
 
 In feedback, identify both *design issues* and *render bugs*: “cards are positioned diagonally because their default left/top is nonzero” is a layout bug; “four captions above an unchanging card are boring” is a creative bug. Fix the correct level. Render and inspect again. A screenshot sheet reveals composition but not motion smoothness: watch the playable slice when available.
 
