@@ -1,0 +1,48 @@
+{
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "separator": "\n\n",
+  "locked_text": "Can you send me your work?\n\nSure. Let me find the link.\n\nActually, there are four.\n\nAnd somehow, none of them tell the whole story.\n\nWhat if there was just one place?\n\nYour projects. Your notes. A way to reach you.\n\nNext time they ask, just send one link.\n\nForm.",
+  "beats": [
+    {
+      "text": "Can you send me your work?",
+      "cue": "curious",
+      "note": "Direct, friendly question, not presenter voice."
+    },
+    {
+      "text": "Sure. Let me find the link.",
+      "cue": "neutral",
+      "note": "Matter-of-fact, short natural pause after sure."
+    },
+    {
+      "text": "Actually, there are four.",
+      "cue": "dry",
+      "note": "A slight embarrassed smile, stress four."
+    },
+    {
+      "text": "And somehow, none of them tell the whole story.",
+      "cue": "reflective",
+      "note": "Dry, lower energy; no extra drama."
+    },
+    {
+      "text": "What if there was just one place?",
+      "cue": "curious",
+      "note": "Lift on one, relieved curiosity."
+    },
+    {
+      "text": "Your projects. Your notes. A way to reach you.",
+      "cue": "neutral",
+      "note": "Three distinct short phrases, no shopping-list cadence."
+    },
+    {
+      "text": "Next time they ask, just send one link.",
+      "cue": "mischief",
+      "note": "Quiet confidence, callback to opening question."
+    },
+    {
+      "text": "Form.",
+      "cue": "neutral",
+      "note": "Short brand landing; no shouted CTA."
+    }
+  ]
+}

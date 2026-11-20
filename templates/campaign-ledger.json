@@ -1,0 +1,8 @@
+{
+  "schema_version":2,
+  "project":"Replace with product",
+  "videos":[
+    {"id":"v001","status":"idea","angle":"One relatable product problem","audience":"Replace","main_message":"Replace","feature_ids":[],"hook_family":"relatable-action","hook":"","visual_motif":"","proof":"","cta":"","prior_overlap":"none known","metrics":null},
+    {"id":"v002","status":"idea","angle":"Separate aspiration-led concept","audience":"Replace","main_message":"Replace","feature_ids":[],"hook_family":"visual-metaphor","hook":"","visual_motif":"","proof":"","cta":"","prior_overlap":"review before production","metrics":null}
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "name": "FORM",
+  "domain": "FORM / CONCEPT",
+  "accent": "#dbee86",
+  "background": "#0c0d0e",
+  "foreground": "#f0f0eb",
+  "image": "../../examples/assets/v15-workspace.png",
+  "font_family": "Inter",
+  "fps": 30,
+  "width": 720,
+  "height": 1280,
+  "bpm": 120,
+  "fictional": true,
+  "beats": [
+    {
+      "kind": "files",
+      "voice": "Ever tried to show someone what you do?",
+      "title": "SELECTED WORK",
+      "items": [
+        "portfolio_final.pdf",
+        "studio_notes.png",
+        "contact.txt",
+        "links_new.txt"
+      ],
+      "min": 2.5,
+      "lines": [
+        "HOW DO YOU",
+        "SHOW YOUR",
+        "WORK?"
+      ],
+      "folio": true
+    },
+    {
+      "kind": "scatter",
+      "voice": "And ended up sending them four different links?",
+      "title": "FOUR LINKS.",
+      "min": 2.8
+    },
+    {
+      "kind": "type",
+      "voice": "Your work is not the problem.",
+      "lines": [
+        "YOUR WORK",
+        "IS NOT THE",
+        "PROBLEM."
+      ],
+      "highlight": 2,
+      "min": 2.5
+    },
+    {
+      "kind": "type",
+      "voice": "The way you show it is.",
+      "lines": [
+        "THE WAY",
+        "YOU SHOW IT",
+        "IS."
+      ],
+      "highlight": 2,
+      "invert": true,
+      "min": 2.5
+    },
+    {
+      "kind": "fold",
+      "voice": "So what if everything had a place?",
+      "title": "ONE PLACE.",
+      "min": 3,
+      "micro": "LESS SCATTER. MORE CONTEXT.",
+      "mesh": {
+        "quality": 0.85,
+        "resolution": 100
+      }
+    },
+    {
+      "kind": "reframe",
+      "voice": "This is Form. A space to bring your work together.",
+      "title": "MEET FORM.",
+      "min": 4,
+      "micro": "A space for selected work."
+    },
+    {
+      "kind": "detail",
+      "voice": "Put your favorite projects where people can actually see them.",
+      "title": "WORK,",
+      "second": "IN FOCUS.",
+      "crop": [
+        0.035,
+        0.27,
+        0.965,
+        0.63
+      ],
+      "min": 4,
+      "layout": "bottom"
+    },
+    {
+      "kind": "split",
+      "voice": "From a portfolio to the notes behind it.",
+      "title": "THE WORK.",
+      "second": "THE PROCESS.",
+      "min": 3
+    },
+    {
+      "kind": "detail",
+      "voice": "Your contact details and links belong there too.",
+      "title": "STAY",
+      "second": "CONNECTED.",
+      "crop": [
+        0.035,
+        0.625,
+        0.965,
+        0.71
+      ],
+      "min": 3,
+      "detail_mode": "stack",
+      "crops": [
+        [
+          0.035,
+          0.63,
+          0.5,
+          0.71
+        ],
+        [
+          0.51,
+          0.63,
+          0.965,
+          0.71
+        ]
+      ]
+    },
+    {
+      "kind": "callback",
+      "voice": "Four links. One place to start.",
+      "title": "ONE PLACE.",
+      "min": 3
+    },
+    {
+      "kind": "end",
+      "voice": "Form. Make room for your work.",
+      "title": "MAKE ROOM.",
+      "min": 3
+    }
+  ],
+  "crops": [
+    [
+      0.045,
+      0.28,
+      0.505,
+      0.61
+    ],
+    [
+      0.54,
+      0.28,
+      0.955,
+      0.61
+    ],
+    [
+      0.035,
+      0.63,
+      0.5,
+      0.71
+    ],
+    [
+      0.51,
+      0.63,
+      0.965,
+      0.71
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+ "width":540,"height":960,"fps":30,
+ "shots":[
+  {"kind":"type","text":"IT'S A\nDISASTER.","frames":36,"reveal_frames":9},
+  {"kind":"wireframe","src":"../ui_engine/demo-profile.png","frames":60,"boxes":[[0.05,0.04,0.95,0.35],[0.1,0.39,0.9,0.48],[0.1,0.52,0.9,0.64],[0.1,0.69,0.9,0.81],[0.1,0.85,0.9,0.95]]},
+  {"kind":"dots","text":"404","frames":48,"size_fraction":0.3},
+  {"kind":"character","frames":90,"poses":[[0,"curious"],[12,"smirk"],[27,"grin"],[40,"grin"],[44,"surprised"],[48,"neutral"],[89,"neutral"]],"zoom":[[0,0.84],[12,1],[27,1.17],[40,1.65],[44,1],[89,1]],"squash":[[0,1],[22,0.89],[30,1.15],[38,1],[44,0.92],[50,1]]},
+  {"kind":"hold","text":"OR IS IT?","background":"#f6f4fa","color":"#13121a","frames":24},
+  {"kind":"type","text":"CHECK THE\nSTATUS.","frames":42,"reveal_frames":10}
+ ]
+}

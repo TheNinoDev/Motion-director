@@ -1,0 +1,90 @@
+[
+  {
+    "index": 0,
+    "start_frame": 0,
+    "frames": 98,
+    "voice_start": 0.12,
+    "voice_end": 2.805,
+    "voice": "Ever tried to show someone what you do?"
+  },
+  {
+    "index": 1,
+    "start_frame": 98,
+    "frames": 90,
+    "voice_start": 3.3866666666666667,
+    "voice_end": 5.871666666666666,
+    "voice": "And ended up sending them four different links?"
+  },
+  {
+    "index": 2,
+    "start_frame": 188,
+    "frames": 75,
+    "voice_start": 6.386666666666667,
+    "voice_end": 8.471666666666668,
+    "voice": "Your work is not the problem."
+  },
+  {
+    "index": 3,
+    "start_frame": 263,
+    "frames": 75,
+    "voice_start": 8.886666666666667,
+    "voice_end": 10.421666666666667,
+    "voice": "The way you show it is."
+  },
+  {
+    "index": 4,
+    "start_frame": 338,
+    "frames": 90,
+    "voice_start": 11.386666666666667,
+    "voice_end": 13.461666666666666,
+    "voice": "So what if everything had a place?"
+  },
+  {
+    "index": 5,
+    "start_frame": 428,
+    "frames": 120,
+    "voice_start": 14.386666666666667,
+    "voice_end": 17.526666666666667,
+    "voice": "This is Form. A space to bring your work together."
+  },
+  {
+    "index": 6,
+    "start_frame": 548,
+    "frames": 128,
+    "voice_start": 18.386666666666667,
+    "voice_end": 22.09166666666667,
+    "voice": "Put your favorite projects where people can actually see them."
+  },
+  {
+    "index": 7,
+    "start_frame": 676,
+    "frames": 90,
+    "voice_start": 22.653333333333336,
+    "voice_end": 25.033333333333335,
+    "voice": "From a portfolio to the notes behind it."
+  },
+  {
+    "index": 8,
+    "start_frame": 766,
+    "frames": 105,
+    "voice_start": 25.653333333333336,
+    "voice_end": 28.633333333333336,
+    "voice": "Your contact details and links belong there too."
+  },
+  {
+    "index": 9,
+    "start_frame": 871,
+    "frames": 90,
+    "voice_start": 29.153333333333336,
+    "voice_end": 31.743333333333336,
+    "voice": "Four links. One place to start."
+  },
+  {
+    "index": 10,
+    "start_frame": 961,
+    "frames": 90,
+    "voice_start": 32.15333333333333,
+    "voice_end": 34.18833333333333,
+    "voice": "Form. Make room for your work."
+  }
+]

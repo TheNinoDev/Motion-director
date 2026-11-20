@@ -1,0 +1,424 @@
+{
+  "width": 540,
+  "height": 960,
+  "fps": 30,
+  "shots": [
+    {
+      "frames": 60,
+      "background": "#0a0a10",
+      "layers": [
+        {
+          "type": "text",
+          "text": "A profile.",
+          "x": 270,
+          "y": 350,
+          "size": 53,
+          "animate": {
+            "opacity": [
+              [
+                0,
+                0
+              ],
+              [
+                8,
+                1,
+                "out"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Or a personality?",
+          "x": 270,
+          "y": 425,
+          "size": 42,
+          "color": "#c4c0ff",
+          "animate": {
+            "opacity": [
+              [
+                0,
+                0
+              ],
+              [
+                17,
+                0
+              ],
+              [
+                25,
+                1,
+                "out"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "DEMO / UI CHOREOGRAPHY",
+          "x": 270,
+          "y": 680,
+          "size": 19,
+          "color": "#9797af",
+          "animate": {
+            "opacity": [
+              [
+                0,
+                0
+              ],
+              [
+                30,
+                0
+              ],
+              [
+                38,
+                1,
+                "out"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "frames": 75,
+      "background": "#0a0a10",
+      "layers": [
+        {
+          "type": "image",
+          "src": "demo-profile.png",
+          "x": 270,
+          "y": 480,
+          "w": 456,
+          "h": 451,
+          "radius": 16,
+          "animate": {
+            "scale": [
+              [
+                0,
+                2.2
+              ],
+              [
+                32,
+                1,
+                "inout"
+              ]
+            ],
+            "y": [
+              [
+                0,
+                725
+              ],
+              [
+                32,
+                490,
+                "inout"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "One profile, your style.",
+          "x": 270,
+          "y": 150,
+          "size": 36,
+          "animate": {
+            "opacity": [
+              [
+                0,
+                0
+              ],
+              [
+                30,
+                0
+              ],
+              [
+                38,
+                1,
+                "out"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "cursor",
+          "x": 360,
+          "y": 630,
+          "animate": {
+            "opacity": [
+              [
+                0,
+                0
+              ],
+              [
+                40,
+                0
+              ],
+              [
+                45,
+                1
+              ]
+            ],
+            "x": [
+              [
+                0,
+                460
+              ],
+              [
+                40,
+                460
+              ],
+              [
+                56,
+                360,
+                "out"
+              ]
+            ],
+            "y": [
+              [
+                0,
+                720
+              ],
+              [
+                40,
+                720
+              ],
+              [
+                56,
+                630,
+                "out"
+              ]
+            ],
+            "scale": [
+              [
+                0,
+                0.75
+              ],
+              [
+                56,
+                0.75
+              ],
+              [
+                59,
+                0.6
+              ],
+              [
+                64,
+                0.75
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "frames": 60,
+      "background": "#0a0a10",
+      "layers": [
+        {
+          "type": "image",
+          "src": "demo-profile.png",
+          "x": 270,
+          "y": 480,
+          "w": 425,
+          "h": 420,
+          "radius": 16,
+          "animate": {
+            "opacity": [
+              [
+                0,
+                1
+              ],
+              [
+                28,
+                1
+              ],
+              [
+                36,
+                0,
+                "inout"
+              ]
+            ],
+            "x": [
+              [
+                0,
+                270
+              ],
+              [
+                28,
+                270
+              ],
+              [
+                36,
+                205,
+                "inout"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "src": "demo-alt.png",
+          "x": 270,
+          "y": 480,
+          "w": 425,
+          "h": 420,
+          "radius": 16,
+          "animate": {
+            "opacity": [
+              [
+                0,
+                0
+              ],
+              [
+                28,
+                0
+              ],
+              [
+                36,
+                1,
+                "out"
+              ]
+            ],
+            "x": [
+              [
+                0,
+                335
+              ],
+              [
+                28,
+                335
+              ],
+              [
+                36,
+                270,
+                "out"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Different looks.",
+          "x": 270,
+          "y": 150,
+          "size": 42
+        },
+        {
+          "type": "text",
+          "text": "Same layout.",
+          "x": 270,
+          "y": 800,
+          "size": 30,
+          "color": "#aaa5d9"
+        }
+      ]
+    },
+    {
+      "frames": 75,
+      "background": "#0a0a10",
+      "layers": [
+        {
+          "type": "image",
+          "src": "demo-profile.png",
+          "x": 185,
+          "y": 445,
+          "w": 265,
+          "h": 262,
+          "radius": 16,
+          "rotation": -9,
+          "animate": {
+            "x": [
+              [
+                0,
+                270
+              ],
+              [
+                20,
+                185,
+                "out"
+              ]
+            ],
+            "scale": [
+              [
+                0,
+                1.5
+              ],
+              [
+                20,
+                1,
+                "out"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "src": "demo-alt.png",
+          "x": 355,
+          "y": 520,
+          "w": 265,
+          "h": 262,
+          "radius": 16,
+          "rotation": 8,
+          "animate": {
+            "x": [
+              [
+                0,
+                590
+              ],
+              [
+                20,
+                355,
+                "out"
+              ]
+            ],
+            "opacity": [
+              [
+                0,
+                0
+              ],
+              [
+                20,
+                1,
+                "out"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "Make it yours.",
+          "x": 270,
+          "y": 185,
+          "size": 46,
+          "animate": {
+            "opacity": [
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0
+              ],
+              [
+                20,
+                1,
+                "out"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "text": "FICTIONAL PRODUCT DEMO",
+          "x": 270,
+          "y": 810,
+          "size": 20,
+          "color": "#9797af"
+        }
+      ]
+    }
+  ]
+}

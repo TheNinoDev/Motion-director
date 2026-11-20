@@ -1,0 +1,29 @@
+{
+    "programs": [
+
+    ],
+    "stream_groups": [
+
+    ],
+    "streams": [
+        {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "avg_frame_rate": "30/1",
+            "nb_read_frames": "1051"
+        },
+        {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "1643"
+        }
+    ],
+    "format": {
+        "duration": "35.033333"
+    }
+}

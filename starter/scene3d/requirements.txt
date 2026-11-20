@@ -1,0 +1,6 @@
+numpy
+Pillow
+opencv-python-headless
+shapely>=2.1
+numba
+# Optional experimental WebGL backend: playwright

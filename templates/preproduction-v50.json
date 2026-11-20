@@ -1,0 +1,40 @@
+{
+  "brief": {
+    "product_name": null,
+    "product_source": null,
+    "focus": null,
+    "audience": null,
+    "language": null,
+    "platforms": [],
+    "use_scope": null,
+    "voice_route": null,
+    "music_route": null
+  },
+  "performance": "performance.json",
+  "script_decision": null,
+  "music_selection": {},
+  "music_waiver": null,
+  "audio": {
+    "voice": {
+      "path": null,
+      "rights_status": "pending",
+      "rights_evidence": null,
+      "audition_observation": null,
+      "scratch": null
+    },
+    "music": {
+      "path": null,
+      "rights_status": "pending",
+      "rights_evidence": null,
+      "audition_observation": null
+    }
+  },
+  "alignment": "alignment.json",
+  "music_offset": 0,
+  "music_gain_db": -16,
+  "audio_delivery": {
+    "mode": null,
+    "observation": null,
+    "handoff_dir": null
+  }
+}

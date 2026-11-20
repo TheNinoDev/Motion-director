@@ -1,0 +1,229 @@
+{
+  "name": "FORM",
+  "domain": "FORM / CONCEPT",
+  "fictional": true,
+  "image": "../../examples/assets/v15-workspace.png",
+  "accent": "#dbee86",
+  "foreground": "#f1f1ef",
+  "background": "#09090a",
+  "fps": 30,
+  "width": 720,
+  "height": 1280,
+  "bpm": 120,
+  "beats": [
+    {
+      "voice": "This is my portfolio. Well, part of it.",
+      "min": 3.0,
+      "shots": [
+        {
+          "kind": "macro",
+          "crop": [
+            0.035,
+            0.27,
+            0.52,
+            0.61
+          ],
+          "weight": 0.52,
+          "text": "THIS IS MY"
+        },
+        {
+          "kind": "tabs",
+          "weight": 0.48,
+          "text": "PORTFOLIO?",
+          "items": [
+            "portfolio.pdf",
+            "studio-notes.png",
+            "contact.txt",
+            "links.txt"
+          ]
+        }
+      ]
+    },
+    {
+      "voice": "The rest? Somewhere between four different links.",
+      "min": 3.3,
+      "shots": [
+        {
+          "kind": "type",
+          "text": "THE REST?",
+          "weight": 0.22,
+          "style": "tiny"
+        },
+        {
+          "kind": "counter",
+          "text": "04",
+          "sub": "DIFFERENT LINKS.",
+          "weight": 0.36,
+          "transition": "iris"
+        },
+        {
+          "kind": "tunnel",
+          "text": "WHICH ONE?",
+          "weight": 0.42
+        }
+      ]
+    },
+    {
+      "voice": "Nobody wants to open all of those just to see your work.",
+      "min": 3.8,
+      "shots": [
+        {
+          "kind": "cascade",
+          "text": "OPEN / CLOSE",
+          "weight": 0.58,
+          "items": [
+            "portfolio.pdf",
+            "studio-notes.png",
+            "contact.txt",
+            "links.txt"
+          ]
+        },
+        {
+          "kind": "type",
+          "text": "JUST TO SEE YOUR WORK.",
+          "style": "inverse",
+          "weight": 0.42,
+          "transition": "shutter"
+        }
+      ]
+    },
+    {
+      "voice": "So what if the whole thing fit in one place?",
+      "min": 3.3,
+      "shots": [
+        {
+          "kind": "type",
+          "text": "WHAT IF?",
+          "weight": 0.24,
+          "style": "tiny"
+        },
+        {
+          "kind": "field",
+          "text": "01",
+          "weight": 0.36
+        },
+        {
+          "kind": "mesh",
+          "text": "ONE PLACE.",
+          "weight": 0.4,
+          "transition": "prism"
+        }
+      ]
+    },
+    {
+      "voice": "Meet Form. Your projects, finally together.",
+      "min": 3.6,
+      "shots": [
+        {
+          "kind": "reveal",
+          "text": "FORM",
+          "weight": 0.56,
+          "transition": "cut"
+        },
+        {
+          "kind": "detail",
+          "crop": [
+            0.035,
+            0.27,
+            0.52,
+            0.61
+          ],
+          "text": "PROJECT / 01",
+          "weight": 0.44
+        }
+      ]
+    },
+    {
+      "voice": "The finished work. And the ideas behind it.",
+      "min": 3.3,
+      "shots": [
+        {
+          "kind": "duo",
+          "text": "THE WORK.",
+          "sub": "THE PROCESS.",
+          "weight": 0.6,
+          "transition": "shutter"
+        },
+        {
+          "kind": "cutout",
+          "text": "IDEAS",
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "voice": "Even the little things, like a way to reach you.",
+      "min": 3.5,
+      "shots": [
+        {
+          "kind": "detail",
+          "crop": [
+            0.035,
+            0.62,
+            0.49,
+            0.71
+          ],
+          "text": "CONTACT",
+          "weight": 0.45,
+          "transition": "match"
+        },
+        {
+          "kind": "macro",
+          "crop": [
+            0.51,
+            0.62,
+            0.97,
+            0.71
+          ],
+          "text": "ALL LINKS",
+          "weight": 0.55,
+          "transition": "prism"
+        }
+      ]
+    },
+    {
+      "voice": "Four links. One place to start.",
+      "min": 2.8,
+      "shots": [
+        {
+          "kind": "counter",
+          "text": "04",
+          "end": "01",
+          "sub": "ONE PLACE.",
+          "weight": 0.52
+        },
+        {
+          "kind": "reveal",
+          "text": "ALL TOGETHER.",
+          "weight": 0.48,
+          "transition": "iris"
+        }
+      ]
+    },
+    {
+      "voice": "Form. Make room for your work.",
+      "min": 2.8,
+      "shots": [
+        {
+          "kind": "lockup",
+          "text": "MAKE ROOM.",
+          "weight": 1.0
+        }
+      ]
+    }
+  ],
+  "proof_crops": [
+    [
+      0.035,
+      0.27,
+      0.52,
+      0.61
+    ],
+    [
+      0.54,
+      0.27,
+      0.97,
+      0.61
+    ]
+  ]
+}

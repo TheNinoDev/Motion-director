@@ -1,0 +1,11 @@
+{
+  "provider": "elevenlabs",
+  "model": "eleven_v4",
+  "separator": "\n\n",
+  "locked_text": "Where did I save that file?\n\nNot here.\n\nOh. There it is.",
+  "beats": [
+    {"text": "Where did I save that file?", "cue": "curious", "note": "Intimate opening; example only"},
+    {"text": "Not here.", "cue": "sigh", "note": "Quiet frustration"},
+    {"text": "Oh. There it is.", "cue": "mischief", "note": "Understated reveal"}
+  ]
+}

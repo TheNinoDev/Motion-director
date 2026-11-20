@@ -1,0 +1,9 @@
+{
+  "use_scope": "unknown",
+  "platforms": [],
+  "region": "",
+  "voice": {"provider": "undecided", "voice_name": "", "model": "", "path": "", "waived": false, "waiver_reason": "", "rights_status": "unknown", "rights_evidence": ""},
+  "music": {"title": "", "artist": "", "version": "", "source_url": "", "path": "", "waived": false, "waiver_reason": "", "rights_status": "unknown", "rights_evidence": ""},
+  "script_path": "creative/narration.txt",
+  "notes": "Replace template with actual inputs. Rights status cleared is a declaration requiring evidence, not automated legal certification."
+}

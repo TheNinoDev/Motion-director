@@ -1,0 +1,155 @@
+{
+  "fps": 30,
+  "total_frames": 240,
+  "status": "illustrative silent demo, adapt to actual soundtrack",
+  "shots": [
+    {
+      "id": "hook",
+      "start_frame": 0,
+      "end_frame": 60,
+      "family": "type",
+      "purpose": "Fictional technique demo: hook",
+      "focus": "title",
+      "entry": "See starter source",
+      "exit": "See next shot",
+      "audio_cue": "intentional silence: demonstration only",
+      "bridge_type": "start",
+      "anchor_in": [
+        0.5,
+        0.5
+      ],
+      "anchor_out": [
+        0.5,
+        0.52
+      ],
+      "motion": [
+        {
+          "object": "title",
+          "property": "reveal",
+          "easing": "ease-out-cubic",
+          "keyframes": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 15,
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "start_frame": 60,
+      "end_frame": 150,
+      "family": "ui",
+      "purpose": "Fictional technique demo: search",
+      "focus": "search bar",
+      "entry": "See starter source",
+      "exit": "See next shot",
+      "audio_cue": "intentional silence: demonstration only",
+      "bridge_type": "shared",
+      "anchor_in": [
+        0.5,
+        0.52
+      ],
+      "anchor_out": [
+        0.5,
+        0.61
+      ],
+      "motion": [
+        {
+          "object": "search bar",
+          "property": "expansion",
+          "easing": "ease-out-cubic",
+          "keyframes": [
+            {
+              "frame": 60,
+              "value": 0
+            },
+            {
+              "frame": 75,
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proof",
+      "start_frame": 150,
+      "end_frame": 195,
+      "family": "proof",
+      "purpose": "Fictional technique demo: proof",
+      "focus": "result card",
+      "entry": "See starter source",
+      "exit": "See next shot",
+      "audio_cue": "intentional silence: demonstration only",
+      "bridge_type": "shared",
+      "anchor_in": [
+        0.5,
+        0.61
+      ],
+      "anchor_out": [
+        0.5,
+        0.61
+      ],
+      "motion": [
+        {
+          "object": "result card",
+          "property": "opacity",
+          "easing": "ease-out-cubic",
+          "keyframes": [
+            {
+              "frame": 150,
+              "value": 0
+            },
+            {
+              "frame": 165,
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brand",
+      "start_frame": 195,
+      "end_frame": 240,
+      "family": "brand",
+      "purpose": "Fictional technique demo: brand",
+      "focus": "name",
+      "entry": "See starter source",
+      "exit": "See next shot",
+      "audio_cue": "intentional silence: demonstration only",
+      "bridge_type": "hard-cut",
+      "anchor_in": [
+        0.5,
+        0.44
+      ],
+      "anchor_out": [
+        0.5,
+        0.44
+      ],
+      "motion": [
+        {
+          "object": "name",
+          "property": "settle",
+          "easing": "ease-out-cubic",
+          "keyframes": [
+            {
+              "frame": 195,
+              "value": 0
+            },
+            {
+              "frame": 210,
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

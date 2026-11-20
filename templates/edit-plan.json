@@ -1,0 +1,138 @@
+{
+  "version": 2,
+  "project": "Example only; replace with actual user brand",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "duration": 8.0,
+  "inputs": {
+    "script": "inputs/script.txt",
+    "music": "inputs/song.mp3",
+    "music_waived": false,
+    "voiceover": "audio/voiceover.wav",
+    "voiceover_waived": false,
+    "script_origin": "agent",
+    "music_delegated": false
+  },
+  "audio": {
+    "alignment_method": "example only; replace with verified method",
+    "music_onsets_verified": false,
+    "mix": "audio/final-mix.wav",
+    "alignment": "audio/alignment.json",
+    "cues": "audio/cues.json"
+  },
+  "style": {
+    "palette": [
+      "#08090B",
+      "#F5F5F5",
+      "#85888F"
+    ],
+    "fonts": [
+      "user-approved display font",
+      "user-approved body font"
+    ],
+    "hero_3d_count": 0
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 2,
+      "family": "kinetic typography",
+      "narration": "Example placeholder, not final script.",
+      "message": "Hook",
+      "focus": "headline",
+      "entry": "word reveal",
+      "development": "emphasis on payoff word",
+      "exit": "maintain baseline",
+      "bridge": "shared baseline into UI label",
+      "audio_cue": "VO onset; optional confirmed musical hit",
+      "assets": [],
+      "claim_ids": [],
+      "anchor_in": [
+        0.5,
+        0.5
+      ],
+      "anchor_out": [
+        0.5,
+        0.5
+      ],
+      "motion_roles": {
+        "primary": "headline",
+        "secondary": "none",
+        "tertiary": "none"
+      },
+      "proof_kind": "example only"
+    },
+    {
+      "id": "proof",
+      "start": 2,
+      "end": 6,
+      "family": "real UI",
+      "narration": "Example placeholder, not final script.",
+      "message": "Demonstration",
+      "focus": "actual product element",
+      "entry": "matched label",
+      "development": "cursor interaction",
+      "exit": "card edge moves",
+      "bridge": "edge becomes logo boundary",
+      "audio_cue": "UI tick at actual click",
+      "assets": [],
+      "claim_ids": [],
+      "anchor_in": [
+        0.5,
+        0.5
+      ],
+      "anchor_out": [
+        0.5,
+        0.5
+      ],
+      "motion_roles": {
+        "primary": "actual product element",
+        "secondary": "none",
+        "tertiary": "none"
+      },
+      "proof_kind": "example only"
+    },
+    {
+      "id": "cta",
+      "start": 6,
+      "end": 8,
+      "family": "brand lockup",
+      "narration": "Example placeholder, not final script.",
+      "message": "Call to action",
+      "focus": "brand + URL",
+      "entry": "match card edge",
+      "development": "clean hold",
+      "exit": "music tail",
+      "bridge": "end",
+      "audio_cue": "music tail",
+      "assets": [],
+      "claim_ids": [],
+      "anchor_in": [
+        0.5,
+        0.5
+      ],
+      "anchor_out": [
+        0.5,
+        0.5
+      ],
+      "motion_roles": {
+        "primary": "brand + URL",
+        "secondary": "none",
+        "tertiary": "none"
+      },
+      "proof_kind": "example only"
+    }
+  ],
+  "concept": {
+    "main_message": "Example only",
+    "hook_family": "question",
+    "payoff": "Example proof",
+    "main_cta": "Example CTA",
+    "main_feature": "f1",
+    "supporting_features": []
+  }
+}

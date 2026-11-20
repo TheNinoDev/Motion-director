@@ -1,0 +1,7 @@
+{
+  "schema_version":2,
+  "output":"",
+  "status":"not-rendered",
+  "checks":{"claims":"not-run","hook_payoff":"not-run","feature_scope":"not-run","first_three_seconds":"not-run","scene_boundaries":"not-run","phone_legibility":"not-run","full_motion_review":"not-run","audio_listen":"not-run","audio_sync":"not-run","media_probe":"not-run","full_decode":"not-run","loudness":"not-run","flash_review":"not-run"},
+  "scores":{},"defects":[],"fixes":[],"assumptions":[],"unverified":[],"deliverables":[]
+}

@@ -1,0 +1,9 @@
+{
+  "stage": 0,
+  "status": "not_started",
+  "artifacts": {},
+  "assumptions": [],
+  "blockers": [],
+  "checks": [],
+  "next_action": "inspect product source and tools"
+}

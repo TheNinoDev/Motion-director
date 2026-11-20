@@ -1,0 +1,23 @@
+{
+  "status": "draft",
+  "verified_benefit": null,
+  "claim_evidence": null,
+  "metaphor": null,
+  "metaphor_bridge": null,
+  "hero_sequences": [],
+  "style_frames": {"macro": null, "hero": null, "ui_handoff": null},
+  "tool_version": null,
+  "render_command": null,
+  "review": {
+    "silhouette_and_bevel": null,
+    "material_and_reflection": null,
+    "focus_and_crop": null,
+    "motion_and_temporal_consistency": null,
+    "product_truth_and_readability": null,
+    "phone_preview": null,
+    "audio_alignment": null,
+    "release_gate": null
+  },
+  "fixes": [],
+  "fallback_reason": null
+}

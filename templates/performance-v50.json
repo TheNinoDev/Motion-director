@@ -1,0 +1,7 @@
+{
+ "provider": "elevenlabs", "model": "eleven_v3", "separator": "\n\n",
+ "hook_candidates": ["Wait. Which version did I send you?", "I think I sent the wrong version.", "Why are there three final files?"],
+ "locked_text": "Wait. Which version did I send you?\n\nThe one called final? Or final-final?\n\nOh. There it is.",
+ "beats": [{"text":"Wait. Which version did I send you?","cue":"curious","note":"Start intimate, genuinely searching."},{"text":"The one called final? Or final-final?","cue":"sigh","note":"Small frustrated but playful exhale; not melodrama."},{"text":"Oh. There it is.","cue":"reflective","note":"Relax into a small discovery."}],
+ "copy_review":{"hook_reason":"Specific familiar problem; fictional syntax demo.","single_story":"Find the correct version.","payoff":"Discovery, not an invented claim.","claim_check":"Fictional syntax demo only; replace with real proof.","read_aloud_review":"Example only; actually read the real script aloud.","rewrite_reason":"Replace generic claims with a human situation."}
+}

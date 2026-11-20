@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "project": "Example only; replace",
+  "source_mode": "user-info",
+  "sources": [{"id":"s1","type":"user-info","locator":"example description","limitations":"Example only"}],
+  "audience": "Replace with audience",
+  "viewer_problem_or_aspiration": "Replace with one goal",
+  "brand_voice": "Plain conversational",
+  "language": "en",
+  "features": [{"id":"f1","claim":"Example only; replace with verified claim","state":"unknown","source_ids":["s1"],"public_claim_allowed":false,"visual_proof":"none","limitations":"No verification"}],
+  "selected_angle": {"title":"Example concept","main_message":"Replace","main_feature":"f1","supporting_features":[],"cta":"Replace"},
+  "script": {"origin":"agent","status":"draft","path":"creative/script.txt","claim_ids":[]},
+  "music": {"path":"","waived":false,"delegated":false},
+  "assets": [],
+  "assumptions": ["Template only, not a finalized brief"]
+}

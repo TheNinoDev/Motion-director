@@ -1,0 +1,13 @@
+{
+  "url": "file:///mnt/data/md8work/motion-director/starter/ui_engine/demo-alt.html",
+  "status": null,
+  "viewport": [
+    600,
+    900
+  ],
+  "selector": ".profile",
+  "console_errors": [],
+  "page_errors": [],
+  "failed_requests": [],
+  "note": "Inspect image and errors; successful capture does not prove correct UI."
+}
