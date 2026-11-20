@@ -1,3 +1,15 @@
+# Motion Director V62 — grounded Claude process transfer, not a Claude style clone
+
+Begin with `SKILL.md`. Guides 129–132 capture the actual user-provided Claude execution sequence, define a weak-agent stage-by-stage creative workflow, show deterministic scene rendering/debugging, and require whole-film review and targeted correction. V61 and older references remain available as supporting knowledge. All executable and binary assets are unchanged. No independent agent test is claimed for V62.
+
+---
+
+# Motion Director V61 — Kinetic Art Direction & Whole-Film Review
+
+Start at `SKILL.md`. The user-provided new GPT v60 video was compared to the earlier Claude discovery ad and its production history. V61 adds four focused documents (125–128) about observed under-animation, movement grammar, complete-film rough-cut review, and a stronger optional protection-film staging. It replaces the practice of considering one successful 2–3 second motion test sufficient to approve a 24 second film. **All sources remain information only, all existing audio is preserved, no tools or non-Markdown files are modified.** This is skill instruction improvement, not an independent new agent run, not a guaranteed quality score, and not a new video.
+
+---
+
 # Motion Director v60 — observed two-agent failure analysis, action-led art direction
 
 **Start with `SKILL.md`.** V60 focuses on the *actual difference* between a successful editorial film and an overloaded, compositionally repetitive film. It does not add renderers, animation primitives, tools or external dependencies.
