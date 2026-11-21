@@ -1,0 +1,50 @@
+name: Publish Motion Director v67
+
+on:
+  push:
+    paths:
+      - ".github/workflows/release-v67.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current skill
+        uses: actions/checkout@v4
+      - name: Verify source and package v67
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/md-release/motion-director"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          count="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$count" = "514"
+          test -f "$target/references/142-sound-direction-and-mix-v67.md"
+          test -f "$target/references/143-effects-and-visual-choreography-v67.md"
+          test -f "$target/references/144-claude-audio-visual-case-v67.md"
+          test -f "$target/scripts/sfx_story_audit_v67.py"
+          test -f "$target/tests/test_sfx_story_audit_v67.py"
+          test -f "$target/examples/sfx-story-v67.json"
+          (cd "$RUNNER_TEMP/md-release" && zip -qr "$GITHUB_WORKSPACE/motion-director-v67.zip" motion-director)
+          unzip -tq "$GITHUB_WORKSPACE/motion-director-v67.zip"
+          sha256sum "$GITHUB_WORKSPACE/motion-director-v67.zip"
+      - name: Publish v67 release with complete ZIP
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v67 >/dev/null 2>&1; then
+            gh release upload v67 motion-director-v67.zip --clobber
+          else
+            gh release create v67 motion-director-v67.zip \
+              --target "$GITHUB_SHA" \
+              --title "Motion Director v67" \
+              --notes "Original motion-graphics and audio workflow: 15 procedural SFX families, sound-event mapping, distinct visual mechanisms, and Claude/GPT analysis. Full 514-file skill; existing editors preserved."
+          fi
