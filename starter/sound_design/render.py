@@ -4,7 +4,8 @@ import argparse,json,math,wave
 from pathlib import Path
 import numpy as np
 SR=48000
-KINDS={'click','impact','whoosh','chime','riser','drop'}
+KINDS={'click','impact','whoosh','chime','riser','drop',
+       'snap','paper','brush','tick','rattle','glint','glitch','sweep','pulse'}
 
 def sound(kind,n,rng):
     t=np.arange(n)/SR;u=np.arange(n)/max(1,n-1);noise=rng.normal(0,1,n)
@@ -19,6 +20,42 @@ def sound(kind,n,rng):
         env=np.sin(np.pi*u)**1.7 if kind=='whoosh' else u**1.8*(1-u**18)
         x=(.7*filtered+.25*np.sin(2*np.pi*(170*t+500*t*t/max(.01,t[-1]))))*env
     elif kind=='chime':x=(.55*np.sin(2*np.pi*740*t)+.28*np.sin(2*np.pi*1109*t)+.12*np.sin(2*np.pi*1480*t))*np.exp(-u*5)
+    elif kind=='snap':
+        # Dry contact: broadband initial crack, quick pitched wood/body resonance.
+        x=(.78*filtered*np.exp(-u*19)+.24*np.sin(2*np.pi*210*t)*np.exp(-u*14))
+    elif kind=='paper':
+        # Soft layered rustle with uneven pressure and subtle stereo pan handled in render().
+        breath=(np.sin(2*np.pi*(3.1*t+0.2*np.sin(2*np.pi*1.3*t)))**2)*.5+.30
+        x=filtered*breath*np.sin(np.pi*u)**.35
+    elif kind=='brush':
+        # Brief directional friction/sweep; smooth attack, soft release.
+        x=filtered*(np.sin(np.pi*u)**1.2)*(0.52+0.32*u)
+    elif kind=='tick':
+        # Tiny electronic/mechanical accent rather than a full-length chime.
+        x=(.62*filtered+.40*np.sin(2*np.pi*2250*t))*np.exp(-u*24)
+    elif kind=='rattle':
+        # A short accelerating cascade of micro-contacts, not uniform white noise.
+        phases=np.cumsum(7+19*u)/SR
+        gate=(np.sin(2*np.pi*phases*SR/1000)>0.72).astype(float)
+        x=filtered*gate*(np.sin(np.pi*u)**.7)
+    elif kind=='glint':
+        # Thin bright sparkle with two decays; not a high-energy impact.
+        x=(.57*np.sin(2*np.pi*(1250*t+450*t*t/max(.01,t[-1])))
+           +.23*np.sin(2*np.pi*1810*t))*np.exp(-u*6)
+    elif kind=='glitch':
+        # Distinct short chopped digital movement; no copyrighted sample.
+        freq=220+310*(np.floor(u*11)%4)
+        phase=2*np.pi*np.cumsum(freq)/SR
+        gate=(np.mod(u*14,1)<.57).astype(float)
+        x=(.72*np.sin(phase)+.31*filtered)*gate*(1-.32*u)
+    elif kind=='sweep':
+        # Thin tonal whoosh with a moving spectral center.
+        phase=2*np.pi*(290*t+570*t*t/max(.01,t[-1]))
+        x=(.42*filtered+.56*np.sin(phase))*np.sin(np.pi*u)**1.15
+    elif kind=='pulse':
+        # Controlled bass and soft transient for low-weight confirmations.
+        phase=2*np.pi*(86*t+18*t*t/max(.01,t[-1]))
+        x=(.90*np.sin(phase)+.12*filtered)*np.exp(-u*6)
     else:raise ValueError('unknown SFX '+kind)
     fade=min(n//3,round(SR*.006));x[:fade]*=np.linspace(0,1,fade);x[-fade:]*=np.linspace(1,0,fade);return x/ max(.1,np.max(np.abs(x)))
 
