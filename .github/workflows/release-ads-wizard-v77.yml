@@ -1,0 +1,39 @@
+name: Publish Ads Wizard v77
+on:
+  push:
+    paths: ['.github/workflows/release-ads-wizard-v77.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package and verify v77
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet pillow
+          target="$RUNNER_TEMP/ads-wizard-dist/ads-wizard"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          test "$(find "$target" -type f | wc -l | tr -d ' ')" = '549'
+          grep -q '^name: ads-wizard$' "$target/SKILL.md"
+          test -f "$target/references/158-v77-current-film-autopsy.md"
+          test -f "$target/scripts/visual_story_inspection_v77.py"
+          python -m unittest discover -s "$target/tests" -p 'test_visual_story_v77.py' -v
+          (cd "$RUNNER_TEMP/ads-wizard-dist" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v77.zip" ads-wizard)
+          unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v77.zip"
+          cp Ads-Wizard-v77.zip ads-wizard-v77.skill
+          cmp Ads-Wizard-v77.zip ads-wizard-v77.skill
+      - name: Publish both formats
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v77 >/dev/null 2>&1; then
+            gh release upload v77 Ads-Wizard-v77.zip ads-wizard-v77.skill --clobber
+          else
+            gh release create v77 Ads-Wizard-v77.zip ads-wizard-v77.skill --target "$GITHUB_SHA" --title "Ads Wizard v77 — Visual-story creative veto" --notes "Improves editorial composition, meaningful image changes and title-muted actual-MP4 review while preserving the v67 renderer and SFX foundation."
+          fi

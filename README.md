@@ -1,3 +1,9 @@
+# Ads Wizard v77 — visual-story creative veto
+
+The latest 24.0s 1080x1920 user export is smoothly rendered yet repeats upper-left headline, centered code/UI panel, and navy perspective grid from start to finish. V77 solves the editorial **concept selection** problem rather than mandating more effects, assets, frames or movement. Start with SKILL.md. See references/158-v77-current-film-autopsy.md (timed evidence), 159-v77-visual-direction-veto.md (concept veto), and 160-v77-proof-and-finish.md (real-film inspection). The new scripts/visual_story_inspection_v77.py produces actual and title-muted MP4 contacts. This tool is a diagnostic, not an automatic aesthetic judge. v67 compositor/SFX tools, supported audio workflow and approved Ads Wizard branding are preserved. Creative improvement on a future model render is still unverified.
+
+---
+
 # Ads Wizard v76 — Claude's new production as evidence, not a visual template
 
 v76 preserves all v67 editing/SFX code, v72–v75 polish, Ads Wizard mascot and previous project files. It adds a practical case study of the supplied 19.8s Claude ad (references/156-claude-live-case-v76.md), and a short decision/revision guide (references/157-editorial-decision-system-v76.md). They prioritize an evolving visual meaning over feature-title slides, actual source edits after inspection, motivated object interactions, native-or-authored deterministic rendering and honest review. This is not a promise of automatically improved creative quality and not permission to reuse the reference film. Active instructions live in SKILL.md.

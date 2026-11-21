@@ -1,0 +1,16 @@
+{
+  "project": "fictional educational scene, not actual client UI evidence",
+  "weak": [
+    "FAST: chip card centered",
+    "SECURE: lock card centered",
+    "SIMPLE: button card centered"
+  ],
+  "better": {
+    "before": "many paths obstruct a target",
+    "action": "a chosen rule redirects signals",
+    "reaction": "blocked signals stop, permitted one advances",
+    "after": "destination visibly responds",
+    "handoff": "the resulting path motivates the final text"
+  },
+  "note": "This describes a visual mechanism, not proven product behavior."
+}
