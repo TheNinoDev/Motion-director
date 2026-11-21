@@ -38,6 +38,11 @@ jobs:
           test -f "$target/references/153-v71-user-film-evidence.md"
           test -f "$target/scripts/edit_asset_role_audit_v71.py"
           test -f "$target/examples/edit-first-v71/shot-plan.json"
+          test -f "$target/examples/icon-ensemble-v70/icons/copy.png"
+          test -f "$target/examples/icon-ensemble-v70/icons/document.png"
+          test -f "$target/examples/icon-ensemble-v70/icons/key.png"
+          test -f "$target/examples/icon-ensemble-v70/icons/lock.png"
+          test -f "$target/examples/icon-ensemble-v70/icons/shield.png"
           (cd "$RUNNER_TEMP/ads-wizard-dist" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v71.zip" ads-wizard)
           unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v71.zip"
           cp "$GITHUB_WORKSPACE/Ads-Wizard-v71.zip" "$GITHUB_WORKSPACE/ads-wizard-v71.skill"
