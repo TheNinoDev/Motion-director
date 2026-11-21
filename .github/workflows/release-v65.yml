@@ -1,0 +1,53 @@
+name: Publish Motion Director v65
+
+on:
+  push:
+    paths:
+      - ".github/workflows/release-v65.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout complete skill
+        uses: actions/checkout@v4
+      - name: Test actual dead-frame audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check numpy
+          python -m unittest discover -s tests -p test_hold_audit_v65.py -v
+          python scripts/hold_audit_v65.py --help >/dev/null
+      - name: Package and verify v65 source
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/md-release/motion-director"
+          mkdir -p "$target"
+          cp SKILL.md README.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          actual="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$actual" = "507"
+          test -f "$target/references/136-motion-continuity-v65.md"
+          test -f "$target/references/137-svg-typography-v65.md"
+          test -f "$target/scripts/hold_audit_v65.py"
+          (cd "$RUNNER_TEMP/md-release" && zip -qr "$GITHUB_WORKSPACE/motion-director-v65.zip" motion-director)
+          unzip -tq "$GITHUB_WORKSPACE/motion-director-v65.zip"
+      - name: Publish v65 GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v65 >/dev/null 2>&1; then
+            gh release upload v65 motion-director-v65.zip --clobber
+          else
+            gh release create v65 motion-director-v65.zip \
+              --target "$GITHUB_SHA" \
+              --title "Motion Director v65" \
+              --notes "Visual-continuity overhaul: real FFmpeg dead-frame candidate scanner, creative restaging guides, licensed external SVG and better font/transition direction. All existing editing engines retained."
+          fi
