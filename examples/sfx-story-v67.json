@@ -1,0 +1,23 @@
+{
+  "duration": 24.6,
+  "fps": 30,
+  "seed": 671,
+  "note": "Illustrative synthetic scoring; align to actual locked VO/song and visuals before production. Not a mandatory cue count or copyable scene plan.",
+  "visual_events": [
+    {"id":"source-enter","at":0.75,"event":"change","visual_change":"Original script rises into foreground","audio_role":"accent","sounds":[{"kind":"paper","at":0.61,"duration":0.36,"gain_db":-25,"pan":-0.28},{"kind":"tick","at":0.77,"duration":0.11,"gain_db":-29,"pan":0.08}]},
+    {"id":"narration-read","at":2.18,"event":"read","visual_change":"Original code remains available for reading","audio_role":"silence","reason":"Let the locked narration and music carry the readable pause"},
+    {"id":"snatch","at":3.07,"event":"contact","visual_change":"Unauthorized copy is pulled away","audio_role":"prelap","sounds":[{"kind":"brush","at":2.88,"duration":0.47,"gain_db":-23,"pan":0.36},{"kind":"snap","at":3.1,"duration":0.17,"gain_db":-18,"pan":0.31}]},
+    {"id":"key-strip","at":5.15,"event":"contact","visual_change":"Key-strip mark loses its connection","audio_role":"accent","sounds":[{"kind":"paper","at":5.08,"duration":0.31,"gain_db":-24},{"kind":"glitch","at":5.2,"duration":0.24,"gain_db":-22,"pan":-0.32}]},
+    {"id":"reposted","at":6.61,"event":"change","visual_change":"Copied card hits the repost frame","audio_role":"accent","sounds":[{"kind":"impact","at":6.61,"duration":0.35,"gain_db":-19},{"kind":"rattle","at":6.67,"duration":0.43,"gain_db":-29}]},
+    {"id":"into-protection","at":8.04,"event":"bridge","visual_change":"Repost panel gives way to original protection geometry","audio_role":"prelap","sounds":[{"kind":"sweep","at":7.72,"duration":0.58,"gain_db":-24,"pan":-0.18},{"kind":"pulse","at":8.06,"duration":0.28,"gain_db":-27}]},
+    {"id":"code-remap","at":10.95,"event":"change","visual_change":"Code fragments separate into instructions","audio_role":"accent","sounds":[{"kind":"rattle","at":10.9,"duration":0.55,"gain_db":-26,"pan":0.18},{"kind":"glint","at":11.42,"duration":0.27,"gain_db":-30}]},
+    {"id":"vm-land","at":12.86,"event":"contact","visual_change":"Instruction modules lock into place","audio_role":"accent","sounds":[{"kind":"snap","at":12.87,"duration":0.16,"gain_db":-22},{"kind":"pulse","at":12.9,"duration":0.24,"gain_db":-28}]},
+    {"id":"key-access","at":13.72,"event":"bridge","visual_change":"One instruction becomes an access token","audio_role":"tail","sounds":[{"kind":"whoosh","at":13.52,"duration":0.42,"gain_db":-25,"pan":0.28},{"kind":"tick","at":13.72,"duration":0.12,"gain_db":-25,"pan":0.10}]},
+    {"id":"account-device","at":14.76,"event":"contact","visual_change":"Key visually joins account and device","audio_role":"accent","sounds":[{"kind":"click","at":14.76,"duration":0.14,"gain_db":-25},{"kind":"glint","at":14.81,"duration":0.29,"gain_db":-30}]},
+    {"id":"into-simple","at":15.69,"event":"bridge","visual_change":"Dark key interface opens a cream onboarding surface","audio_role":"prelap","sounds":[{"kind":"sweep","at":15.48,"duration":0.48,"gain_db":-23,"pan":-0.12}]},
+    {"id":"upload","at":18.2,"event":"contact","visual_change":"File settles into upload receptacle","audio_role":"accent","sounds":[{"kind":"brush","at":18.04,"duration":0.42,"gain_db":-26,"pan":-0.26},{"kind":"tick","at":18.23,"duration":0.11,"gain_db":-24}]},
+    {"id":"toggle","at":19.08,"event":"contact","visual_change":"Protection toggle activates","audio_role":"accent","sounds":[{"kind":"click","at":19.08,"duration":0.12,"gain_db":-22},{"kind":"chime","at":19.11,"duration":0.31,"gain_db":-29}]},
+    {"id":"payoff-reveal","at":20.02,"event":"bridge","visual_change":"Activation shape opens final brand composition","audio_role":"prelap","sounds":[{"kind":"sweep","at":19.79,"duration":0.55,"gain_db":-23,"pan":0.20},{"kind":"drop","at":20.04,"duration":0.46,"gain_db":-24}]},
+    {"id":"outro-readable","at":22.5,"event":"hold","visual_change":"Final brand statement remains legible","audio_role":"silence","reason":"No further SFX: the supplied voice/music lead the concluding read"}
+  ]
+}
