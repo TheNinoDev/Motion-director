@@ -1,3 +1,7 @@
+# Ads Wizard v70 — Solar Bold / Bold Duotone, coherent multi-actor scenes
+
+Corrects v69's one-centered-asset-per-shot tendency observed in the 24.29s RobloxLARP test. Assets should support genuinely interesting motion design, not carry the whole video. Build relationships and smooth handoffs; prefer simpler consistent silhouettes with restrained duotone rather than ornate stickers. The original demo SVGs are not official Solar icons. Use `scripts/solar_svg_import_v70.py` with locally installed official Solar SVGs; attribute 480 Design (CC BY 4.0). Check scene relationships with `scripts/icon_scene_audit_v70.py` (warnings do not replace playback). See guides 149–151 and `examples/icon-ensemble-v70`. Retains all previous files and branding.
+
 # Ads Wizard v69 — previously Motion Director
 
 **Ads Wizard** is the new display name. The portable skill slug is `ads-wizard` and its install directory is `ads-wizard/`.

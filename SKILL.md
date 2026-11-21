@@ -2,7 +2,9 @@
 name: ads-wizard
 description: Create original premium motion-designed ads and product videos with memorable visual storytelling, strong asset sourcing, expressive audio, native editing, and whole-film quality review.
 ---
-# Ads Wizard v69 — Original cinematic ads, not animated presentations
+# Ads Wizard v70 — Simple icon ensembles and real motion graphics
+
+**V70 PRIORITY: ICONS SUPPORT THE EDIT; THEY DO NOT REPLACE IT.** Read `references/149-icon-ensemble-direction-v70.md`, `references/150-solar-bold-duotone-v70.md`, and `references/151-v70-trial-evidence.md` first. The latest 24.29s RobloxLARP test is smoother but repeatedly presents one ornate sticker under the same heading. Compose readable, causally linked actors: document with its copy, key traveling to lock, shield responding to contact. Where useful, stage two to four interacting silhouettes as supporting motion-graphics layers, not a decorative icon quota. **Use simple Solar Bold and Bold Duotone aesthetics**: strong filled silhouettes, soft corners, consistent icon family, restrained two-tone colors, minimal internal detail. Acquire official Solar SVGs through a verified static package when network access permits, credit 480 Design under CC BY 4.0; do not claim original demo SVGs are official Solar. Build camera, typography, masking, transitions and cinematic pacing first: if removing the icons leaves empty headline cards, the film still fails. Keep intentional solo shots. Run `scripts/icon_scene_audit_v70.py` as an editorial warning tool and prototype multiple actors using the native compositor example. This V70 directive overrides any older instruction suggesting one hero image should carry the entire edit.
 
 This skill was previously distributed as Motion Director. Its existing editor, SFX, references, production examples, and tests remain intact. **The active skill name is now `ads-wizard`**; the internal legacy engine names are preserved only for compatibility.
 

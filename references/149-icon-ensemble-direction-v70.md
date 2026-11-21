@@ -1,0 +1,15 @@
+# V70 — Icon ensembles as supporting actors, not single-sticker slides
+
+**Observed failure:** In the uploaded 24.29s / 24fps RobloxLARP export, repeated framed moments show a single document (1–3s), stolen copy (4–7s), shield (9–10s), VM badge (12–13s), key (14–15s), upload window (16–19s), and shield endcard (21–24s). These are sampled views; some overlaps exist between samples. Repeated heading-plus-centered-icon compositions remain weak despite smoother movement.
+
+## Operating method
+1. Write the visual *verb* before choosing assets: copied, pursued, blocked, docked, authenticated, transformed. Name the initiator, target, consequence, and next-scene handoff.
+2. Consider a small cast of two to four meaningful **supporting icon actors** when the narrative warrants. Do not mechanically require multiple icons in every shot. A focused solo shot is sometimes best; five unrelated stickers are worse.
+3. Each icon must have a concrete role (hero, cause, target, consequence, context, bridge). Decorations do not count as story actors. Make the hero optically larger or earlier; use secondary actors in controlled hierarchy, not equally spaced badges.
+4. Choreograph two actors *together*: separate entrance timing, independent scale/velocity, overlap, contact, reaction and exit. A key must actually approach a lock; a copied file must visibly diverge from its origin; a shield should receive the object rather than merely replace it.
+5. Assets must **support the editing**, never become a slideshow's content. Plan the kinetic type, framing, masking, cameras, match cuts, handoffs, and rhythm first. Hide all icon layers as a thought experiment: if only a static headline remains, redesign the edit.
+6. Prefer consistent visually simple SVGs over v68/v69's heavy multi-stroke faux-3D illustrations. Rounded silhouettes and two-tone blocks should be readable at phone size. Use color accents intentionally. Never apply gratuitous polygons, floor grids, chrome, glow, or identical zooms to compensate for missing direction.
+7. Make the final frames of one scene prepare the start of the next: carried key/cursor, moving silhouette, shared trajectory, shape reveal, or a deliberately motivated cut. SFX should follow real contact and travel, not random whooshes.
+
+## Acceptance
+Give each shot an actor/interaction list with timecoded verbs and bridge where relevant. Prototype one whole action in native editor with at least two interacting subjects where justified, then watch at normal speed and inspect the seam. Run `scripts/icon_scene_audit_v70.py` on the shot plan; its warnings are editor prompts, not hard numerical quotas. If the title must be read to learn what is happening, or icons only float separately, restage. Check whole film with existing v65/v66 tools. Do not copy Claude/NOIZ footage or product site's imagery unless specifically permitted. Keep user-provided audio locked.

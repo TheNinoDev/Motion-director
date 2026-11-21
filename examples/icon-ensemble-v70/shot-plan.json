@@ -1,0 +1,73 @@
+{
+  "film": "Original simple icon ensemble compositor proof",
+  "shots": [
+    {
+      "id": "copy-collision",
+      "start": 0,
+      "end": 2.4,
+      "assets": [
+        {
+          "id": "document",
+          "role": "hero"
+        },
+        {
+          "id": "copy",
+          "role": "cause"
+        },
+        {
+          "id": "key",
+          "role": "bridge"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "copy",
+          "to": "document",
+          "verb": "duplicates",
+          "cue": 1.1
+        },
+        {
+          "from": "key",
+          "to": "copy",
+          "verb": "intercepts",
+          "cue": 1.7
+        }
+      ],
+      "bridge_actor": "key"
+    },
+    {
+      "id": "key-to-lock",
+      "start": 2.1,
+      "end": 4.5,
+      "assets": [
+        {
+          "id": "key",
+          "role": "hero"
+        },
+        {
+          "id": "lock",
+          "role": "target"
+        },
+        {
+          "id": "shield",
+          "role": "consequence"
+        }
+      ],
+      "relationships": [
+        {
+          "from": "key",
+          "to": "lock",
+          "verb": "docks",
+          "cue": 3
+        },
+        {
+          "from": "lock",
+          "to": "shield",
+          "verb": "protected",
+          "cue": 3.7
+        }
+      ],
+      "bridge_actor": "key"
+    }
+  ]
+}
