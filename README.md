@@ -1,3 +1,9 @@
+# Ads Wizard v76 — Claude's new production as evidence, not a visual template
+
+v76 preserves all v67 editing/SFX code, v72–v75 polish, Ads Wizard mascot and previous project files. It adds a practical case study of the supplied 19.8s Claude ad (references/156-claude-live-case-v76.md), and a short decision/revision guide (references/157-editorial-decision-system-v76.md). They prioritize an evolving visual meaning over feature-title slides, actual source edits after inspection, motivated object interactions, native-or-authored deterministic rendering and honest review. This is not a promise of automatically improved creative quality and not permission to reuse the reference film. Active instructions live in SKILL.md.
+
+---
+
 # Ads Wizard v75 — clean compositing, deliberate lifecycles and scene differentiation
 
 V75 is a targeted revision of v74, which itself preserves the v67 Motion Director renderer and 15-family SFX baseline. The user-provided 24.6s ad is visually more animated but still accumulates stale layers, collides diagram lines with headlines, repeats similar card/color compositions, and holds its outro excessively. The new directives address those observed failures rather than introducing mandatory effects or icons.

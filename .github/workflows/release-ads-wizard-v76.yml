@@ -1,0 +1,45 @@
+name: Publish Ads Wizard v76 - ZIP and skill
+
+on:
+  push:
+    paths:
+      - '.github/workflows/release-ads-wizard-v76.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package and verify v76
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/ads-wizard-dist/ads-wizard"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          test "$(find "$target" -type f | wc -l | tr -d ' ')" = "543"
+          grep -q '^name: ads-wizard$' "$target/SKILL.md"
+          test -f "$target/references/156-claude-live-case-v76.md"
+          test -f "$target/references/157-editorial-decision-system-v76.md"
+          test -f "$target/assets/branding/ads-wizard-icon.png"
+          python3 "$target/tests/test_v76_contract.py"
+          (cd "$RUNNER_TEMP/ads-wizard-dist" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v76.zip" ads-wizard)
+          unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v76.zip"
+          cp "$GITHUB_WORKSPACE/Ads-Wizard-v76.zip" "$GITHUB_WORKSPACE/ads-wizard-v76.skill"
+          cmp "$GITHUB_WORKSPACE/Ads-Wizard-v76.zip" "$GITHUB_WORKSPACE/ads-wizard-v76.skill"
+      - name: Publish v76 release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v76 >/dev/null 2>&1; then
+            gh release upload v76 Ads-Wizard-v76.zip ads-wizard-v76.skill --clobber
+          else
+            gh release create v76 Ads-Wizard-v76.zip ads-wizard-v76.skill --target "$GITHUB_SHA" --title "Ads Wizard v76" --notes "New real Claude workflow case, continuous story direction, revisable rendering and honest QA. Legacy editing/SFX untouched."
+          fi

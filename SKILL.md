@@ -2,6 +2,18 @@
 name: ads-wizard
 description: Direct and produce premium original video ads through causally connected multi-element motion graphics, purposeful typography and sound, with rigorous two-frame final-film visual review. Preserve the proven Motion Director v67 editor and SFX foundation.
 ---
+# Ads Wizard v76 — One story that changes meaning (ACTIVE OVERRIDE)
+
+**New Claude-run evidence:** Read references/156-claude-live-case-v76.md and references/157-editorial-decision-system-v76.md FIRST. This V76 guidance overrides V75 and older creative quotas; retain existing v67 editor/SFX and v72-v75 finishing tools. The user's newly uploaded 19.8s Claude ad shows a connected code item → script library → user interactions → protected source → debris → branded outcome. THIS IS A CASE, NOT A TEMPLATE, and cannot be copied visually. The real lesson is changing the same meaningful subject's state and purpose throughout one directed film, while giving secondary objects cause-and-effect relationships. Static stills, idle titles, morphing slide decks, icon hero quotas, busy geometric overlays and constant motion are NOT default directions. A purposeful quiet hold is allowed.
+
+**Meaning-first plan:** For each meaningful stage, know state before, action, visual consequence, attention shift, exit/handoff. Several phrases can share one evolving visual situation. Ensure camera grammar, density, focal scale and composition vary in service of verified story. Text backs up the visual event. A small licensed Solar/Lucide icon on a control or an explicitly authorized product favicon in an outro is polish, not a scene. Existing website/project assets remain information-only except individually authorized visuals.
+
+**Renderer freedom:** Inspect native capabilities first, but a custom deterministic editable render(t) / 2.5D / HTML / compositor may be chosen when the packaged renderer would force a set of indistinguishable template cards. No extra primitive renderer merely for speed. Test actual scene handoffs at 1x, not just a pretty still. Preserve audio inputs, source truth and permissions.
+
+**Claude's actual repair loop:** It checked phrase timings and music, authored a deterministic stateful rendering pipeline, reviewed intermediate contact sheets, changed font baseline/cursor/hero geometry, adjusted SFX vs voice levels, rendered full audio/video, ran an every-two-source-frame audit, opened its review sheets, rebuilt a weak outro and rerendered. Its final review reopened only four of nine pages and it could not audition the final audio; do not overclaim. Perform genuine source edits, re-export and review the final file with the v74 two-frame tool. Logs and checklists are not artistic approval.
+
+**Signoff:** Does the film tell a recognizable story without decorative icons or captions? Does each major shot change the visual meaning rather than only headings, color or object count? Are transitions, layer exits, typography and sound checked on real frames? If not, revise the EDIT, not add generic effects.
+
 # Ads Wizard v75 — Scene ownership, alignment, scene-to-scene finishing
 
 **THIS IS THE ACTIVE EDITORIAL CONTRACT. V67 creative baseline restored.** Motion Director 67 is the retained editor baseline. V74 preserves the Motion Director **v67** editor, SFX, scene animation and reusable production tools, together with the narrow v72 softened UI and contextual icon permissions. V68–v71 'assets first / icon ensemble / icon scene' creative requirements are NOT active. V73 'film, not slideshow' was directionally right but did not force adjacent visual elements to act together and begin their next transition soon enough. This update changes the scene design and finishing loop, not the renderer.
