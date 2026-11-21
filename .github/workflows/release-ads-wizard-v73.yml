@@ -14,10 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Test v73 and package both skill formats
         shell: bash
         run: |
           set -euo pipefail
+          python -m pip install --disable-pip-version-check pillow
           target="$RUNNER_TEMP/ads-wizard-v73/ads-wizard"
           mkdir -p "$target"
           cp README.md SKILL.md "$target/"
@@ -29,6 +33,8 @@ jobs:
           test -f "$target/assets/branding/ads-wizard-badge-original.png"
           python -m unittest discover -s "$target/tests" -p 'test_film_rehearsal_v73.py' -v
           python -m unittest discover -s "$target/tests" -p 'test_v72_contract.py' -v
+          find "$target" -type d -name '__pycache__' -prune -exec rm -rf {} +
+          test "$(find "$target" -type f | wc -l | tr -d ' ')" = '526'
           (cd "$RUNNER_TEMP/ads-wizard-v73" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v73.zip" ads-wizard)
           unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v73.zip"
           cp "$GITHUB_WORKSPACE/Ads-Wizard-v73.zip" "$GITHUB_WORKSPACE/ads-wizard-v73.skill"
