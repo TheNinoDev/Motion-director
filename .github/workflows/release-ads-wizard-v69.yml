@@ -1,0 +1,78 @@
+name: Publish Ads Wizard v69 and .skill archives
+
+on:
+  push:
+    paths:
+      - '.github/workflows/release-ads-wizard-v69.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and package Ads Wizard v69
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/ads-wizard-dist/ads-wizard"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          total="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$total" = '535'
+          grep -q '^name: ads-wizard$' "$target/SKILL.md"
+          test -f "$target/assets/branding/ads-wizard-badge-original.png"
+          test -f "$target/assets/branding/ads-wizard-icon.png"
+          test -f "$target/references/148-premium-asset-selection-v69.md"
+          (cd "$RUNNER_TEMP/ads-wizard-dist" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v69.zip" ads-wizard)
+          unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v69.zip"
+          cp "$GITHUB_WORKSPACE/Ads-Wizard-v69.zip" "$GITHUB_WORKSPACE/ads-wizard-v69.skill"
+          cmp "$GITHUB_WORKSPACE/Ads-Wizard-v69.zip" "$GITHUB_WORKSPACE/ads-wizard-v69.skill"
+      - name: Publish v69 ZIP + Skill
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v69 >/dev/null 2>&1; then
+            gh release upload v69 Ads-Wizard-v69.zip ads-wizard-v69.skill --clobber
+          else
+            gh release create v69 Ads-Wizard-v69.zip ads-wizard-v69.skill \
+              --target "$GITHUB_SHA" \
+              --title "Ads Wizard v69 — brand identity and premium asset direction" \
+              --notes "Renamed from Motion Director to Ads Wizard (skill slug ads-wizard). Original user-provided transparent anime mascot included. ZIP and .skill formats, 535 complete skill files. Legacy editor and sound tools preserved."
+          fi
+      - name: Add .skill alongside ZIP on existing historical releases
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/legacy-skill"
+          gh release list --limit 100 --json tagName --jq '.[].tagName' | while IFS= read -r tag; do
+            case "$tag" in
+              v5[7-9]|v6[0-8]) ;;
+              *) continue ;;
+            esac
+            version="${tag#v}"
+            if gh release view "$tag" --json assets --jq '.assets[].name' | grep -Eq "^motion-director-v${version}\\.skill$"; then
+              echo "Already present: $tag .skill"
+              continue
+            fi
+            dir="$RUNNER_TEMP/legacy-skill/$tag"
+            mkdir -p "$dir"
+            if ! gh release download "$tag" --pattern "motion-director-v${version}.zip" --dir "$dir"; then
+              echo "Skipping $tag: exact original ZIP not found"
+              continue
+            fi
+            source="$dir/motion-director-v${version}.zip"
+            test -f "$source" || continue
+            unzip -tq "$source"
+            cp "$source" "$dir/motion-director-v${version}.skill"
+            gh release upload "$tag" "$dir/motion-director-v${version}.skill"
+            echo "Added .skill to $tag"
+          done

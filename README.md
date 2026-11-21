@@ -1,3 +1,16 @@
+# Ads Wizard v69 — previously Motion Director
+
+**Ads Wizard** is the new display name. The portable skill slug is `ads-wizard` and its install directory is `ads-wizard/`.
+This release keeps all Motion Director editing, audio, templates, tests, examples, historical reference guides, and script interfaces. Only the public skill identity, icon assets, and stricter premium asset guidance changed. Older versions remain archived under their original `motion-director` skill name to preserve integrity.
+
+Download **Ads-Wizard-v69.zip** (conventional ZIP) or **ads-wizard-v69.skill** (skill file, itself a ZIP). Both include the same complete skill with the uploaded anime mascot. Do not download both to install twice. Extract for Codex/Claude Code; import the ZIP in a compatible custom Skill interface.
+
+The user-supplied transparent icon is in `assets/branding/`, and the full-size master remains untouched. This icon is for branding the Ads Wizard skill, not to inject into third-party client ads.
+
+See `references/148-premium-asset-selection-v69.md` for visual asset quality and use rules.
+
+---
+
 # Motion Director v68 — Asset-first picture language
 
 **The critical fix:** agents kept building morphing PowerPoint films from generic text, sharp rectangles, and wireframe code cards. V68 gives an actual set of transparent, editable multicolor illustrated assets, a native compositor project using imported image layers, a local asset scout with safe SVG preview and rights labeling, and three focused guides for pictorial storytelling, emoji/icon choices, hero acting and whole-film visual acceptance. This is not a mandatory icon-count quota. For RobloxLARP projects the user specifically requests site icons; individual site icons may be used with grounded ownership/permission, never wholesale website screenshots/HTML or unapproved imagery. Existing audio/SFX/transition/source rules remain active.
