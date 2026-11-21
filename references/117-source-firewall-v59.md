@@ -1,3 +1,5 @@
+> **V68 explicit user exception (RobloxLARP campaign only):** This user has specifically asked the editor to use individual original RobloxLARP site icons. These isolated icons may be used **only when product ownership or permission for the specific asset is grounded and recorded**; all other product-site HTML/CSS, screenshots, page captures, page images, logos and reference-video pixels remain forbidden. See `references/145-asset-first-regie-v68.md`. An icon source is not automatically a license.
+
 # 117 — Zero-source-pixels firewall (V59 current)
 
 ## Why this rule exists

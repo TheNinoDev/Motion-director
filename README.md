@@ -1,3 +1,11 @@
+# Motion Director v68 — Asset-first picture language
+
+**The critical fix:** agents kept building morphing PowerPoint films from generic text, sharp rectangles, and wireframe code cards. V68 gives an actual set of transparent, editable multicolor illustrated assets, a native compositor project using imported image layers, a local asset scout with safe SVG preview and rights labeling, and three focused guides for pictorial storytelling, emoji/icon choices, hero acting and whole-film visual acceptance. This is not a mandatory icon-count quota. For RobloxLARP projects the user specifically requests site icons; individual site icons may be used with grounded ownership/permission, never wholesale website screenshots/HTML or unapproved imagery. Existing audio/SFX/transition/source rules remain active.
+
+New files: `references/145-asset-first-regie-v68.md`, `references/146-pictorial-animation-language-v68.md`, `references/147-asset-acceptance-and-quality-v68.md`, `scripts/asset_scout_v68.py`, `tests/test_asset_scout_v68.py`, `examples/asset-first-v68/*`. New illustrative assets are original CC0 artwork, not borrowed from site or reference video. Run `python scripts/asset_scout_v68.py examples/asset-first-v68/illustrations --out work/v68/assets.json --sheet work/v68/assets.jpg`; then run the native compositor on `examples/asset-first-v68/scene.json` for proof. Cinematic quality needs independent film review, not just a generated contact sheet.
+
+---
+
 # Motion Director v67 — More intentional SFX and original kinetic visual FX
 
 User feedback: newest GPT film is an improvement but still lacks diverse sound accents and distinctive motion-graphics technique. v67 adds three evidence-based director manuals (`references/142-...` to `144-...`), a tested sound-event coverage tool, an editable example scoring map, and **nine new procedural SFX kinds** in the existing sound renderer (15 total; all six old kinds retained). The old renderers and pipelines are intact.
