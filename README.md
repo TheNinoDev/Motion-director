@@ -1,3 +1,19 @@
+# Motion Director v67 — More intentional SFX and original kinetic visual FX
+
+User feedback: newest GPT film is an improvement but still lacks diverse sound accents and distinctive motion-graphics technique. v67 adds three evidence-based director manuals (`references/142-...` to `144-...`), a tested sound-event coverage tool, an editable example scoring map, and **nine new procedural SFX kinds** in the existing sound renderer (15 total; all six old kinds retained). The old renderers and pipelines are intact.
+
+**Try the verified native tools:**
+
+```bash
+python scripts/sfx_story_audit_v67.py examples/sfx-story-v67.json --render-plan WORK/native-sfx.json --report WORK/sfx-report.json
+python starter/sound_design/render.py WORK/native-sfx.json WORK/sfx.wav
+python -m unittest discover -s tests -p 'test_sfx_story_audit_v67.py' -v
+```
+
+The sample contains 15 storyboard events, 25 deliberately layered synthetic cues and 14 families; these numbers describe **one illustrative map** and are NOT a mandatory edit quota. The supplied voiceover and soundtrack remain production inputs and must be kept separate. The generated procedural SFX are scratch/original effects; author/edit/mix and actually audition the result. The measured candidate transient times in the source videos cannot isolate specific SFX from a mixed master. New visual examples are design ideas, not permission to reuse NOIZ/Claude/product-site assets.
+
+---
+
 # Motion Director v66 — authored transitions, velocity-aware animation, NOIZ/Claude comparison
 
 Start with `SKILL.md`. V66 adds the transition architecture, movement trajectory guidance and a source-grounded comparison, plus an optional scene-seam contact-strip script and test. The main correction from V65 is that quiet frames are not automatically failures: each scene change must be earned by story, match logic or deliberate contrast. Existing visual source firewall, editor routing, independent SVG licensing, original audio constraints, subagent ownership, and all previous tooling remain active.
