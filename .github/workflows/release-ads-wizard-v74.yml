@@ -1,0 +1,57 @@
+name: Publish Ads Wizard v74 — Ensemble Motion & Two-Frame Finishing
+
+on:
+  push:
+    paths:
+      - '.github/workflows/release-ads-wizard-v74.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test v74 and package complete ZIP + .skill
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check pillow numpy
+          target="$RUNNER_TEMP/ads-wizard-v74/ads-wizard"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          test "$(find "$target" -type f | wc -l | tr -d ' ')" = '533'
+          grep -q '^name: ads-wizard$' "$target/SKILL.md"
+          test -f "$target/references/149-ensemble-motion-grammar-v74.md"
+          test -f "$target/references/150-two-frame-finish-review-v74.md"
+          test -f "$target/scripts/two_frame_finish_v74.py"
+          test -f "$target/assets/branding/ads-wizard-badge-original.png"
+          python -m unittest discover -s "$target/tests" -p 'test_v74_editorial_review.py' -v
+          python -m unittest discover -s "$target/tests" -p 'test_film_rehearsal_v73.py' -v
+          python -m unittest discover -s "$target/tests" -p 'test_v72_contract.py' -v
+          find "$target" -type d -name '__pycache__' -prune -exec rm -rf {} +
+          test "$(find "$target" -type f | wc -l | tr -d ' ')" = '533'
+          (cd "$RUNNER_TEMP/ads-wizard-v74" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v74.zip" ads-wizard)
+          unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v74.zip"
+          cp "$GITHUB_WORKSPACE/Ads-Wizard-v74.zip" "$GITHUB_WORKSPACE/ads-wizard-v74.skill"
+          cmp "$GITHUB_WORKSPACE/Ads-Wizard-v74.zip" "$GITHUB_WORKSPACE/ads-wizard-v74.skill"
+      - name: Publish ZIP and .skill release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v74 >/dev/null 2>&1; then
+            gh release upload v74 Ads-Wizard-v74.zip ads-wizard-v74.skill --clobber
+          else
+            gh release create v74 Ads-Wizard-v74.zip ads-wizard-v74.skill \
+              --target "$GITHUB_SHA" \
+              --title "Ads Wizard v74 — Connected motion and two-frame finish review" \
+              --notes "Based on v73/v67 editor and SFX core. Adds actor→reaction→transition scene grammar, scene plan audit, and complete two-frame native video contact-sheet finishing. Preserves existing tools, audio rules, mascot branding, and limited contextual icon polish."
+          fi

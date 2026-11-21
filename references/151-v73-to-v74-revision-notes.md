@@ -1,0 +1,9 @@
+# 151 — v73 feedback translated into a testable film direction
+
+Observed prior 24.5s vertical output and the earlier Claude comparisons: repeated centered windows, headline resets, panels held in the same composition, and transitions connecting *layouts* instead of progressing *actions*. Pixel activity alone did not reliably predict the user's judgment of quality. The user's most recent clarification is decisive: an actual scene should use several cooperating objects, motion graphics as one composition, text as support, and should start the next transition before the current scene finishes.
+
+**Do not mistake this for a mandate to put multiple stickers in every frame.** A convincing scene is recognized by changing relationships and consequences. The same code card can become compelling when it actually causes other spatial elements to respond and then supplies the next shot's shape or motion. Three independent icons orbiting are still slides.
+
+Revision priority: (A) connected story actions and compositional variety, (B) cross-scene handoff designed in advance, (C) credible acceleration/occlusion/contact/reaction, (D) audio and visual sync, (E) typography/control polish, (F) optional icons. Preserve Motion Director v67 editor/SFX core and v72 narrow rounded-controls + contextual small SVG rules. Do not revive v68-v71 asset-first or one-icon-per-scene recipes.
+
+**Actual acceptance before a future claim of improvement** requires a new independent model run producing a film and proof: an approved moving sequence with at least one interaction that changes a second element, a bridge visible on both sides of a scene boundary, normal-speed full review, and complete `two_frame_finish_v74.py` output with every page actually inspected. Without that, only the instructions and diagnostics are validated, not the movie quality.

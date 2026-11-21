@@ -1,0 +1,63 @@
+{
+  "status": "EXAMPLE ONLY: conceptual animation, not a claim about implemented RobloxLARP protection features",
+  "project": "Illustrative motion-graphics rehearsal",
+  "scenes": [
+    {
+      "id": "source-under-pressure",
+      "start": 0,
+      "end": 3,
+      "visual_cause": "A visible attempt to pull a copy away from its source creates immediate tension",
+      "primary_action": "The source panel bends and splits at a point of contact while a copy peels away",
+      "secondary_reaction": "Adjacent status strokes warp toward the extraction and the virtual camera reframes its focal point",
+      "result": "The viewer sees an incomplete detached copy and a continuing line of tension",
+      "text_role": "A small caption reveals the stakes after the split; the image is intelligible without it",
+      "elements": [
+        {"id": "source", "role": "actor", "action": "deform and separate"},
+        {"id": "status", "role": "reaction", "responds_to": "source", "action": "change state and pull inward"},
+        {"id": "caption", "role": "text", "responds_to": "status", "action": "enter on consequence"}
+      ],
+      "handoff": {
+        "anchor": "bright-extraction-line",
+        "preparation_start": 2.45,
+        "forward_action": "The extraction line stretches beyond the panel edge, enters foreground and masks the next environment"
+      }
+    },
+    {
+      "id": "line-becomes-gate",
+      "start": 3,
+      "end": 6,
+      "receives": "bright-extraction-line",
+      "visual_cause": "The stretched extraction line closes into the contour of a generic access gate",
+      "primary_action": "The line physically folds into a gate; the detached copy tries to pass through",
+      "secondary_reaction": "A nearby control retracts after contact; the surroundings shift with a delayed parallax response",
+      "result": "The detached copy is redirected and the empty gate outline becomes a new shape",
+      "text_role": "Minimal short label appears beside the reacting control rather than replacing the scene",
+      "elements": [
+        {"id": "line", "role": "actor", "action": "fold into gate shape"},
+        {"id": "control", "role": "reaction", "responds_to": "line", "action": "respond to copy contact"},
+        {"id": "copy", "role": "subject", "responds_to": "control", "action": "deflect toward a corner"}
+      ],
+      "handoff": {
+        "anchor": "gate-outline",
+        "preparation_start": 5.35,
+        "forward_action": "The gate outline expands into a full-screen contour before a new scene is revealed"
+      }
+    },
+    {
+      "id": "system-in-motion",
+      "start": 6,
+      "end": 9,
+      "receives": "gate-outline",
+      "visual_cause": "The gate outline becomes the edge of a new workspace rather than an unrelated fresh slide",
+      "primary_action": "Multiple related lines connect into a legible flow while the camera settles on the result",
+      "secondary_reaction": "A compact status button updates only after the flow completes; secondary lines settle at a different speed",
+      "result": "The scene resolves into one clear outcome with a natural audio tail",
+      "text_role": "A short payoff accompanies the established animation instead of explaining an otherwise static poster",
+      "elements": [
+        {"id": "outline", "role": "actor", "action": "expand and connect"},
+        {"id": "status-button", "role": "reaction", "responds_to": "outline", "action": "acknowledge completion"},
+        {"id": "payoff", "role": "text", "responds_to": "status-button", "action": "small supporting read"}
+      ]
+    }
+  ]
+}

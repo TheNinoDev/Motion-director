@@ -1,3 +1,15 @@
+# Ads Wizard v74 — Connected Motion and Every-Two-Frame Finishing
+
+**V74 restores and preserves the Motion Director v67 creative/editor foundation.** The v68–v71 asset-first, mascot-as-ad and one-icon-scene approaches are NOT restored. The new higher-priority v74 guidance solves the v73 failure identified by the user: a series of independently animated object-and-text slides, even after smoother easing.
+
+**New in v74:** `references/149-ensemble-motion-grammar-v74.md` (acting object + spatial reaction + supporting type + early cross-scene handoff, no arbitrary object quotas), `references/150-two-frame-finish-review-v74.md` (post-export every-second-native-frame visual QA), and `references/151-v73-to-v74-revision-notes.md` (evidence-based corrective plan). `scripts/ensemble_story_audit_v74.py` checks planning relationships; `scripts/two_frame_finish_v74.py` decodes every source frame, samples every 2nd frame into chronologically numbered image pages, logs flagged differences and possible holds, checks optional shot seams, and records final video hash. New tests and a fictional concept example are included.
+
+**Example:** `python scripts/ensemble_story_audit_v74.py examples/ensemble-motion-v74.json` and `python scripts/two_frame_finish_v74.py FILM.mp4 --out review --every 2`.
+
+A successful audit is a diagnostic, **not proof that any agent watched the pages** or that the final film has good art direction. Real model/video evaluation is still needed. All user-provided audio remains locked, and small Solar/Lucide glyphs are optional UI polish after the scene itself works.
+
+---
+
 # Ads Wizard v73 — editorial continuity reset on the v67 production core
 
 The 24.5 s FullHD v72 test still resembled completed title/code/UI panels despite smooth motion and polished corners. This update changes the **decision process**, not the SFX/editor engine: design one continuous image action across spoken phrases, inspect before/middle/after states and real shot seams, then rebuild the weakest title-panel montage before final export. Prioritize `SKILL.md` and guides `147-film-not-slides-v73.md` and `148-real-output-diagnosis-v73.md`. The new `scripts/film_rehearsal_v73.py` exports honest shot-and-seam review sheets from an actual MP4; it cannot score artistic quality. The original Motion Director v67 production tools and narrow v72 UI icon/rounding instructions are preserved. No source/reference footage or unlicensed assets are bundled.
