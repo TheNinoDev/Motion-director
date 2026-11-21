@@ -1,0 +1,47 @@
+name: Publish Motion Director v66
+
+on:
+  push:
+    paths:
+      - ".github/workflows/release-v66.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current skill
+        uses: actions/checkout@v4
+      - name: Package and validate skill
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/md-release/motion-director"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          test "$(find "$target" -type f | wc -l | tr -d ' ')" = "508"
+          test -f "$target/references/139-cross-scene-handoffs-v66.md"
+          test -f "$target/references/140-fluid-kinetics-v66.md"
+          test -f "$target/references/141-noiz-claude-transition-study-v66.md"
+          test -f "$target/scripts/seam_review_v66.py"
+          (cd "$RUNNER_TEMP/md-release" && zip -qr "$GITHUB_WORKSPACE/motion-director-v66.zip" motion-director)
+          unzip -tq "$GITHUB_WORKSPACE/motion-director-v66.zip"
+          sha256sum motion-director-v66.zip
+      - name: Publish GitHub Release v66
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v66 >/dev/null 2>&1; then
+            gh release upload v66 motion-director-v66.zip --clobber
+          else
+            gh release create v66 motion-director-v66.zip \
+              --target "$GITHUB_SHA" \
+              --title "Motion Director v66" \
+              --notes "Scene-to-scene handoffs, smooth motion trajectory review, NOIZ/Claude/GPT comparative case, automated transition contact sheets. Existing production editors and user audio contracts preserved."
+          fi
