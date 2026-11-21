@@ -1,0 +1,34 @@
+{
+  "schema": "ads-wizard-film-rehearsal-v73",
+  "film": "Replace with actual exported film name",
+  "editorial_question": "Is this one continuing filmed action or separate designed panels?",
+  "shots": [
+    {
+      "start": 0,
+      "end": 3.1,
+      "label": "Subject established and acted upon",
+      "visual_action": "Show evidence of one starting state and actual intervention",
+      "outgoing": "The resulting transformed subject carries into the next visual space",
+      "continuity": "same subject",
+      "notes": "Sample metadata; replace boundaries for actual film"
+    },
+    {
+      "start": 3.1,
+      "end": 6.5,
+      "label": "Intervention causes new state",
+      "visual_action": "Visible consequence changes the relationship between subjects",
+      "outgoing": "Carry one recognizable visual anchor, or explain a motivating contrast cut",
+      "continuity": "designed cut",
+      "notes": "No copy-paste from these sample shots"
+    },
+    {
+      "start": 6.5,
+      "end": 10.0,
+      "label": "Payoff",
+      "visual_action": "Result becomes clear without adding a new explanatory slide",
+      "outgoing": "Resolution to brand or next action",
+      "continuity": "resolved",
+      "notes": "If actual film is longer, define its true chapters"
+    }
+  ]
+}

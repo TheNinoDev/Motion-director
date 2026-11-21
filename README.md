@@ -1,3 +1,9 @@
+# Ads Wizard v73 — editorial continuity reset on the v67 production core
+
+The 24.5 s FullHD v72 test still resembled completed title/code/UI panels despite smooth motion and polished corners. This update changes the **decision process**, not the SFX/editor engine: design one continuous image action across spoken phrases, inspect before/middle/after states and real shot seams, then rebuild the weakest title-panel montage before final export. Prioritize `SKILL.md` and guides `147-film-not-slides-v73.md` and `148-real-output-diagnosis-v73.md`. The new `scripts/film_rehearsal_v73.py` exports honest shot-and-seam review sheets from an actual MP4; it cannot score artistic quality. The original Motion Director v67 production tools and narrow v72 UI icon/rounding instructions are preserved. No source/reference footage or unlicensed assets are bundled.
+
+---
+
 # Ads Wizard v72 — Restore Motion Director v67 editing baseline
 
 **Version strategy:** v72 is rebased on the complete **v67 skill**, not evolved from v71. The owner prefers the v67 motion work to the later icon/asset-heavy revisions. All v67 production scripts, tests, SFX and examples remain unchanged. Only the root/README wording, two short creative guides, one storyboard demonstration, a regression test and the approved skill branding are added. No later v68–v71 asset-first workflow is included.

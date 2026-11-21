@@ -1,0 +1,49 @@
+name: Publish Ads Wizard v73 — Editor Continuity
+
+on:
+  push:
+    paths:
+      - '.github/workflows/release-ads-wizard-v73.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test v73 and package both skill formats
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/ads-wizard-v73/ads-wizard"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          test "$(find "$target" -type f | wc -l | tr -d ' ')" = '526'
+          grep -q '^name: ads-wizard$' "$target/SKILL.md"
+          test -f "$target/references/147-film-not-slides-v73.md"
+          test -f "$target/scripts/film_rehearsal_v73.py"
+          test -f "$target/assets/branding/ads-wizard-badge-original.png"
+          python -m unittest discover -s "$target/tests" -p 'test_film_rehearsal_v73.py' -v
+          python -m unittest discover -s "$target/tests" -p 'test_v72_contract.py' -v
+          (cd "$RUNNER_TEMP/ads-wizard-v73" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v73.zip" ads-wizard)
+          unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v73.zip"
+          cp "$GITHUB_WORKSPACE/Ads-Wizard-v73.zip" "$GITHUB_WORKSPACE/ads-wizard-v73.skill"
+          cmp "$GITHUB_WORKSPACE/Ads-Wizard-v73.zip" "$GITHUB_WORKSPACE/ads-wizard-v73.skill"
+      - name: Publish ZIP and .skill release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v73 >/dev/null 2>&1; then
+            gh release upload v73 Ads-Wizard-v73.zip ads-wizard-v73.skill --clobber
+          else
+            gh release create v73 Ads-Wizard-v73.zip ads-wizard-v73.skill \
+              --target "$GITHUB_SHA" \
+              --title "Ads Wizard v73 — Film Not Slides" \
+              --notes "v67 editor and sound core, v72 UI polish and icon exceptions, plus real-film visual action and continuity direction. Includes actual MP4 storyboard/seam review tool and full ZIP/.skill packages."
+          fi
