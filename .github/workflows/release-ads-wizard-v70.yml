@@ -1,0 +1,64 @@
+name: Publish Ads Wizard v70 (ZIP + .skill)
+
+on:
+  push:
+    paths:
+      - '.github/workflows/release-ads-wizard-v70.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate original demo PNGs and verify v70 code
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet cairosvg
+          python -m unittest tests.test_icon_scene_v70 -v
+          python - <<'PY'
+          from pathlib import Path
+          import cairosvg
+          root=Path('examples/icon-ensemble-v70/icons')
+          for svg in sorted(root.glob('*.svg')):
+              cairosvg.svg2png(url=str(svg),write_to=str(svg.with_suffix('.png')),output_width=400,output_height=400)
+          assert len(list(root.glob('*.png')))==5
+          PY
+      - name: Package Ads Wizard in both formats
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/ads-wizard-dist/ads-wizard"
+          mkdir -p "$target"
+          cp SKILL.md README.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          find "$target" -type d -name __pycache__ -prune -exec rm -rf '{}' +
+          total="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$total" = '555'
+          grep -q '^name: ads-wizard$' "$target/SKILL.md"
+          test -f "$target/references/149-icon-ensemble-direction-v70.md"
+          test -f "$target/references/150-solar-bold-duotone-v70.md"
+          test -f "$target/scripts/solar_svg_import_v70.py"
+          test -f "$target/examples/icon-ensemble-v70/icons/shield.png"
+          (cd "$RUNNER_TEMP/ads-wizard-dist" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v70.zip" ads-wizard)
+          unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v70.zip"
+          cp "$GITHUB_WORKSPACE/Ads-Wizard-v70.zip" "$GITHUB_WORKSPACE/ads-wizard-v70.skill"
+          cmp "$GITHUB_WORKSPACE/Ads-Wizard-v70.zip" "$GITHUB_WORKSPACE/ads-wizard-v70.skill"
+      - name: Publish GitHub release v70
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v70 >/dev/null 2>&1; then
+            gh release upload v70 Ads-Wizard-v70.zip ads-wizard-v70.skill --clobber
+          else
+            gh release create v70 Ads-Wizard-v70.zip ads-wizard-v70.skill \
+              --target "$GITHUB_SHA" \
+              --title "Ads Wizard v70 — simple coordinated icon motion" \
+              --notes "Corrected single-icon-per-scene slideshow behavior, asset roles and multi-actor choreography; Solar Bold/Duotone official package import route with artwork CC BY 4.0 attribution; native compositor demo with simple original SVGs. 555 files in ZIP and .skill."
+          fi
