@@ -1,0 +1,49 @@
+name: Publish Ads Wizard v72 (V67 editor baseline)
+
+on:
+  push:
+    paths:
+      - '.github/workflows/release-ads-wizard-v72.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify restored editor and build ZIP + skill
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/ads-wizard-v72/ads-wizard"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          count="$(find "$target" -type f | wc -l | tr -d ' ')"
+          test "$count" = '521'
+          grep -q '^name: ads-wizard$' "$target/SKILL.md"
+          test -f "$target/references/145-editor-first-soft-geometry-v72.md"
+          test -f "$target/assets/branding/ads-wizard-badge-original.png"
+          test -f "$target/scripts/sfx_story_audit_v67.py"
+          python -m unittest discover -s "$target/tests" -p test_v72_contract.py -v
+          (cd "$RUNNER_TEMP/ads-wizard-v72" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v72.zip" ads-wizard)
+          unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v72.zip"
+          cp "$GITHUB_WORKSPACE/Ads-Wizard-v72.zip" "$GITHUB_WORKSPACE/ads-wizard-v72.skill"
+          cmp "$GITHUB_WORKSPACE/Ads-Wizard-v72.zip" "$GITHUB_WORKSPACE/ads-wizard-v72.skill"
+      - name: Publish GitHub Release v72
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v72 >/dev/null 2>&1; then
+            gh release upload v72 Ads-Wizard-v72.zip ads-wizard-v72.skill --clobber
+          else
+            gh release create v72 Ads-Wizard-v72.zip ads-wizard-v72.skill \
+              --target "$GITHUB_SHA" \
+              --title "Ads Wizard v72 — Motion Director v67 restored" \
+              --notes "Restores v67 motion/SFX/editor baseline; adds softer UI geometry, contextual button/card glyphs, and opt-in official product logo end-card. Both ZIP and .skill include the complete 521-file skill."
+          fi

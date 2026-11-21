@@ -1,0 +1,57 @@
+{
+  "type": "editorial_direction_example_not_real_UI_proof",
+  "version": "v72",
+  "baseline": "motion-director-v67",
+  "notes": [
+    "Do not create an icon slideshow or invent product controls.",
+    "This is a composition exercise, not a claim about currently released RobloxLARP security features.",
+    "Voice/music inputs are locked."
+  ],
+  "beats": [
+    {
+      "id": "original",
+      "visual_action": "Code document physically comes forward with depth; a second sheet begins to pull away",
+      "geometry": "paper edge may remain hard; supporting button mild corners",
+      "ui_polish": {
+        "role": "small functional toolbar glyph",
+        "icon": "copy",
+        "size": "small",
+        "source": "optional independently licensed SVG"
+      },
+      "seam": "copied sheet carries the next composition"
+    },
+    {
+      "id": "dispute",
+      "visual_action": "Duplicated sheet shifts ownership association and triggers a contrast in page layers",
+      "geometry": "curved trailing line, mixed radii for actual UI chips",
+      "ui_polish": {
+        "role": "optional lock status hint inside chip",
+        "icon": "lock-closed",
+        "size": "small"
+      },
+      "seam": "moving edge occludes reveal, not an arbitrary fade"
+    },
+    {
+      "id": "protection",
+      "visual_action": "Source layout compresses and passes through original conceptual transformation machine",
+      "geometry": "rounded input controls with meaningful harder machine edges",
+      "ui_polish": {
+        "role": "small button affordance, only if control is clearly established",
+        "icon": "play",
+        "size": "small"
+      },
+      "seam": "outgoing light/shape maps into next shot"
+    },
+    {
+      "id": "payoff",
+      "visual_action": "Result settles and title resolves with an intentional audio punctuation",
+      "geometry": "mostly typography and clean space",
+      "ui_polish": {
+        "role": "optional user-owned official site icon for sign-off",
+        "icon": "official logo or favicon if supplied/authorized",
+        "size": "subtle"
+      },
+      "seam": "end"
+    }
+  ]
+}

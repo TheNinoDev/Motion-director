@@ -1,5 +1,3 @@
-> **V68 explicit user exception (RobloxLARP campaign only):** This user has specifically asked the editor to use individual original RobloxLARP site icons. These isolated icons may be used **only when product ownership or permission for the specific asset is grounded and recorded**; all other product-site HTML/CSS, screenshots, page captures, page images, logos and reference-video pixels remain forbidden. See `references/145-asset-first-regie-v68.md`. An icon source is not automatically a license.
-
 # 119 — Mandatory asset-origin audit (V59, manual instruction)
 
 This guide is a production checklist to be performed by the agent using tools it already has; it is NOT a new programmatic validator. A passing file-existence, codec, or previous pipeline gate is not evidence of asset originality. Treat asset lineage as a release-critical issue. The user explicitly requires websites, local projects, HTML and reference clips to be information-only.
