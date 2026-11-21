@@ -1,3 +1,11 @@
+# Ads Wizard v75 — clean compositing, deliberate lifecycles and scene differentiation
+
+V75 is a targeted revision of v74, which itself preserves the v67 Motion Director renderer and 15-family SFX baseline. The user-provided 24.6s ad is visually more animated but still accumulates stale layers, collides diagram lines with headlines, repeats similar card/color compositions, and holds its outro excessively. The new directives address those observed failures rather than introducing mandatory effects or icons.
+
+**New docs:** `references/152-layer-lifecycles-and-ownership-v75.md`, `153-layout-and-hierarchy-v75.md`, `154-color-rhythm-and-creative-differentiation-v75.md`, `155-user-export-evidence-v75.md`. **New tools:** `scripts/scene_ownership_audit_v75.py` with focused automated tests, and `examples/scene-ownership-v75.json` showing a deliberately safe plan. Start with `SKILL.md`. This preflight catches declared geometry/lifecycle problems but cannot replace human review of actual frames.
+
+---
+
 # Ads Wizard v74 — Connected Motion and Every-Two-Frame Finishing
 
 **V74 restores and preserves the Motion Director v67 creative/editor foundation.** The v68–v71 asset-first, mascot-as-ad and one-icon-scene approaches are NOT restored. The new higher-priority v74 guidance solves the v73 failure identified by the user: a series of independently animated object-and-text slides, even after smoother easing.

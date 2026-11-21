@@ -1,0 +1,15 @@
+{
+  "duration": 4.0,
+  "scenes": [
+    {"id": "threat", "start": 0.0, "end": 2.0, "composition_signature": "left-focus-code-to-right-violation"},
+    {"id": "protection", "start": 2.0, "end": 4.0, "composition_signature": "center-focus-closed-gate"}
+  ],
+  "layers": [
+    {"id": "script-original", "owner": "threat", "role": "hero", "start": 0.0, "end": 2.25, "exit": "handoff", "handoff_to": "protection", "box": [0.10,0.24,0.30,0.40]},
+    {"id": "threat-title", "owner": "threat", "role": "headline", "start": 0.1, "end": 1.8, "exit": "dissolve", "box": [0.08,0.07,0.82,0.12]},
+    {"id": "key-leak", "owner": "threat", "role": "effect", "start": 0.9, "end": 2.0, "exit": "transform", "box": [0.48,0.32,0.32,0.28]},
+    {"id": "closed-gate", "owner": "protection", "role": "hero", "start": 1.87, "end": 3.9, "exit": "despawn", "box": [0.37,0.25,0.40,0.42]},
+    {"id": "protected-title", "owner": "protection", "role": "headline", "start": 2.4, "end": 3.96, "exit": "remove", "box": [0.06,0.76,0.84,0.13]}
+  ],
+  "intentional_overlaps": []
+}

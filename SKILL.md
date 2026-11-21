@@ -2,9 +2,17 @@
 name: ads-wizard
 description: Direct and produce premium original video ads through causally connected multi-element motion graphics, purposeful typography and sound, with rigorous two-frame final-film visual review. Preserve the proven Motion Director v67 editor and SFX foundation.
 ---
-# Ads Wizard v74 — Connected motion-graphics ensembles, frame-by-frame finishing
+# Ads Wizard v75 — Scene ownership, alignment, scene-to-scene finishing
 
 **THIS IS THE ACTIVE EDITORIAL CONTRACT. V67 creative baseline restored.** Motion Director 67 is the retained editor baseline. V74 preserves the Motion Director **v67** editor, SFX, scene animation and reusable production tools, together with the narrow v72 softened UI and contextual icon permissions. V68–v71 'assets first / icon ensemble / icon scene' creative requirements are NOT active. V73 'film, not slideshow' was directionally right but did not force adjacent visual elements to act together and begin their next transition soon enough. This update changes the scene design and finishing loop, not the renderer.
+
+## V75 OVERRIDE — MOTION WITHOUT CLEAN COMPOSITING IS NOT POLISH
+
+The most recent 24.6-second user export contains unmotivated layers from a previous scene, connector strokes entering title bounds, repeated code-card/label compositions and a near-static outro. **Read `references/152-layer-lifecycles-and-ownership-v75.md`, `references/153-layout-and-hierarchy-v75.md`, `references/154-color-rhythm-and-creative-differentiation-v75.md`, and `references/155-user-export-evidence-v75.md` before choosing how to animate.** V67 renderer/SFX tools remain the base; prior guidance to always add more icons, objects, FX or motion is NOT an active quota.
+
+A scene is a **lifecycle-controlled composition**: every significant layer has entrance, purpose, reaction, transition and EXPLICIT EXIT or ownership handoff; accidental cross-scene persistence is a defect, not continuity. Validate main title and annotation bounds against connecting lines and moving objects using swept boxes and real video frames. Make overlap intentional and opt-in, never ban depth/occlusion. Color and composition should develop with the story while remaining cohesive; don't use the same cyan wireframe/card/white title everywhere. The simpler result should win when more detail undermines legibility.
+
+For a project with layer geometry, use `python scripts/scene_ownership_audit_v75.py PROJECT-PLAN.json` and fix unresolved critical errors BEFORE final rendering; then use existing `scripts/two_frame_finish_v74.py` on the actual MP4 for visible overlap, clipping, type hierarchy, pacing, alignment and stale layers. The tool is a geometric **preflight**, not an image evaluator. A clean report NEVER replaces watching the finished film. No false claims of automated visual approval.
 
 ## 1. Choreograph a connected event, NEVER a finished poster per line of narration
 

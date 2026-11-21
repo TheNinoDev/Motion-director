@@ -1,0 +1,59 @@
+name: Publish Ads Wizard v75 — layout ownership and finish QA
+
+on:
+  push:
+    paths:
+      - '.github/workflows/release-ads-wizard-v75.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate v75 editorial preflight and previous core
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_scene_ownership_v75.py' -v
+          python -m unittest discover -s tests -p 'test_v74_editorial_review.py' -v
+          python -m unittest discover -s tests -p 'test_v72_contract.py' -v
+          python scripts/scene_ownership_audit_v75.py examples/scene-ownership-v75.json
+      - name: Package ZIP and .skill
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="$RUNNER_TEMP/ads-wizard-v75/ads-wizard"
+          mkdir -p "$target"
+          cp README.md SKILL.md "$target/"
+          cp -R assets examples references scripts starter templates tests "$target/"
+          find "$target" -type d -name __pycache__ -prune -exec rm -rf {} +
+          test "$(find "$target" -type f | wc -l | tr -d ' ')" = '540'
+          grep -qx 'name: ads-wizard' "$target/SKILL.md"
+          test -f "$target/references/152-layer-lifecycles-and-ownership-v75.md"
+          test -f "$target/references/153-layout-and-hierarchy-v75.md"
+          test -f "$target/scripts/scene_ownership_audit_v75.py"
+          (cd "$RUNNER_TEMP/ads-wizard-v75" && zip -qr "$GITHUB_WORKSPACE/Ads-Wizard-v75.zip" ads-wizard)
+          unzip -tq "$GITHUB_WORKSPACE/Ads-Wizard-v75.zip"
+          cp "$GITHUB_WORKSPACE/Ads-Wizard-v75.zip" "$GITHUB_WORKSPACE/ads-wizard-v75.skill"
+          cmp "$GITHUB_WORKSPACE/Ads-Wizard-v75.zip" "$GITHUB_WORKSPACE/ads-wizard-v75.skill"
+      - name: Publish v75 GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v75 >/dev/null 2>&1; then
+            gh release upload v75 Ads-Wizard-v75.zip ads-wizard-v75.skill --clobber
+          else
+            gh release create v75 Ads-Wizard-v75.zip ads-wizard-v75.skill \
+              --target "$GITHUB_SHA" \
+              --title "Ads Wizard v75 — Scene ownership and polish" \
+              --notes "Preserves v67 editing and SFX via v74, corrects scene layer lifecycles, text/connector collisions, clutter and scene repetition. Adds independently tested scene-ownership audit and a real user-film critique. No new mandatory icons/effects."
+          fi
