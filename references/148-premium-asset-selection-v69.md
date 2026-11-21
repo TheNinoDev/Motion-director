@@ -1,3 +1,5 @@
+**V71 direction supersedes the asset-first ordering here:** This guide helps only when an image is genuinely needed. The default is edit-first, component motion-first, and icons/assets added last as secondary polish to buttons/cards/badges. Do not create a hero slideshow by following this guide literally. See `152-edit-first-icon-polish-v71.md`.
+
 # 148 — Premium asset acquisition and visual art direction (Ads Wizard v69)
 
 ## Why this exists

@@ -1,6 +1,22 @@
-# Ads Wizard v70 — Solar Bold / Bold Duotone, coherent multi-actor scenes
+# Ads Wizard v71 — Edit-first, icon-polished UI motion (NOT an asset slideshow)
 
-Corrects v69's one-centered-asset-per-shot tendency observed in the 24.29s RobloxLARP test. Assets should support genuinely interesting motion design, not carry the whole video. Build relationships and smooth handoffs; prefer simpler consistent silhouettes with restrained duotone rather than ornate stickers. The original demo SVGs are not official Solar icons. Use `scripts/solar_svg_import_v70.py` with locally installed official Solar SVGs; attribute 480 Design (CC BY 4.0). Check scene relationships with `scripts/icon_scene_audit_v70.py` (warnings do not replace playback). See guides 149–151 and `examples/icon-ensemble-v70`. Retains all previous files and branding.
+**Explicit user correction:** V68–V70 mistakenly treated external artwork as the core of every software ad. The latest actual `RobloxLARP_Protection_Ad.mp4` shows repeated standalone centered icons under similar headlines. V71 reverses production order: a strong, coherent edit first; original UI components and choreography second; Solar Bold/Bold Duotone SVG icons (when relevant) as final-stage details *inside buttons, cards, tabs and statuses*, not as heroes.
+
+**New active files:** `references/152-edit-first-icon-polish-v71.md`, `references/153-v71-user-film-evidence.md`, `scripts/edit_asset_role_audit_v71.py`, `tests/test_edit_asset_role_audit_v71.py`, `examples/edit-first-v71/shot-plan.json`. The old icon-ensemble, Solar and premium-asset guides have explicit v71 corrections. Audio, source ownership, SFX, transitions, editor and existing tools are preserved.
+
+**Creative acceptance:** A shot must have an interesting action and a connection to neighboring shots even when all imported icon layers are disabled. A meaningful button/card/status may carry a small icon. An isolated large shield/chip/key under a title is a regression unless there is a strong product-specific story reason. This is not a numeric minimum or prohibition on all hero objects.
+
+**Quick check:** `python scripts/edit_asset_role_audit_v71.py examples/edit-first-v71/shot-plan.json`; runs a structural warning-only storyboard audit, not aesthetic proof. Render actual film in the native editor and inspect at 1x for quality.
+
+---
+
+# Ads Wizard v70 — visual storytelling with simple, interacting icon ensembles
+
+The user test exposed a second failure after asset-first adoption: the 24.29s, 24fps RobloxLARP ad is substantially smoother but cycles isolated fancy icons under similar title cards. Multiple icons may be useful **only when each one supports an action**: a file is copied, a copy reaches a lock, a key travels between scenes, or a shield encloses both. Prefer **Solar Bold / Bold Duotone** simple silhouettes instead of ornate multi-stroke vector stickers. Keep one clear focus; intentional solo frames and type-only frames remain valid. Original demos included, *not official Solar assets*.
+
+New: `references/149-icon-ensemble-direction-v70.md`, `150-solar-bold-duotone-v70.md`, `151-v70-trial-evidence.md`; `scripts/icon_scene_audit_v70.py` scene anti-template reviewer; `scripts/solar_svg_import_v70.py` offline-safe, licensed static Solar loader; `examples/icon-ensemble-v70/` native-compositor two-phase proof with cohesive original SVG/PNG assets. All v69 files and tools are preserved. Audio/source rights rules continue.
+
+**Editor proof:** `python starter/composite_film/compositor.py examples/icon-ensemble-v70/scene.json WORK/icon-demo --at 1.2 --at 2.9 --size 360` (from skill root). For real Solar assets, obtain official `@solar-icons/static` on a network-enabled machine, inspect exact icon names, and use importer with the resolved installation directory. Preserve CC BY 4.0 attribution to 480 Design in the campaign credits. The package code's MIT license is not an icon copyright waiver.
 
 # Ads Wizard v69 — previously Motion Director
 

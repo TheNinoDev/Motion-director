@@ -1,0 +1,144 @@
+{
+  "version": "v71",
+  "description": "Illustrative concept plan, not observed product footage. Story first; UI icon details last.",
+  "shots": [
+    {
+      "id": "ownership",
+      "start": 0,
+      "end": 3.0,
+      "layout": "full-width-editorial-code-panel",
+      "primary_action": "Code panel slides in; highlight tracks through lines and resolves to a file tab",
+      "components": [
+        {
+          "id": "file-tab",
+          "type": "tab",
+          "role": "navigation"
+        },
+        {
+          "id": "code-pane",
+          "type": "editor",
+          "role": "main"
+        }
+      ],
+      "assets": [
+        {
+          "id": "file-glyph",
+          "type": "svg-icon",
+          "role": "tab-icon",
+          "attached_to": "file-tab"
+        }
+      ],
+      "handoff": "tracked code highlight becomes edge of the incoming duplicate panel"
+    },
+    {
+      "id": "duplication",
+      "start": 3.0,
+      "end": 7.0,
+      "layout": "split-panel-with-perspective",
+      "primary_action": "Duplicate panel peels away while status label detaches and color changes",
+      "components": [
+        {
+          "id": "right-card",
+          "type": "card",
+          "role": "result"
+        },
+        {
+          "id": "copy-status",
+          "type": "badge",
+          "role": "state"
+        }
+      ],
+      "assets": [
+        {
+          "id": "warning-glyph",
+          "type": "svg-icon",
+          "role": "status-icon",
+          "attached_to": "copy-status"
+        }
+      ],
+      "handoff": "outgoing pink status label masks into next permission field"
+    },
+    {
+      "id": "protection",
+      "start": 7.0,
+      "end": 13.0,
+      "layout": "horizontal-permission-workflow",
+      "primary_action": "Access button compresses on click, focus mask reveals token check and status flips",
+      "components": [
+        {
+          "id": "access-button",
+          "type": "button",
+          "role": "action"
+        },
+        {
+          "id": "access-status",
+          "type": "badge",
+          "role": "result"
+        },
+        {
+          "id": "permission-pane",
+          "type": "card",
+          "role": "context"
+        }
+      ],
+      "assets": [
+        {
+          "id": "lock-glyph",
+          "type": "svg-icon",
+          "role": "button-icon",
+          "attached_to": "access-button"
+        },
+        {
+          "id": "check-glyph",
+          "type": "svg-icon",
+          "role": "status-icon",
+          "attached_to": "access-status"
+        }
+      ],
+      "handoff": "check state expands into next scene's underline; deliberate musical beat"
+    },
+    {
+      "id": "upload",
+      "start": 13.0,
+      "end": 19.0,
+      "layout": "diagonal-composed-ui",
+      "primary_action": "Upload card tilts into foreground; progress mask fills and protect toggle physically switches state",
+      "components": [
+        {
+          "id": "upload-card",
+          "type": "card",
+          "role": "context"
+        },
+        {
+          "id": "upload-button",
+          "type": "button",
+          "role": "action"
+        },
+        {
+          "id": "protect-toggle",
+          "type": "toggle",
+          "role": "state"
+        }
+      ],
+      "assets": [
+        {
+          "id": "upload-glyph",
+          "type": "svg-icon",
+          "role": "button-icon",
+          "attached_to": "upload-button"
+        }
+      ],
+      "handoff": "toggled state becomes accent mark in typography frame"
+    },
+    {
+      "id": "payoff",
+      "start": 19.0,
+      "end": 24.0,
+      "layout": "full-frame-editorial-typography",
+      "primary_action": "Words arrive by masked rhythmic line reveal; final line resolves and holds for comprehension",
+      "components": [],
+      "assets": [],
+      "handoff": "terminal hold for readable payoff"
+    }
+  ]
+}
