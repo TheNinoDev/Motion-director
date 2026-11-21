@@ -1,3 +1,15 @@
+# Motion Director v65 — better motion, typography, transitions and SVG assets
+
+User feedback from a new 24.6-second RobloxLARP production: the v64 export is visually flat and static. A reproducible comparison of decoded 180×320 samples found 56.2% very-low-change half-second transitions for that film versus 25.0% for the same-duration Claude counterpart (not a frame-exact or absolute creative-quality measure). A more detailed 10fps sample flagged eight v64 near-static intervals for actual human review.
+
+**New active guides:** `references/136-motion-continuity-v65.md` (near-zero *unintentional* dead time, staggered motion, narrative transitions and an actual MP4 audit), `references/137-svg-typography-v65.md` (user-authorized licensed third-party SVG, sanitization, distinctive legally usable font pairings and cinematic composition), and `references/138-editorial-repair-v65.md` (timestamped critique and concrete restaging). 
+
+**New executable:** `scripts/hold_audit_v65.py` (FFmpeg + numpy), with `tests/test_hold_audit_v65.py`. Run `python scripts/hold_audit_v65.py video.mp4 --fps 10 --max-hold 0.85 --report hold-audit.json`. This is an editorial diagnostic, **not** a demand for non-stop background jitter, guaranteed great motion, or proof that a legal SVG may be copied from a product site.
+
+All existing editors and prior guides are retained; v64 editor-first routing and optional subagent direction still apply. The site's screenshots, DOM, and visuals remain information-only; *independently sourced* authorized SVGs are the narrow exception. Preserve user-provided voice and music. No independent v65 cross-model production test has been performed.
+
+---
+
 # Motion Director v64 — director-led optional subagents
 
 When real subagent support is available, the parent director delegates narrow, independent fact/audio/story/editor-proof/QA tasks with explicit inputs, separate workspaces, evidence and acceptance criteria. Only one agent owns the master film and release. The director verifies native editor output and rejects clutter. When no subagent tool exists, the same workflow runs sequentially without pretending. Read `references/135-subagent-orchestration-v64.md`.
